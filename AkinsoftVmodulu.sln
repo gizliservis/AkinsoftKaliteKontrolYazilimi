@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkinsoftVmodulu.UI.BackOffice", "AkinsoftVmodulu.UI.BackOffice\AkinsoftVmodulu.UI.BackOffice.csproj", "{44017B1C-B09D-4956-9B2E-37EFF51FFF6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsbaRestaurant.UserControls", "IsbaRestaurant.UserControls\IsbaRestaurant.UserControls.csproj", "{DCB37C2B-EA78-4D88-ADFC-A9BA9EB3F44E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Tüm Teknoloji V Modülü", "Tüm Teknoloji V Modülü\Tüm Teknoloji V Modülü.vdproj", "{6AC54AB7-5E60-4324-9DB0-79BEB347C7A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44017B1C-B09D-4956-9B2E-37EFF51FFF6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44017B1C-B09D-4956-9B2E-37EFF51FFF6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44017B1C-B09D-4956-9B2E-37EFF51FFF6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44017B1C-B09D-4956-9B2E-37EFF51FFF6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB37C2B-EA78-4D88-ADFC-A9BA9EB3F44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB37C2B-EA78-4D88-ADFC-A9BA9EB3F44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB37C2B-EA78-4D88-ADFC-A9BA9EB3F44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB37C2B-EA78-4D88-ADFC-A9BA9EB3F44E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC54AB7-5E60-4324-9DB0-79BEB347C7A6}.Debug|Any CPU.ActiveCfg = Debug
+		{6AC54AB7-5E60-4324-9DB0-79BEB347C7A6}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E9D4041-1D90-4ED5-A1E0-88CF4F427BC6}
+	EndGlobalSection
+EndGlobal

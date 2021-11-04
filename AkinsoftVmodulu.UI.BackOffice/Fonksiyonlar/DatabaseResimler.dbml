@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WOLVOX8_DOSYA" Class="DatabaseResimlerDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.44.254,1433;Initial Catalog=WOLVOX8_DOSYA;User ID=sa" SettingsObjectName="AkinsoftVmodulu.UI.BackOffice.Properties.Settings" SettingsPropertyName="D__AKINSOFT_WOLVOX8_DOSYAConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DOSYA" Member="DOSYA">
+    <Type Name="DOSYA">
+      <Column Name="BLKODU" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BAGKODU" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="DOSYAADI" Type="System.String" DbType="VarChar(75)" CanBeNull="true" />
+      <Column Name="ACIKLAMA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FILEDATA" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="OZELKODU" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="WEBDE_GORUNSUN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

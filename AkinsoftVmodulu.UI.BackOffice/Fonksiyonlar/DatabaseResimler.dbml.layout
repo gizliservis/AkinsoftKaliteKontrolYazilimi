@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DatabaseResimler">
+  <DataContextMoniker Name="/DatabaseResimlerDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ea579346-ec87-46b9-af3e-0cddc4a9bf00" isExpanded="false" absoluteBounds="0.75, 0.75, 2, 0.45">
+      <DataClassMoniker Name="/DatabaseResimlerDataContext/DOSYA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2b3bdb19-3f93-4cc9-944d-1afe165ccd77" absoluteBounds="0.76499999999999968, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

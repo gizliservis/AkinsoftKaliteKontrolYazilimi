@@ -1,0 +1,348 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44017B1C-B09D-4956-9B2E-37EFF51FFF6D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AkinsoftVmodulu.UI.BackOffice</RootNamespace>
+    <AssemblyName>AkinsoftVmodulu.UI.BackOffice</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarcodeStandard, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BarcodeLib.2.4.0\lib\netstandard2.0\BarcodeStandard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v19.2" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.2" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2" />
+    <Reference Include="DevExpress.Printing.v19.2.Core" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EPPlus, Version=5.7.5.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.5.7.5\lib\net45\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>C:\Users\icb_1\OneDrive\Masaüstü\NefesWolvoxResimGetirDLL\Release\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.4.1\lib\net46\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="NefesWolvoxResimGetir, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\icb_1\Desktop\NefesWolvoxResimGetirDLL\Release\NefesWolvoxResimGetir.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.5.0.2\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Text.Encodings.Web, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.5.0.1\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.5.0.2\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZLIB">
+      <HintPath>C:\Users\icb_1\OneDrive\Masaüstü\ZLIB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaMenu\frmAnaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenu\frmAnaMenu.Designer.cs">
+      <DependentUpon>frmAnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaMenu\frmKullanici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenu\frmKullanici.Designer.cs">
+      <DependentUpon>frmKullanici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaMenu\frmYoneticiMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenu\frmYoneticiMenu.Designer.cs">
+      <DependentUpon>frmYoneticiMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaturaVeSiparis\frmFaturaSiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaturaVeSiparis\frmFaturaSiparis.Designer.cs">
+      <DependentUpon>frmFaturaSiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaturaVeSiparis\frmSiparisHareket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaturaVeSiparis\frmSiparisHareket.Designer.cs">
+      <DependentUpon>frmSiparisHareket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fonksiyonlar\Database.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Fonksiyonlar\DatabaseKullanici.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseKullanici.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Fonksiyonlar\DatabaseResimler.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseResimler.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rapor\rptFis.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapor\rptFis.Designer.cs">
+      <DependentUpon>rptFis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YöneticiEkrani\frmTolayici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YöneticiEkrani\frmTolayici.Designer.cs">
+      <DependentUpon>frmTolayici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YöneticiEkrani\frmYonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YöneticiEkrani\frmYonetici.Designer.cs">
+      <DependentUpon>frmYonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet2.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaMenu\frmAnaMenu.resx">
+      <DependentUpon>frmAnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaMenu\frmKullanici.resx">
+      <DependentUpon>frmKullanici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaMenu\frmYoneticiMenu.resx">
+      <DependentUpon>frmYoneticiMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaturaVeSiparis\frmFaturaSiparis.resx">
+      <DependentUpon>frmFaturaSiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaturaVeSiparis\frmSiparisHareket.resx">
+      <DependentUpon>frmSiparisHareket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rapor\rptFis.resx">
+      <DependentUpon>rptFis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YöneticiEkrani\frmTolayici.resx">
+      <DependentUpon>frmTolayici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YöneticiEkrani\frmYonetici.resx">
+      <DependentUpon>frmYonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Fonksiyonlar\Database.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Database.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fonksiyonlar\Database.dbml.layout">
+      <DependentUpon>Database.dbml</DependentUpon>
+    </None>
+    <None Include="Fonksiyonlar\DatabaseKullanici.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DatabaseKullanici.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fonksiyonlar\DatabaseKullanici.dbml.layout">
+      <DependentUpon>DatabaseKullanici.dbml</DependentUpon>
+    </None>
+    <None Include="Fonksiyonlar\DatabaseResimler.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DatabaseResimler.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fonksiyonlar\DatabaseResimler.dbml.layout">
+      <DependentUpon>DatabaseResimler.dbml</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\AkinsoftVmodulu.UI.BackOffice.Fonksiyonlar.CARI.datasource" />
+    <None Include="Properties\DataSources\AkinsoftVmodulu.UI.BackOffice.Fonksiyonlar.FATURA.datasource" />
+    <None Include="Properties\DataSources\AkinsoftVmodulu.UI.BackOffice.Fonksiyonlar.FATURAHR.datasource" />
+    <None Include="Properties\DataSources\AkinsoftVmodulu.UI.BackOffice.Fonksiyonlar.SIPARIS.datasource" />
+    <None Include="Properties\DataSources\AkinsoftVmodulu.UI.BackOffice.Fonksiyonlar.SIPARISHR.datasource" />
+    <None Include="Properties\DataSources\AkinsoftVmodulu.UI.BackOffice.Fonksiyonlar.SIPARIS_DURUM_TANIM.datasource" />
+    <None Include="Properties\DataSources\AkinsoftVmodulu.UI.BackOffice.Fonksiyonlar.STOK.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet.xsc">
+      <DependentUpon>_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet.xss">
+      <DependentUpon>_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet1.xsc">
+      <DependentUpon>_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet1.xss">
+      <DependentUpon>_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet2.xsc">
+      <DependentUpon>_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet2.xss">
+      <DependentUpon>_D__AKINSOFT_WOLVOX8_001_2020_WOLVOXDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaydet24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darkseer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imza darkseer.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

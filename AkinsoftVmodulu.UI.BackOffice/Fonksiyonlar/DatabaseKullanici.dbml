@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WOLVOX8_SIRKET" Class="DatabaseKullaniciDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.44.254;Initial Catalog=WOLVOX8_SIRKET;User ID=sa" SettingsObjectName="AkinsoftVmodulu.UI.BackOffice.Properties.Settings" SettingsPropertyName="WOLVOX8_SIRKETConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.PERSONEL" Member="PERSONEL">
+    <Type Name="PERSONEL">
+      <Column Name="BLKODU" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OZEL_KODU" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ADI" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SOYADI" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BABA_ADI" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DOGUM_YERI" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DOGUM_TARIHI" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SICIL_NO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TELEFONU" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CEP_TEL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="E_MAIL" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="USERPWD" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="BANKA_ADI" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="BANKA_NO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ADRESI" Type="System.String" DbType="VarChar(120)" CanBeNull="true" />
+      <Column Name="ACIKLAMA1" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="ACIKLAMA2" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="ACIKLAMA3" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="AKTIF" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TERMINALLER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DAHILI" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
