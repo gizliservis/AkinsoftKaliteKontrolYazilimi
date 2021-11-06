@@ -26,5 +26,11 @@
         <elementListCompartment Id="01ef76d7-1f05-4851-9fcf-98cc4781b85d" absoluteBounds="0.63999999999999968, 1.585, 1.9700000000000002, 20.633341471354164" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="63ac35bd-2551-4f62-8db3-9c4d7c1d1d82" isExpanded="false" absoluteBounds="2.875, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/DatabaseDataContext/STOK" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8dccdff0-4bba-46c1-aebc-8b88fec3900a" absoluteBounds="2.8899999999999997, 1.585, 1.9700000000000002, 21.402547200520832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

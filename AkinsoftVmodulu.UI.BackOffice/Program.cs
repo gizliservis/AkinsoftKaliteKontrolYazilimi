@@ -1,5 +1,6 @@
 ﻿using AkinsoftVmodulu.UI.BackOffice.AnaMenu;
 using AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis;
+using AkinsoftVmodulu.UI.BackOffice.V2;
 using DevExpress.LookAndFeel;
 using DevExpress.Skins;
 using DevExpress.UserSkins;
@@ -20,7 +21,7 @@ namespace AkinsoftVmodulu.UI.BackOffice
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmKullanici());
+            Application.Run(new frmStokEtiket());
         }
     }
 }

@@ -77,5 +77,16 @@ namespace AkinsoftVmodulu.UI.BackOffice.Properties {
                 return ((string)(this["WOLVOX8_SIRKETConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=GIZLISERVIS\\MSSQLMASTER;Initial Catalog=D:\\AKINSOFT_WOLVOX8_001_2020_" +
+            "WOLVOX;User ID=sa;Password=17421742")]
+        public string D__AKINSOFT_WOLVOX8_001_2020_WOLVOXConnectionString2 {
+            get {
+                return ((string)(this["D__AKINSOFT_WOLVOX8_001_2020_WOLVOXConnectionString2"]));
+            }
+        }
     }
 }

@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WOLVOX8_001_2021_WOLVOX" Class="DatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.44.254,1433;Initial Catalog=WOLVOX8_001_2021_WOLVOX;Persist Security Info=True;User ID=sa" SettingsObjectName="AkinsoftVmodulu.UI.BackOffice.Properties.Settings" SettingsPropertyName="D__AKINSOFT_WOLVOX8_001_2020_WOLVOXConnectionString" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="D:\AKINSOFT_WOLVOX8_001_2020_WOLVOX" Class="DatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=GIZLISERVIS\MSSQLMASTER;Initial Catalog=D:\AKINSOFT_WOLVOX8_001_2020_WOLVOX;User ID=sa" SettingsObjectName="AkinsoftVmodulu.UI.BackOffice.Properties.Settings" SettingsPropertyName="D__AKINSOFT_WOLVOX8_001_2020_WOLVOXConnectionString2" Provider="System.Data.SqlClient" />
   <Table Name="dbo.FATURA" Member="FATURA">
     <Type Name="FATURA">
       <Column Name="BLKODU" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -642,6 +642,120 @@
       <Column Name="BLPAKETKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="OZELALANTANIM_17" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="OZELALANTANIM_18" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.STOK" Member="STOK">
+    <Type Name="STOK">
+      <Column Name="BLKODU" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="STOKKODU" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="STOK_ADI" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="OZEL_KODU1" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="OZEL_KODU2" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="OZEL_KODU3" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ARA_GRUBU" Type="System.String" DbType="VarChar(35)" CanBeNull="true" />
+      <Column Name="ALT_GRUBU" Type="System.String" DbType="VarChar(35)" CanBeNull="true" />
+      <Column Name="BIRIMI" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="KDV_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ALIS_ISKONTO_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SATIS_ISKONTO_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ALIS_ISKONTO_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SATIS_ISKONTO_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KAYIT_TARIHI" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DOVIZ_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DOVIZ_BIRIMI" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="BAKIYE_UYARI" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="MIKTAR_MINIMUM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MIKTAR_MAXIMUM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KALITE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="URETICI_FIRMA" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ACIKLAMA1" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="ACIKLAMA2" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="ACIKLAMA3" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="DEPO_ADI" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="SIPARIS_EKLE" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SIPARIS_MINIMUM_MIKTAR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SIPARIS_EKLENECEK_MIKTAR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MUH_ALIS" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="MUH_SATIS_YI" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="MUH_SATIS_YD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="MUH_IADE_YI" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="MUH_IADE_YD" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="KAYDEDEN" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DEGISTIREN" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DEGISTIRME_TARIHI" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GRUBU" Type="System.String" DbType="VarChar(35)" CanBeNull="true" />
+      <Column Name="VADE_GUNU" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="OTV_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="OTV_BIRIMI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="OIV_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BIRIMLER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="BARKODU" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ANA_STOK" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ANA_STOKKODU" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="RENK" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BEDEN" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MARKASI" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MODELI" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ENTRYKDVDEPARTMAN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BIRIMI_2" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="WEBDE_GORUNSUN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="AKTIF" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SIPARIS_DURUMU" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PAZARLAMACI_KAR_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="STOK_ADI_YD" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="BIRIM_AGIRLIK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="STISK1_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="STISK1_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="STISK2_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="STISK2_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="STISK3_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="STISK3_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ASORTI_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ETICARET_ACIKLAMA" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SERINO_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="OZELLIK_TANIMI" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="KDV_ORANI_ALIS" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BASIT_URETIM_BLKODU" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="RESIM_YOLU" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="MRP_MAKINE_MINBSL_MIKTARI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ALISISK1_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ALISISK1_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ALISISK2_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ALISISK2_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ALISISK3_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ALISISK3_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TEVKIFAT_ORANI_1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TEVKIFAT_ORANI_2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KDV_85_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="MUH_MALIYET_HESABI" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="PAZARLAMACI_PRIM_TUTARI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BIRIM_AGIRLIK_BRUT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="FORMUL_HACIM" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="OFFLINE_DURUM" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="OFFLINEBLSTKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SERILOT_MALIYET_ESLESTIR" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="LOT_PARCALANABILIR" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="KDV_ORANI_SATIS_TPT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PDA_ENTEGRASYON" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BONUS_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BONUS_BRFYT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SOURCE_APP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MUH_SATIS_IND" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="BLEKOZELLIK_KODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="VARS_ISLEM_MIKTARI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BARKOD_TIPI" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ACIKLAMA4" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="OFFLINE_GUID" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="KDV_ISTISNA_KODU" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="DEPOZITO_BLSTKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GTIP_NO" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="YERLI_URETIM" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="URETIM_YERI" Type="System.String" DbType="VarChar(35)" CanBeNull="true" />
+      <Column Name="TEVKIFAT_KODU" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="OZELALANTANIM_2" Type="System.String" DbType="VarChar(65)" CanBeNull="true" />
+      <Column Name="OZELALANTANIM_4" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="OZELALANTANIM_8" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="OZELALANTANIM_212" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

@@ -172,6 +172,9 @@
     <Compile Include="FaturaVeSiparis\frmSiparisHareket.Designer.cs">
       <DependentUpon>frmSiparisHareket.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fonksiyonlar\Database.cs">
+      <DependentUpon>Database.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Fonksiyonlar\Database.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -218,6 +221,12 @@
     </Compile>
     <Compile Include="Rapor\rptStok.Designer.cs">
       <DependentUpon>rptStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="V2\frmStokEtiket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="V2\frmStokEtiket.Designer.cs">
+      <DependentUpon>frmStokEtiket.cs</DependentUpon>
     </Compile>
     <Compile Include="V2\frmV2Siparis.cs">
       <SubType>Form</SubType>
@@ -283,6 +292,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Rapor\rptStok.resx">
       <DependentUpon>rptStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="V2\frmStokEtiket.resx">
+      <DependentUpon>frmStokEtiket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="V2\frmV2Siparis.resx">
       <DependentUpon>frmV2Siparis.cs</DependentUpon>
@@ -380,6 +392,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Asset 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -139,10 +139,9 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             foreach (int i in RowHandles)
             {
                 string miktar = gridView1.GetRowCellValue(i, gridView1.Columns["MIKTARI"]).ToString();
-                string stokkodu = gridView1.GetRowCellValue(i, gridView1.Columns["STOKKODU"]).ToString();
                 string carikod = gridView1.GetRowCellValue(i, gridView1.Columns["carikodu"]).ToString();
-                string barkod = gridView1.GetRowCellValue(i, gridView1.Columns["BARKODU"]).ToString();
-                rptBarkod fis = new rptBarkod(barkod, stokkodu);
+                int blkod = Convert.ToInt32(gridView1.GetRowCellValue(i, gridView1.Columns["BLSTKODU"]));
+                rptBarkod fis = new rptBarkod(blkod);
                 ReportPrintTool barkode = new ReportPrintTool(fis);
                 for (int s = 1; s <= int.Parse(miktar); s++)
                 {

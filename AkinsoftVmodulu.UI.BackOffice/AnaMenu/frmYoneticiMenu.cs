@@ -1,4 +1,5 @@
-﻿using AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani;
+﻿using AkinsoftVmodulu.UI.BackOffice.V2;
+using AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani;
 using DevExpress.XtraBars;
 using System;
 using System.Collections.Generic;
@@ -33,6 +34,11 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             frm.Show();
         }
 
-       
+        private void btnEtiketYazdirma_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmStokEtiket frm = new frmStokEtiket();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

@@ -46,6 +46,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.btnEtiketYazdirma = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -76,9 +77,10 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             this.skinPaletteRibbonGalleryBarItem1,
             this.barEditItem4,
             this.barButtonItem2,
-            this.skinRibbonGalleryBarItem1});
+            this.skinRibbonGalleryBarItem1,
+            this.btnEtiketYazdirma});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 12;
+            this.ribbon.MaxItemId = 13;
             this.ribbon.Name = "ribbon";
             this.ribbon.OptionsMenuMinWidth = 385;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -88,7 +90,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             this.repositoryItemHyperLinkEdit1,
             this.repositoryItemFontEdit1,
             this.repositoryItemTextEdit1});
-            this.ribbon.Size = new System.Drawing.Size(1384, 159);
+            this.ribbon.Size = new System.Drawing.Size(1384, 153);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // btnV1
@@ -187,6 +189,14 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             this.skinRibbonGalleryBarItem1.Id = 11;
             this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
             // 
+            // btnEtiketYazdirma
+            // 
+            this.btnEtiketYazdirma.Caption = "Etiket Yazdırma Sihirbazı";
+            this.btnEtiketYazdirma.Id = 12;
+            this.btnEtiketYazdirma.ImageOptions.LargeImage = global::AkinsoftVmodulu.UI.BackOffice.Properties.Resources.barcode;
+            this.btnEtiketYazdirma.Name = "btnEtiketYazdirma";
+            this.btnEtiketYazdirma.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEtiketYazdirma_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -199,6 +209,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.btnV1);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnV2);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnEtiketYazdirma);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "İşlemler";
             // 
@@ -211,10 +222,10 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             // ribbonStatusBar
             // 
             this.ribbonStatusBar.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 724);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 720);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1384, 21);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1384, 25);
             // 
             // xtraTabbedMdiManager1
             // 
@@ -282,5 +293,6 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
         private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl1;
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private DevExpress.XtraBars.BarButtonItem btnEtiketYazdirma;
     }
 }

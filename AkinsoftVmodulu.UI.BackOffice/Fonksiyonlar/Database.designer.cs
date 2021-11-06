@@ -22,7 +22,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.Fonksiyonlar
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="WOLVOX8_001_2021_WOLVOX")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="D:\\AKINSOFT_WOLVOX8_001_2020_WOLVOX")]
 	public partial class DatabaseDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -42,10 +42,13 @@ namespace AkinsoftVmodulu.UI.BackOffice.Fonksiyonlar
     partial void InsertSIPARISHR(SIPARISHR instance);
     partial void UpdateSIPARISHR(SIPARISHR instance);
     partial void DeleteSIPARISHR(SIPARISHR instance);
+    partial void InsertSTOK(STOK instance);
+    partial void UpdateSTOK(STOK instance);
+    partial void DeleteSTOK(STOK instance);
     #endregion
 		
 		public DatabaseDataContext() : 
-				base(global::AkinsoftVmodulu.UI.BackOffice.Properties.Settings.Default.D__AKINSOFT_WOLVOX8_001_2020_WOLVOXConnectionString, mappingSource)
+				base(global::AkinsoftVmodulu.UI.BackOffice.Properties.Settings.Default.D__AKINSOFT_WOLVOX8_001_2020_WOLVOXConnectionString2, mappingSource)
 		{
 			OnCreated();
 		}
@@ -103,6 +106,14 @@ namespace AkinsoftVmodulu.UI.BackOffice.Fonksiyonlar
 			get
 			{
 				return this.GetTable<SIPARISHR>();
+			}
+		}
+		
+		public System.Data.Linq.Table<STOK> STOK
+		{
+			get
+			{
+				return this.GetTable<STOK>();
 			}
 		}
 	}
@@ -15306,6 +15317,2684 @@ namespace AkinsoftVmodulu.UI.BackOffice.Fonksiyonlar
 					this._OZELALANTANIM_18 = value;
 					this.SendPropertyChanged("OZELALANTANIM_18");
 					this.OnOZELALANTANIM_18Changed();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.STOK")]
+	public partial class STOK : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private long _BLKODU;
+		
+		private string _STOKKODU;
+		
+		private string _STOK_ADI;
+		
+		private string _OZEL_KODU1;
+		
+		private string _OZEL_KODU2;
+		
+		private string _OZEL_KODU3;
+		
+		private string _ARA_GRUBU;
+		
+		private string _ALT_GRUBU;
+		
+		private string _BIRIMI;
+		
+		private System.Nullable<double> _KDV_ORANI;
+		
+		private System.Nullable<short> _ALIS_ISKONTO_KULLAN;
+		
+		private System.Nullable<short> _SATIS_ISKONTO_KULLAN;
+		
+		private System.Nullable<double> _ALIS_ISKONTO_ORANI;
+		
+		private System.Nullable<double> _SATIS_ISKONTO_ORANI;
+		
+		private System.Nullable<System.DateTime> _KAYIT_TARIHI;
+		
+		private System.Nullable<short> _DOVIZ_KULLAN;
+		
+		private string _DOVIZ_BIRIMI;
+		
+		private System.Nullable<short> _BAKIYE_UYARI;
+		
+		private System.Nullable<double> _MIKTAR_MINIMUM;
+		
+		private System.Nullable<double> _MIKTAR_MAXIMUM;
+		
+		private string _KALITE;
+		
+		private string _URETICI_FIRMA;
+		
+		private string _ACIKLAMA1;
+		
+		private string _ACIKLAMA2;
+		
+		private string _ACIKLAMA3;
+		
+		private string _DEPO_ADI;
+		
+		private System.Nullable<short> _SIPARIS_EKLE;
+		
+		private System.Nullable<int> _SIPARIS_MINIMUM_MIKTAR;
+		
+		private System.Nullable<int> _SIPARIS_EKLENECEK_MIKTAR;
+		
+		private string _MUH_ALIS;
+		
+		private string _MUH_SATIS_YI;
+		
+		private string _MUH_SATIS_YD;
+		
+		private string _MUH_IADE_YI;
+		
+		private string _MUH_IADE_YD;
+		
+		private string _KAYDEDEN;
+		
+		private string _DEGISTIREN;
+		
+		private System.Nullable<System.DateTime> _DEGISTIRME_TARIHI;
+		
+		private string _GRUBU;
+		
+		private System.Nullable<short> _VADE_GUNU;
+		
+		private System.Nullable<double> _OTV_ORANI;
+		
+		private System.Nullable<double> _OTV_BIRIMI;
+		
+		private System.Nullable<double> _OIV_ORANI;
+		
+		private string _BIRIMLER;
+		
+		private string _BARKODU;
+		
+		private System.Nullable<short> _ANA_STOK;
+		
+		private string _ANA_STOKKODU;
+		
+		private string _RENK;
+		
+		private string _BEDEN;
+		
+		private string _MARKASI;
+		
+		private string _MODELI;
+		
+		private System.Nullable<int> _ENTRYKDVDEPARTMAN;
+		
+		private string _BIRIMI_2;
+		
+		private System.Nullable<short> _WEBDE_GORUNSUN;
+		
+		private System.Nullable<short> _AKTIF;
+		
+		private System.Nullable<short> _SIPARIS_DURUMU;
+		
+		private System.Nullable<double> _PAZARLAMACI_KAR_ORANI;
+		
+		private string _STOK_ADI_YD;
+		
+		private System.Nullable<double> _BIRIM_AGIRLIK;
+		
+		private System.Nullable<short> _STISK1_KULLAN;
+		
+		private System.Nullable<double> _STISK1_ORANI;
+		
+		private System.Nullable<short> _STISK2_KULLAN;
+		
+		private System.Nullable<double> _STISK2_ORANI;
+		
+		private System.Nullable<short> _STISK3_KULLAN;
+		
+		private System.Nullable<double> _STISK3_ORANI;
+		
+		private System.Nullable<short> _ASORTI_KULLAN;
+		
+		private string _ETICARET_ACIKLAMA;
+		
+		private System.Nullable<short> _SERINO_KULLAN;
+		
+		private string _OZELLIK_TANIMI;
+		
+		private System.Nullable<double> _KDV_ORANI_ALIS;
+		
+		private System.Nullable<double> _BASIT_URETIM_BLKODU;
+		
+		private string _RESIM_YOLU;
+		
+		private System.Nullable<double> _MRP_MAKINE_MINBSL_MIKTARI;
+		
+		private System.Nullable<short> _ALISISK1_KULLAN;
+		
+		private System.Nullable<double> _ALISISK1_ORANI;
+		
+		private System.Nullable<short> _ALISISK2_KULLAN;
+		
+		private System.Nullable<double> _ALISISK2_ORANI;
+		
+		private System.Nullable<short> _ALISISK3_KULLAN;
+		
+		private System.Nullable<double> _ALISISK3_ORANI;
+		
+		private System.Nullable<double> _TEVKIFAT_ORANI_1;
+		
+		private System.Nullable<double> _TEVKIFAT_ORANI_2;
+		
+		private System.Nullable<short> _KDV_85_KULLAN;
+		
+		private string _MUH_MALIYET_HESABI;
+		
+		private System.Nullable<double> _PAZARLAMACI_PRIM_TUTARI;
+		
+		private System.Nullable<double> _BIRIM_AGIRLIK_BRUT;
+		
+		private System.Nullable<long> _FORMUL_HACIM;
+		
+		private System.Nullable<short> _OFFLINE_DURUM;
+		
+		private System.Nullable<long> _OFFLINEBLSTKODU;
+		
+		private System.Nullable<short> _SERILOT_MALIYET_ESLESTIR;
+		
+		private System.Nullable<short> _LOT_PARCALANABILIR;
+		
+		private System.Nullable<double> _KDV_ORANI_SATIS_TPT;
+		
+		private string _PDA_ENTEGRASYON;
+		
+		private System.Nullable<double> _BONUS_ORANI;
+		
+		private System.Nullable<double> _BONUS_BRFYT;
+		
+		private string _SOURCE_APP;
+		
+		private string _MUH_SATIS_IND;
+		
+		private System.Nullable<long> _BLEKOZELLIK_KODU;
+		
+		private System.Nullable<double> _VARS_ISLEM_MIKTARI;
+		
+		private System.Nullable<short> _BARKOD_TIPI;
+		
+		private string _ACIKLAMA4;
+		
+		private string _OFFLINE_GUID;
+		
+		private string _KDV_ISTISNA_KODU;
+		
+		private System.Nullable<long> _DEPOZITO_BLSTKODU;
+		
+		private string _GTIP_NO;
+		
+		private System.Nullable<short> _YERLI_URETIM;
+		
+		private string _URETIM_YERI;
+		
+		private string _TEVKIFAT_KODU;
+		
+		private string _OZELALANTANIM_2;
+		
+		private System.Nullable<double> _OZELALANTANIM_4;
+		
+		private string _OZELALANTANIM_8;
+		
+		private System.Nullable<int> _OZELALANTANIM_212;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnBLKODUChanging(long value);
+    partial void OnBLKODUChanged();
+    partial void OnSTOKKODUChanging(string value);
+    partial void OnSTOKKODUChanged();
+    partial void OnSTOK_ADIChanging(string value);
+    partial void OnSTOK_ADIChanged();
+    partial void OnOZEL_KODU1Changing(string value);
+    partial void OnOZEL_KODU1Changed();
+    partial void OnOZEL_KODU2Changing(string value);
+    partial void OnOZEL_KODU2Changed();
+    partial void OnOZEL_KODU3Changing(string value);
+    partial void OnOZEL_KODU3Changed();
+    partial void OnARA_GRUBUChanging(string value);
+    partial void OnARA_GRUBUChanged();
+    partial void OnALT_GRUBUChanging(string value);
+    partial void OnALT_GRUBUChanged();
+    partial void OnBIRIMIChanging(string value);
+    partial void OnBIRIMIChanged();
+    partial void OnKDV_ORANIChanging(System.Nullable<double> value);
+    partial void OnKDV_ORANIChanged();
+    partial void OnALIS_ISKONTO_KULLANChanging(System.Nullable<short> value);
+    partial void OnALIS_ISKONTO_KULLANChanged();
+    partial void OnSATIS_ISKONTO_KULLANChanging(System.Nullable<short> value);
+    partial void OnSATIS_ISKONTO_KULLANChanged();
+    partial void OnALIS_ISKONTO_ORANIChanging(System.Nullable<double> value);
+    partial void OnALIS_ISKONTO_ORANIChanged();
+    partial void OnSATIS_ISKONTO_ORANIChanging(System.Nullable<double> value);
+    partial void OnSATIS_ISKONTO_ORANIChanged();
+    partial void OnKAYIT_TARIHIChanging(System.Nullable<System.DateTime> value);
+    partial void OnKAYIT_TARIHIChanged();
+    partial void OnDOVIZ_KULLANChanging(System.Nullable<short> value);
+    partial void OnDOVIZ_KULLANChanged();
+    partial void OnDOVIZ_BIRIMIChanging(string value);
+    partial void OnDOVIZ_BIRIMIChanged();
+    partial void OnBAKIYE_UYARIChanging(System.Nullable<short> value);
+    partial void OnBAKIYE_UYARIChanged();
+    partial void OnMIKTAR_MINIMUMChanging(System.Nullable<double> value);
+    partial void OnMIKTAR_MINIMUMChanged();
+    partial void OnMIKTAR_MAXIMUMChanging(System.Nullable<double> value);
+    partial void OnMIKTAR_MAXIMUMChanged();
+    partial void OnKALITEChanging(string value);
+    partial void OnKALITEChanged();
+    partial void OnURETICI_FIRMAChanging(string value);
+    partial void OnURETICI_FIRMAChanged();
+    partial void OnACIKLAMA1Changing(string value);
+    partial void OnACIKLAMA1Changed();
+    partial void OnACIKLAMA2Changing(string value);
+    partial void OnACIKLAMA2Changed();
+    partial void OnACIKLAMA3Changing(string value);
+    partial void OnACIKLAMA3Changed();
+    partial void OnDEPO_ADIChanging(string value);
+    partial void OnDEPO_ADIChanged();
+    partial void OnSIPARIS_EKLEChanging(System.Nullable<short> value);
+    partial void OnSIPARIS_EKLEChanged();
+    partial void OnSIPARIS_MINIMUM_MIKTARChanging(System.Nullable<int> value);
+    partial void OnSIPARIS_MINIMUM_MIKTARChanged();
+    partial void OnSIPARIS_EKLENECEK_MIKTARChanging(System.Nullable<int> value);
+    partial void OnSIPARIS_EKLENECEK_MIKTARChanged();
+    partial void OnMUH_ALISChanging(string value);
+    partial void OnMUH_ALISChanged();
+    partial void OnMUH_SATIS_YIChanging(string value);
+    partial void OnMUH_SATIS_YIChanged();
+    partial void OnMUH_SATIS_YDChanging(string value);
+    partial void OnMUH_SATIS_YDChanged();
+    partial void OnMUH_IADE_YIChanging(string value);
+    partial void OnMUH_IADE_YIChanged();
+    partial void OnMUH_IADE_YDChanging(string value);
+    partial void OnMUH_IADE_YDChanged();
+    partial void OnKAYDEDENChanging(string value);
+    partial void OnKAYDEDENChanged();
+    partial void OnDEGISTIRENChanging(string value);
+    partial void OnDEGISTIRENChanged();
+    partial void OnDEGISTIRME_TARIHIChanging(System.Nullable<System.DateTime> value);
+    partial void OnDEGISTIRME_TARIHIChanged();
+    partial void OnGRUBUChanging(string value);
+    partial void OnGRUBUChanged();
+    partial void OnVADE_GUNUChanging(System.Nullable<short> value);
+    partial void OnVADE_GUNUChanged();
+    partial void OnOTV_ORANIChanging(System.Nullable<double> value);
+    partial void OnOTV_ORANIChanged();
+    partial void OnOTV_BIRIMIChanging(System.Nullable<double> value);
+    partial void OnOTV_BIRIMIChanged();
+    partial void OnOIV_ORANIChanging(System.Nullable<double> value);
+    partial void OnOIV_ORANIChanged();
+    partial void OnBIRIMLERChanging(string value);
+    partial void OnBIRIMLERChanged();
+    partial void OnBARKODUChanging(string value);
+    partial void OnBARKODUChanged();
+    partial void OnANA_STOKChanging(System.Nullable<short> value);
+    partial void OnANA_STOKChanged();
+    partial void OnANA_STOKKODUChanging(string value);
+    partial void OnANA_STOKKODUChanged();
+    partial void OnRENKChanging(string value);
+    partial void OnRENKChanged();
+    partial void OnBEDENChanging(string value);
+    partial void OnBEDENChanged();
+    partial void OnMARKASIChanging(string value);
+    partial void OnMARKASIChanged();
+    partial void OnMODELIChanging(string value);
+    partial void OnMODELIChanged();
+    partial void OnENTRYKDVDEPARTMANChanging(System.Nullable<int> value);
+    partial void OnENTRYKDVDEPARTMANChanged();
+    partial void OnBIRIMI_2Changing(string value);
+    partial void OnBIRIMI_2Changed();
+    partial void OnWEBDE_GORUNSUNChanging(System.Nullable<short> value);
+    partial void OnWEBDE_GORUNSUNChanged();
+    partial void OnAKTIFChanging(System.Nullable<short> value);
+    partial void OnAKTIFChanged();
+    partial void OnSIPARIS_DURUMUChanging(System.Nullable<short> value);
+    partial void OnSIPARIS_DURUMUChanged();
+    partial void OnPAZARLAMACI_KAR_ORANIChanging(System.Nullable<double> value);
+    partial void OnPAZARLAMACI_KAR_ORANIChanged();
+    partial void OnSTOK_ADI_YDChanging(string value);
+    partial void OnSTOK_ADI_YDChanged();
+    partial void OnBIRIM_AGIRLIKChanging(System.Nullable<double> value);
+    partial void OnBIRIM_AGIRLIKChanged();
+    partial void OnSTISK1_KULLANChanging(System.Nullable<short> value);
+    partial void OnSTISK1_KULLANChanged();
+    partial void OnSTISK1_ORANIChanging(System.Nullable<double> value);
+    partial void OnSTISK1_ORANIChanged();
+    partial void OnSTISK2_KULLANChanging(System.Nullable<short> value);
+    partial void OnSTISK2_KULLANChanged();
+    partial void OnSTISK2_ORANIChanging(System.Nullable<double> value);
+    partial void OnSTISK2_ORANIChanged();
+    partial void OnSTISK3_KULLANChanging(System.Nullable<short> value);
+    partial void OnSTISK3_KULLANChanged();
+    partial void OnSTISK3_ORANIChanging(System.Nullable<double> value);
+    partial void OnSTISK3_ORANIChanged();
+    partial void OnASORTI_KULLANChanging(System.Nullable<short> value);
+    partial void OnASORTI_KULLANChanged();
+    partial void OnETICARET_ACIKLAMAChanging(string value);
+    partial void OnETICARET_ACIKLAMAChanged();
+    partial void OnSERINO_KULLANChanging(System.Nullable<short> value);
+    partial void OnSERINO_KULLANChanged();
+    partial void OnOZELLIK_TANIMIChanging(string value);
+    partial void OnOZELLIK_TANIMIChanged();
+    partial void OnKDV_ORANI_ALISChanging(System.Nullable<double> value);
+    partial void OnKDV_ORANI_ALISChanged();
+    partial void OnBASIT_URETIM_BLKODUChanging(System.Nullable<double> value);
+    partial void OnBASIT_URETIM_BLKODUChanged();
+    partial void OnRESIM_YOLUChanging(string value);
+    partial void OnRESIM_YOLUChanged();
+    partial void OnMRP_MAKINE_MINBSL_MIKTARIChanging(System.Nullable<double> value);
+    partial void OnMRP_MAKINE_MINBSL_MIKTARIChanged();
+    partial void OnALISISK1_KULLANChanging(System.Nullable<short> value);
+    partial void OnALISISK1_KULLANChanged();
+    partial void OnALISISK1_ORANIChanging(System.Nullable<double> value);
+    partial void OnALISISK1_ORANIChanged();
+    partial void OnALISISK2_KULLANChanging(System.Nullable<short> value);
+    partial void OnALISISK2_KULLANChanged();
+    partial void OnALISISK2_ORANIChanging(System.Nullable<double> value);
+    partial void OnALISISK2_ORANIChanged();
+    partial void OnALISISK3_KULLANChanging(System.Nullable<short> value);
+    partial void OnALISISK3_KULLANChanged();
+    partial void OnALISISK3_ORANIChanging(System.Nullable<double> value);
+    partial void OnALISISK3_ORANIChanged();
+    partial void OnTEVKIFAT_ORANI_1Changing(System.Nullable<double> value);
+    partial void OnTEVKIFAT_ORANI_1Changed();
+    partial void OnTEVKIFAT_ORANI_2Changing(System.Nullable<double> value);
+    partial void OnTEVKIFAT_ORANI_2Changed();
+    partial void OnKDV_85_KULLANChanging(System.Nullable<short> value);
+    partial void OnKDV_85_KULLANChanged();
+    partial void OnMUH_MALIYET_HESABIChanging(string value);
+    partial void OnMUH_MALIYET_HESABIChanged();
+    partial void OnPAZARLAMACI_PRIM_TUTARIChanging(System.Nullable<double> value);
+    partial void OnPAZARLAMACI_PRIM_TUTARIChanged();
+    partial void OnBIRIM_AGIRLIK_BRUTChanging(System.Nullable<double> value);
+    partial void OnBIRIM_AGIRLIK_BRUTChanged();
+    partial void OnFORMUL_HACIMChanging(System.Nullable<long> value);
+    partial void OnFORMUL_HACIMChanged();
+    partial void OnOFFLINE_DURUMChanging(System.Nullable<short> value);
+    partial void OnOFFLINE_DURUMChanged();
+    partial void OnOFFLINEBLSTKODUChanging(System.Nullable<long> value);
+    partial void OnOFFLINEBLSTKODUChanged();
+    partial void OnSERILOT_MALIYET_ESLESTIRChanging(System.Nullable<short> value);
+    partial void OnSERILOT_MALIYET_ESLESTIRChanged();
+    partial void OnLOT_PARCALANABILIRChanging(System.Nullable<short> value);
+    partial void OnLOT_PARCALANABILIRChanged();
+    partial void OnKDV_ORANI_SATIS_TPTChanging(System.Nullable<double> value);
+    partial void OnKDV_ORANI_SATIS_TPTChanged();
+    partial void OnPDA_ENTEGRASYONChanging(string value);
+    partial void OnPDA_ENTEGRASYONChanged();
+    partial void OnBONUS_ORANIChanging(System.Nullable<double> value);
+    partial void OnBONUS_ORANIChanged();
+    partial void OnBONUS_BRFYTChanging(System.Nullable<double> value);
+    partial void OnBONUS_BRFYTChanged();
+    partial void OnSOURCE_APPChanging(string value);
+    partial void OnSOURCE_APPChanged();
+    partial void OnMUH_SATIS_INDChanging(string value);
+    partial void OnMUH_SATIS_INDChanged();
+    partial void OnBLEKOZELLIK_KODUChanging(System.Nullable<long> value);
+    partial void OnBLEKOZELLIK_KODUChanged();
+    partial void OnVARS_ISLEM_MIKTARIChanging(System.Nullable<double> value);
+    partial void OnVARS_ISLEM_MIKTARIChanged();
+    partial void OnBARKOD_TIPIChanging(System.Nullable<short> value);
+    partial void OnBARKOD_TIPIChanged();
+    partial void OnACIKLAMA4Changing(string value);
+    partial void OnACIKLAMA4Changed();
+    partial void OnOFFLINE_GUIDChanging(string value);
+    partial void OnOFFLINE_GUIDChanged();
+    partial void OnKDV_ISTISNA_KODUChanging(string value);
+    partial void OnKDV_ISTISNA_KODUChanged();
+    partial void OnDEPOZITO_BLSTKODUChanging(System.Nullable<long> value);
+    partial void OnDEPOZITO_BLSTKODUChanged();
+    partial void OnGTIP_NOChanging(string value);
+    partial void OnGTIP_NOChanged();
+    partial void OnYERLI_URETIMChanging(System.Nullable<short> value);
+    partial void OnYERLI_URETIMChanged();
+    partial void OnURETIM_YERIChanging(string value);
+    partial void OnURETIM_YERIChanged();
+    partial void OnTEVKIFAT_KODUChanging(string value);
+    partial void OnTEVKIFAT_KODUChanged();
+    partial void OnOZELALANTANIM_2Changing(string value);
+    partial void OnOZELALANTANIM_2Changed();
+    partial void OnOZELALANTANIM_4Changing(System.Nullable<double> value);
+    partial void OnOZELALANTANIM_4Changed();
+    partial void OnOZELALANTANIM_8Changing(string value);
+    partial void OnOZELALANTANIM_8Changed();
+    partial void OnOZELALANTANIM_212Changing(System.Nullable<int> value);
+    partial void OnOZELALANTANIM_212Changed();
+    #endregion
+		
+		public STOK()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BLKODU", DbType="BigInt NOT NULL", IsPrimaryKey=true)]
+		public long BLKODU
+		{
+			get
+			{
+				return this._BLKODU;
+			}
+			set
+			{
+				if ((this._BLKODU != value))
+				{
+					this.OnBLKODUChanging(value);
+					this.SendPropertyChanging();
+					this._BLKODU = value;
+					this.SendPropertyChanged("BLKODU");
+					this.OnBLKODUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_STOKKODU", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string STOKKODU
+		{
+			get
+			{
+				return this._STOKKODU;
+			}
+			set
+			{
+				if ((this._STOKKODU != value))
+				{
+					this.OnSTOKKODUChanging(value);
+					this.SendPropertyChanging();
+					this._STOKKODU = value;
+					this.SendPropertyChanged("STOKKODU");
+					this.OnSTOKKODUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_STOK_ADI", DbType="VarChar(250)")]
+		public string STOK_ADI
+		{
+			get
+			{
+				return this._STOK_ADI;
+			}
+			set
+			{
+				if ((this._STOK_ADI != value))
+				{
+					this.OnSTOK_ADIChanging(value);
+					this.SendPropertyChanging();
+					this._STOK_ADI = value;
+					this.SendPropertyChanged("STOK_ADI");
+					this.OnSTOK_ADIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OZEL_KODU1", DbType="VarChar(20)")]
+		public string OZEL_KODU1
+		{
+			get
+			{
+				return this._OZEL_KODU1;
+			}
+			set
+			{
+				if ((this._OZEL_KODU1 != value))
+				{
+					this.OnOZEL_KODU1Changing(value);
+					this.SendPropertyChanging();
+					this._OZEL_KODU1 = value;
+					this.SendPropertyChanged("OZEL_KODU1");
+					this.OnOZEL_KODU1Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OZEL_KODU2", DbType="VarChar(20)")]
+		public string OZEL_KODU2
+		{
+			get
+			{
+				return this._OZEL_KODU2;
+			}
+			set
+			{
+				if ((this._OZEL_KODU2 != value))
+				{
+					this.OnOZEL_KODU2Changing(value);
+					this.SendPropertyChanging();
+					this._OZEL_KODU2 = value;
+					this.SendPropertyChanged("OZEL_KODU2");
+					this.OnOZEL_KODU2Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OZEL_KODU3", DbType="VarChar(20)")]
+		public string OZEL_KODU3
+		{
+			get
+			{
+				return this._OZEL_KODU3;
+			}
+			set
+			{
+				if ((this._OZEL_KODU3 != value))
+				{
+					this.OnOZEL_KODU3Changing(value);
+					this.SendPropertyChanging();
+					this._OZEL_KODU3 = value;
+					this.SendPropertyChanged("OZEL_KODU3");
+					this.OnOZEL_KODU3Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ARA_GRUBU", DbType="VarChar(35)")]
+		public string ARA_GRUBU
+		{
+			get
+			{
+				return this._ARA_GRUBU;
+			}
+			set
+			{
+				if ((this._ARA_GRUBU != value))
+				{
+					this.OnARA_GRUBUChanging(value);
+					this.SendPropertyChanging();
+					this._ARA_GRUBU = value;
+					this.SendPropertyChanged("ARA_GRUBU");
+					this.OnARA_GRUBUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ALT_GRUBU", DbType="VarChar(35)")]
+		public string ALT_GRUBU
+		{
+			get
+			{
+				return this._ALT_GRUBU;
+			}
+			set
+			{
+				if ((this._ALT_GRUBU != value))
+				{
+					this.OnALT_GRUBUChanging(value);
+					this.SendPropertyChanging();
+					this._ALT_GRUBU = value;
+					this.SendPropertyChanged("ALT_GRUBU");
+					this.OnALT_GRUBUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BIRIMI", DbType="VarChar(15)")]
+		public string BIRIMI
+		{
+			get
+			{
+				return this._BIRIMI;
+			}
+			set
+			{
+				if ((this._BIRIMI != value))
+				{
+					this.OnBIRIMIChanging(value);
+					this.SendPropertyChanging();
+					this._BIRIMI = value;
+					this.SendPropertyChanged("BIRIMI");
+					this.OnBIRIMIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_KDV_ORANI", DbType="Float")]
+		public System.Nullable<double> KDV_ORANI
+		{
+			get
+			{
+				return this._KDV_ORANI;
+			}
+			set
+			{
+				if ((this._KDV_ORANI != value))
+				{
+					this.OnKDV_ORANIChanging(value);
+					this.SendPropertyChanging();
+					this._KDV_ORANI = value;
+					this.SendPropertyChanged("KDV_ORANI");
+					this.OnKDV_ORANIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ALIS_ISKONTO_KULLAN", DbType="SmallInt")]
+		public System.Nullable<short> ALIS_ISKONTO_KULLAN
+		{
+			get
+			{
+				return this._ALIS_ISKONTO_KULLAN;
+			}
+			set
+			{
+				if ((this._ALIS_ISKONTO_KULLAN != value))
+				{
+					this.OnALIS_ISKONTO_KULLANChanging(value);
+					this.SendPropertyChanging();
+					this._ALIS_ISKONTO_KULLAN = value;
+					this.SendPropertyChanged("ALIS_ISKONTO_KULLAN");
+					this.OnALIS_ISKONTO_KULLANChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SATIS_ISKONTO_KULLAN", DbType="SmallInt")]
+		public System.Nullable<short> SATIS_ISKONTO_KULLAN
+		{
+			get
+			{
+				return this._SATIS_ISKONTO_KULLAN;
+			}
+			set
+			{
+				if ((this._SATIS_ISKONTO_KULLAN != value))
+				{
+					this.OnSATIS_ISKONTO_KULLANChanging(value);
+					this.SendPropertyChanging();
+					this._SATIS_ISKONTO_KULLAN = value;
+					this.SendPropertyChanged("SATIS_ISKONTO_KULLAN");
+					this.OnSATIS_ISKONTO_KULLANChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ALIS_ISKONTO_ORANI", DbType="Float")]
+		public System.Nullable<double> ALIS_ISKONTO_ORANI
+		{
+			get
+			{
+				return this._ALIS_ISKONTO_ORANI;
+			}
+			set
+			{
+				if ((this._ALIS_ISKONTO_ORANI != value))
+				{
+					this.OnALIS_ISKONTO_ORANIChanging(value);
+					this.SendPropertyChanging();
+					this._ALIS_ISKONTO_ORANI = value;
+					this.SendPropertyChanged("ALIS_ISKONTO_ORANI");
+					this.OnALIS_ISKONTO_ORANIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SATIS_ISKONTO_ORANI", DbType="Float")]
+		public System.Nullable<double> SATIS_ISKONTO_ORANI
+		{
+			get
+			{
+				return this._SATIS_ISKONTO_ORANI;
+			}
+			set
+			{
+				if ((this._SATIS_ISKONTO_ORANI != value))
+				{
+					this.OnSATIS_ISKONTO_ORANIChanging(value);
+					this.SendPropertyChanging();
+					this._SATIS_ISKONTO_ORANI = value;
+					this.SendPropertyChanged("SATIS_ISKONTO_ORANI");
+					this.OnSATIS_ISKONTO_ORANIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_KAYIT_TARIHI", DbType="DateTime")]
+		public System.Nullable<System.DateTime> KAYIT_TARIHI
+		{
+			get
+			{
+				return this._KAYIT_TARIHI;
+			}
+			set
+			{
+				if ((this._KAYIT_TARIHI != value))
+				{
+					this.OnKAYIT_TARIHIChanging(value);
+					this.SendPropertyChanging();
+					this._KAYIT_TARIHI = value;
+					this.SendPropertyChanged("KAYIT_TARIHI");
+					this.OnKAYIT_TARIHIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DOVIZ_KULLAN", DbType="SmallInt")]
+		public System.Nullable<short> DOVIZ_KULLAN
+		{
+			get
+			{
+				return this._DOVIZ_KULLAN;
+			}
+			set
+			{
+				if ((this._DOVIZ_KULLAN != value))
+				{
+					this.OnDOVIZ_KULLANChanging(value);
+					this.SendPropertyChanging();
+					this._DOVIZ_KULLAN = value;
+					this.SendPropertyChanged("DOVIZ_KULLAN");
+					this.OnDOVIZ_KULLANChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DOVIZ_BIRIMI", DbType="VarChar(4)")]
+		public string DOVIZ_BIRIMI
+		{
+			get
+			{
+				return this._DOVIZ_BIRIMI;
+			}
+			set
+			{
+				if ((this._DOVIZ_BIRIMI != value))
+				{
+					this.OnDOVIZ_BIRIMIChanging(value);
+					this.SendPropertyChanging();
+					this._DOVIZ_BIRIMI = value;
+					this.SendPropertyChanged("DOVIZ_BIRIMI");
+					this.OnDOVIZ_BIRIMIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BAKIYE_UYARI", DbType="SmallInt")]
+		public System.Nullable<short> BAKIYE_UYARI
+		{
+			get
+			{
+				return this._BAKIYE_UYARI;
+			}
+			set
+			{
+				if ((this._BAKIYE_UYARI != value))
+				{
+					this.OnBAKIYE_UYARIChanging(value);
+					this.SendPropertyChanging();
+					this._BAKIYE_UYARI = value;
+					this.SendPropertyChanged("BAKIYE_UYARI");
+					this.OnBAKIYE_UYARIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MIKTAR_MINIMUM", DbType="Float")]
+		public System.Nullable<double> MIKTAR_MINIMUM
+		{
+			get
+			{
+				return this._MIKTAR_MINIMUM;
+			}
+			set
+			{
+				if ((this._MIKTAR_MINIMUM != value))
+				{
+					this.OnMIKTAR_MINIMUMChanging(value);
+					this.SendPropertyChanging();
+					this._MIKTAR_MINIMUM = value;
+					this.SendPropertyChanged("MIKTAR_MINIMUM");
+					this.OnMIKTAR_MINIMUMChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MIKTAR_MAXIMUM", DbType="Float")]
+		public System.Nullable<double> MIKTAR_MAXIMUM
+		{
+			get
+			{
+				return this._MIKTAR_MAXIMUM;
+			}
+			set
+			{
+				if ((this._MIKTAR_MAXIMUM != value))
+				{
+					this.OnMIKTAR_MAXIMUMChanging(value);
+					this.SendPropertyChanging();
+					this._MIKTAR_MAXIMUM = value;
+					this.SendPropertyChanged("MIKTAR_MAXIMUM");
+					this.OnMIKTAR_MAXIMUMChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_KALITE", DbType="VarChar(10)")]
+		public string KALITE
+		{
+			get
+			{
+				return this._KALITE;
+			}
+			set
+			{
+				if ((this._KALITE != value))
+				{
+					this.OnKALITEChanging(value);
+					this.SendPropertyChanging();
+					this._KALITE = value;
+					this.SendPropertyChanged("KALITE");
+					this.OnKALITEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_URETICI_FIRMA", DbType="VarChar(30)")]
+		public string URETICI_FIRMA
+		{
+			get
+			{
+				return this._URETICI_FIRMA;
+			}
+			set
+			{
+				if ((this._URETICI_FIRMA != value))
+				{
+					this.OnURETICI_FIRMAChanging(value);
+					this.SendPropertyChanging();
+					this._URETICI_FIRMA = value;
+					this.SendPropertyChanged("URETICI_FIRMA");
+					this.OnURETICI_FIRMAChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ACIKLAMA1", DbType="VarChar(60)")]
+		public string ACIKLAMA1
+		{
+			get
+			{
+				return this._ACIKLAMA1;
+			}
+			set
+			{
+				if ((this._ACIKLAMA1 != value))
+				{
+					this.OnACIKLAMA1Changing(value);
+					this.SendPropertyChanging();
+					this._ACIKLAMA1 = value;
+					this.SendPropertyChanged("ACIKLAMA1");
+					this.OnACIKLAMA1Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ACIKLAMA2", DbType="VarChar(60)")]
+		public string ACIKLAMA2
+		{
+			get
+			{
+				return this._ACIKLAMA2;
+			}
+			set
+			{
+				if ((this._ACIKLAMA2 != value))
+				{
+					this.OnACIKLAMA2Changing(value);
+					this.SendPropertyChanging();
+					this._ACIKLAMA2 = value;
+					this.SendPropertyChanged("ACIKLAMA2");
+					this.OnACIKLAMA2Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ACIKLAMA3", DbType="VarChar(60)")]
+		public string ACIKLAMA3
+		{
+			get
+			{
+				return this._ACIKLAMA3;
+			}
+			set
+			{
+				if ((this._ACIKLAMA3 != value))
+				{
+					this.OnACIKLAMA3Changing(value);
+					this.SendPropertyChanging();
+					this._ACIKLAMA3 = value;
+					this.SendPropertyChanged("ACIKLAMA3");
+					this.OnACIKLAMA3Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DEPO_ADI", DbType="VarChar(30)")]
+		public string DEPO_ADI
+		{
+			get
+			{
+				return this._DEPO_ADI;
+			}
+			set
+			{
+				if ((this._DEPO_ADI != value))
+				{
+					this.OnDEPO_ADIChanging(value);
+					this.SendPropertyChanging();
+					this._DEPO_ADI = value;
+					this.SendPropertyChanged("DEPO_ADI");
+					this.OnDEPO_ADIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SIPARIS_EKLE", DbType="SmallInt")]
+		public System.Nullable<short> SIPARIS_EKLE
+		{
+			get
+			{
+				return this._SIPARIS_EKLE;
+			}
+			set
+			{
+				if ((this._SIPARIS_EKLE != value))
+				{
+					this.OnSIPARIS_EKLEChanging(value);
+					this.SendPropertyChanging();
+					this._SIPARIS_EKLE = value;
+					this.SendPropertyChanged("SIPARIS_EKLE");
+					this.OnSIPARIS_EKLEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SIPARIS_MINIMUM_MIKTAR", DbType="Int")]
+		public System.Nullable<int> SIPARIS_MINIMUM_MIKTAR
+		{
+			get
+			{
+				return this._SIPARIS_MINIMUM_MIKTAR;
+			}
+			set
+			{
+				if ((this._SIPARIS_MINIMUM_MIKTAR != value))
+				{
+					this.OnSIPARIS_MINIMUM_MIKTARChanging(value);
+					this.SendPropertyChanging();
+					this._SIPARIS_MINIMUM_MIKTAR = value;
+					this.SendPropertyChanged("SIPARIS_MINIMUM_MIKTAR");
+					this.OnSIPARIS_MINIMUM_MIKTARChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SIPARIS_EKLENECEK_MIKTAR", DbType="Int")]
+		public System.Nullable<int> SIPARIS_EKLENECEK_MIKTAR
+		{
+			get
+			{
+				return this._SIPARIS_EKLENECEK_MIKTAR;
+			}
+			set
+			{
+				if ((this._SIPARIS_EKLENECEK_MIKTAR != value))
+				{
+					this.OnSIPARIS_EKLENECEK_MIKTARChanging(value);
+					this.SendPropertyChanging();
+					this._SIPARIS_EKLENECEK_MIKTAR = value;
+					this.SendPropertyChanged("SIPARIS_EKLENECEK_MIKTAR");
+					this.OnSIPARIS_EKLENECEK_MIKTARChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MUH_ALIS", DbType="VarChar(30)")]
+		public string MUH_ALIS
+		{
+			get
+			{
+				return this._MUH_ALIS;
+			}
+			set
+			{
+				if ((this._MUH_ALIS != value))
+				{
+					this.OnMUH_ALISChanging(value);
+					this.SendPropertyChanging();
+					this._MUH_ALIS = value;
+					this.SendPropertyChanged("MUH_ALIS");
+					this.OnMUH_ALISChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MUH_SATIS_YI", DbType="VarChar(30)")]
+		public string MUH_SATIS_YI
+		{
+			get
+			{
+				return this._MUH_SATIS_YI;
+			}
+			set
+			{
+				if ((this._MUH_SATIS_YI != value))
+				{
+					this.OnMUH_SATIS_YIChanging(value);
+					this.SendPropertyChanging();
+					this._MUH_SATIS_YI = value;
+					this.SendPropertyChanged("MUH_SATIS_YI");
+					this.OnMUH_SATIS_YIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MUH_SATIS_YD", DbType="VarChar(30)")]
+		public string MUH_SATIS_YD
+		{
+			get
+			{
+				return this._MUH_SATIS_YD;
+			}
+			set
+			{
+				if ((this._MUH_SATIS_YD != value))
+				{
+					this.OnMUH_SATIS_YDChanging(value);
+					this.SendPropertyChanging();
+					this._MUH_SATIS_YD = value;
+					this.SendPropertyChanged("MUH_SATIS_YD");
+					this.OnMUH_SATIS_YDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MUH_IADE_YI", DbType="VarChar(30)")]
+		public string MUH_IADE_YI
+		{
+			get
+			{
+				return this._MUH_IADE_YI;
+			}
+			set
+			{
+				if ((this._MUH_IADE_YI != value))
+				{
+					this.OnMUH_IADE_YIChanging(value);
+					this.SendPropertyChanging();
+					this._MUH_IADE_YI = value;
+					this.SendPropertyChanged("MUH_IADE_YI");
+					this.OnMUH_IADE_YIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MUH_IADE_YD", DbType="VarChar(25)")]
+		public string MUH_IADE_YD
+		{
+			get
+			{
+				return this._MUH_IADE_YD;
+			}
+			set
+			{
+				if ((this._MUH_IADE_YD != value))
+				{
+					this.OnMUH_IADE_YDChanging(value);
+					this.SendPropertyChanging();
+					this._MUH_IADE_YD = value;
+					this.SendPropertyChanged("MUH_IADE_YD");
+					this.OnMUH_IADE_YDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_KAYDEDEN", DbType="VarChar(20)")]
+		public string KAYDEDEN
+		{
+			get
+			{
+				return this._KAYDEDEN;
+			}
+			set
+			{
+				if ((this._KAYDEDEN != value))
+				{
+					this.OnKAYDEDENChanging(value);
+					this.SendPropertyChanging();
+					this._KAYDEDEN = value;
+					this.SendPropertyChanged("KAYDEDEN");
+					this.OnKAYDEDENChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DEGISTIREN", DbType="VarChar(20)")]
+		public string DEGISTIREN
+		{
+			get
+			{
+				return this._DEGISTIREN;
+			}
+			set
+			{
+				if ((this._DEGISTIREN != value))
+				{
+					this.OnDEGISTIRENChanging(value);
+					this.SendPropertyChanging();
+					this._DEGISTIREN = value;
+					this.SendPropertyChanged("DEGISTIREN");
+					this.OnDEGISTIRENChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DEGISTIRME_TARIHI", DbType="DateTime")]
+		public System.Nullable<System.DateTime> DEGISTIRME_TARIHI
+		{
+			get
+			{
+				return this._DEGISTIRME_TARIHI;
+			}
+			set
+			{
+				if ((this._DEGISTIRME_TARIHI != value))
+				{
+					this.OnDEGISTIRME_TARIHIChanging(value);
+					this.SendPropertyChanging();
+					this._DEGISTIRME_TARIHI = value;
+					this.SendPropertyChanged("DEGISTIRME_TARIHI");
+					this.OnDEGISTIRME_TARIHIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GRUBU", DbType="VarChar(35)")]
+		public string GRUBU
+		{
+			get
+			{
+				return this._GRUBU;
+			}
+			set
+			{
+				if ((this._GRUBU != value))
+				{
+					this.OnGRUBUChanging(value);
+					this.SendPropertyChanging();
+					this._GRUBU = value;
+					this.SendPropertyChanged("GRUBU");
+					this.OnGRUBUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VADE_GUNU", DbType="SmallInt")]
+		public System.Nullable<short> VADE_GUNU
+		{
+			get
+			{
+				return this._VADE_GUNU;
+			}
+			set
+			{
+				if ((this._VADE_GUNU != value))
+				{
+					this.OnVADE_GUNUChanging(value);
+					this.SendPropertyChanging();
+					this._VADE_GUNU = value;
+					this.SendPropertyChanged("VADE_GUNU");
+					this.OnVADE_GUNUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OTV_ORANI", DbType="Float")]
+		public System.Nullable<double> OTV_ORANI
+		{
+			get
+			{
+				return this._OTV_ORANI;
+			}
+			set
+			{
+				if ((this._OTV_ORANI != value))
+				{
+					this.OnOTV_ORANIChanging(value);
+					this.SendPropertyChanging();
+					this._OTV_ORANI = value;
+					this.SendPropertyChanged("OTV_ORANI");
+					this.OnOTV_ORANIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OTV_BIRIMI", DbType="Float")]
+		public System.Nullable<double> OTV_BIRIMI
+		{
+			get
+			{
+				return this._OTV_BIRIMI;
+			}
+			set
+			{
+				if ((this._OTV_BIRIMI != value))
+				{
+					this.OnOTV_BIRIMIChanging(value);
+					this.SendPropertyChanging();
+					this._OTV_BIRIMI = value;
+					this.SendPropertyChanged("OTV_BIRIMI");
+					this.OnOTV_BIRIMIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OIV_ORANI", DbType="Float")]
+		public System.Nullable<double> OIV_ORANI
+		{
+			get
+			{
+				return this._OIV_ORANI;
+			}
+			set
+			{
+				if ((this._OIV_ORANI != value))
+				{
+					this.OnOIV_ORANIChanging(value);
+					this.SendPropertyChanging();
+					this._OIV_ORANI = value;
+					this.SendPropertyChanged("OIV_ORANI");
+					this.OnOIV_ORANIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BIRIMLER", DbType="VarChar(MAX)")]
+		public string BIRIMLER
+		{
+			get
+			{
+				return this._BIRIMLER;
+			}
+			set
+			{
+				if ((this._BIRIMLER != value))
+				{
+					this.OnBIRIMLERChanging(value);
+					this.SendPropertyChanging();
+					this._BIRIMLER = value;
+					this.SendPropertyChanged("BIRIMLER");
+					this.OnBIRIMLERChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BARKODU", DbType="VarChar(100)")]
+		public string BARKODU
+		{
+			get
+			{
+				return this._BARKODU;
+			}
+			set
+			{
+				if ((this._BARKODU != value))
+				{
+					this.OnBARKODUChanging(value);
+					this.SendPropertyChanging();
+					this._BARKODU = value;
+					this.SendPropertyChanged("BARKODU");
+					this.OnBARKODUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ANA_STOK", DbType="SmallInt")]
+		public System.Nullable<short> ANA_STOK
+		{
+			get
+			{
+				return this._ANA_STOK;
+			}
+			set
+			{
+				if ((this._ANA_STOK != value))
+				{
+					this.OnANA_STOKChanging(value);
+					this.SendPropertyChanging();
+					this._ANA_STOK = value;
+					this.SendPropertyChanged("ANA_STOK");
+					this.OnANA_STOKChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ANA_STOKKODU", DbType="VarChar(30)")]
+		public string ANA_STOKKODU
+		{
+			get
+			{
+				return this._ANA_STOKKODU;
+			}
+			set
+			{
+				if ((this._ANA_STOKKODU != value))
+				{
+					this.OnANA_STOKKODUChanging(value);
+					this.SendPropertyChanging();
+					this._ANA_STOKKODU = value;
+					this.SendPropertyChanged("ANA_STOKKODU");
+					this.OnANA_STOKKODUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RENK", DbType="VarChar(50)")]
+		public string RENK
+		{
+			get
+			{
+				return this._RENK;
+			}
+			set
+			{
+				if ((this._RENK != value))
+				{
+					this.OnRENKChanging(value);
+					this.SendPropertyChanging();
+					this._RENK = value;
+					this.SendPropertyChanged("RENK");
+					this.OnRENKChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BEDEN", DbType="VarChar(20)")]
+		public string BEDEN
+		{
+			get
+			{
+				return this._BEDEN;
+			}
+			set
+			{
+				if ((this._BEDEN != value))
+				{
+					this.OnBEDENChanging(value);
+					this.SendPropertyChanging();
+					this._BEDEN = value;
+					this.SendPropertyChanged("BEDEN");
+					this.OnBEDENChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MARKASI", DbType="VarChar(50)")]
+		public string MARKASI
+		{
+			get
+			{
+				return this._MARKASI;
+			}
+			set
+			{
+				if ((this._MARKASI != value))
+				{
+					this.OnMARKASIChanging(value);
+					this.SendPropertyChanging();
+					this._MARKASI = value;
+					this.SendPropertyChanged("MARKASI");
+					this.OnMARKASIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MODELI", DbType="VarChar(50)")]
+		public string MODELI
+		{
+			get
+			{
+				return this._MODELI;
+			}
+			set
+			{
+				if ((this._MODELI != value))
+				{
+					this.OnMODELIChanging(value);
+					this.SendPropertyChanging();
+					this._MODELI = value;
+					this.SendPropertyChanged("MODELI");
+					this.OnMODELIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ENTRYKDVDEPARTMAN", DbType="Int")]
+		public System.Nullable<int> ENTRYKDVDEPARTMAN
+		{
+			get
+			{
+				return this._ENTRYKDVDEPARTMAN;
+			}
+			set
+			{
+				if ((this._ENTRYKDVDEPARTMAN != value))
+				{
+					this.OnENTRYKDVDEPARTMANChanging(value);
+					this.SendPropertyChanging();
+					this._ENTRYKDVDEPARTMAN = value;
+					this.SendPropertyChanged("ENTRYKDVDEPARTMAN");
+					this.OnENTRYKDVDEPARTMANChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BIRIMI_2", DbType="VarChar(15)")]
+		public string BIRIMI_2
+		{
+			get
+			{
+				return this._BIRIMI_2;
+			}
+			set
+			{
+				if ((this._BIRIMI_2 != value))
+				{
+					this.OnBIRIMI_2Changing(value);
+					this.SendPropertyChanging();
+					this._BIRIMI_2 = value;
+					this.SendPropertyChanged("BIRIMI_2");
+					this.OnBIRIMI_2Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WEBDE_GORUNSUN", DbType="SmallInt")]
+		public System.Nullable<short> WEBDE_GORUNSUN
+		{
+			get
+			{
+				return this._WEBDE_GORUNSUN;
+			}
+			set
+			{
+				if ((this._WEBDE_GORUNSUN != value))
+				{
+					this.OnWEBDE_GORUNSUNChanging(value);
+					this.SendPropertyChanging();
+					this._WEBDE_GORUNSUN = value;
+					this.SendPropertyChanged("WEBDE_GORUNSUN");
+					this.OnWEBDE_GORUNSUNChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AKTIF", DbType="SmallInt")]
+		public System.Nullable<short> AKTIF
+		{
+			get
+			{
+				return this._AKTIF;
+			}
+			set
+			{
+				if ((this._AKTIF != value))
+				{
+					this.OnAKTIFChanging(value);
+					this.SendPropertyChanging();
+					this._AKTIF = value;
+					this.SendPropertyChanged("AKTIF");
+					this.OnAKTIFChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SIPARIS_DURUMU", DbType="SmallInt")]
+		public System.Nullable<short> SIPARIS_DURUMU
+		{
+			get
+			{
+				return this._SIPARIS_DURUMU;
+			}
+			set
+			{
+				if ((this._SIPARIS_DURUMU != value))
+				{
+					this.OnSIPARIS_DURUMUChanging(value);
+					this.SendPropertyChanging();
+					this._SIPARIS_DURUMU = value;
+					this.SendPropertyChanged("SIPARIS_DURUMU");
+					this.OnSIPARIS_DURUMUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PAZARLAMACI_KAR_ORANI", DbType="Float")]
+		public System.Nullable<double> PAZARLAMACI_KAR_ORANI
+		{
+			get
+			{
+				return this._PAZARLAMACI_KAR_ORANI;
+			}
+			set
+			{
+				if ((this._PAZARLAMACI_KAR_ORANI != value))
+				{
+					this.OnPAZARLAMACI_KAR_ORANIChanging(value);
+					this.SendPropertyChanging();
+					this._PAZARLAMACI_KAR_ORANI = value;
+					this.SendPropertyChanged("PAZARLAMACI_KAR_ORANI");
+					this.OnPAZARLAMACI_KAR_ORANIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_STOK_ADI_YD", DbType="VarChar(250)")]
+		public string STOK_ADI_YD
+		{
+			get
+			{
+				return this._STOK_ADI_YD;
+			}
+			set
+			{
+				if ((this._STOK_ADI_YD != value))
+				{
+					this.OnSTOK_ADI_YDChanging(value);
+					this.SendPropertyChanging();
+					this._STOK_ADI_YD = value;
+					this.SendPropertyChanged("STOK_ADI_YD");
+					this.OnSTOK_ADI_YDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BIRIM_AGIRLIK", DbType="Float")]
+		public System.Nullable<double> BIRIM_AGIRLIK
+		{
+			get
+			{
+				return this._BIRIM_AGIRLIK;
+			}
+			set
+			{
+				if ((this._BIRIM_AGIRLIK != value))
+				{
+					this.OnBIRIM_AGIRLIKChanging(value);
+					this.SendPropertyChanging();
+					this._BIRIM_AGIRLIK = value;
+					this.SendPropertyChanged("BIRIM_AGIRLIK");
+					this.OnBIRIM_AGIRLIKChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_STISK1_KULLAN", DbType="SmallInt")]
+		public System.Nullable<short> STISK1_KULLAN
+		{
+			get
+			{
+				return this._STISK1_KULLAN;
+			}
+			set
+			{
+				if ((this._STISK1_KULLAN != value))
+				{
+					this.OnSTISK1_KULLANChanging(value);
+					this.SendPropertyChanging();
+					this._STISK1_KULLAN = value;
+					this.SendPropertyChanged("STISK1_KULLAN");
+					this.OnSTISK1_KULLANChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_STISK1_ORANI", DbType="Float")]
+		public System.Nullable<double> STISK1_ORANI
+		{
+			get
+			{
+				return this._STISK1_ORANI;
+			}
+			set
+			{
+				if ((this._STISK1_ORANI != value))
+				{
+					this.OnSTISK1_ORANIChanging(value);
+					this.SendPropertyChanging();
+					this._STISK1_ORANI = value;
+					this.SendPropertyChanged("STISK1_ORANI");
+					this.OnSTISK1_ORANIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_STISK2_KULLAN", DbType="SmallInt")]
+		public System.Nullable<short> STISK2_KULLAN
+		{
+			get
+			{
+				return this._STISK2_KULLAN;
+			}
+			set
+			{
+				if ((this._STISK2_KULLAN != value))
+				{
+					this.OnSTISK2_KULLANChanging(value);
+					this.SendPropertyChanging();
+					this._STISK2_KULLAN = value;
+					this.SendPropertyChanged("STISK2_KULLAN");
+					this.OnSTISK2_KULLANChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_STISK2_ORANI", DbType="Float")]
+		public System.Nullable<double> STISK2_ORANI
+		{
+			get
+			{
+				return this._STISK2_ORANI;
+			}
+			set
+			{
+				if ((this._STISK2_ORANI != value))
+				{
+					this.OnSTISK2_ORANIChanging(value);
+					this.SendPropertyChanging();
+					this._STISK2_ORANI = value;
+					this.SendPropertyChanged("STISK2_ORANI");
+					this.OnSTISK2_ORANIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_STISK3_KULLAN", DbType="SmallInt")]
+		public System.Nullable<short> STISK3_KULLAN
+		{
+			get
+			{
+				return this._STISK3_KULLAN;
+			}
+			set
+			{
+				if ((this._STISK3_KULLAN != value))
+				{
+					this.OnSTISK3_KULLANChanging(value);
+					this.SendPropertyChanging();
+					this._STISK3_KULLAN = value;
+					this.SendPropertyChanged("STISK3_KULLAN");
+					this.OnSTISK3_KULLANChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_STISK3_ORANI", DbType="Float")]
+		public System.Nullable<double> STISK3_ORANI
+		{
+			get
+			{
+				return this._STISK3_ORANI;
+			}
+			set
+			{
+				if ((this._STISK3_ORANI != value))
+				{
+					this.OnSTISK3_ORANIChanging(value);
+					this.SendPropertyChanging();
+					this._STISK3_ORANI = value;
+					this.SendPropertyChanged("STISK3_ORANI");
+					this.OnSTISK3_ORANIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ASORTI_KULLAN", DbType="SmallInt")]
+		public System.Nullable<short> ASORTI_KULLAN
+		{
+			get
+			{
+				return this._ASORTI_KULLAN;
+			}
+			set
+			{
+				if ((this._ASORTI_KULLAN != value))
+				{
+					this.OnASORTI_KULLANChanging(value);
+					this.SendPropertyChanging();
+					this._ASORTI_KULLAN = value;
+					this.SendPropertyChanged("ASORTI_KULLAN");
+					this.OnASORTI_KULLANChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ETICARET_ACIKLAMA", DbType="VarChar(MAX)")]
+		public string ETICARET_ACIKLAMA
+		{
+			get
+			{
+				return this._ETICARET_ACIKLAMA;
+			}
+			set
+			{
+				if ((this._ETICARET_ACIKLAMA != value))
+				{
+					this.OnETICARET_ACIKLAMAChanging(value);
+					this.SendPropertyChanging();
+					this._ETICARET_ACIKLAMA = value;
+					this.SendPropertyChanged("ETICARET_ACIKLAMA");
+					this.OnETICARET_ACIKLAMAChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SERINO_KULLAN", DbType="SmallInt")]
+		public System.Nullable<short> SERINO_KULLAN
+		{
+			get
+			{
+				return this._SERINO_KULLAN;
+			}
+			set
+			{
+				if ((this._SERINO_KULLAN != value))
+				{
+					this.OnSERINO_KULLANChanging(value);
+					this.SendPropertyChanging();
+					this._SERINO_KULLAN = value;
+					this.SendPropertyChanged("SERINO_KULLAN");
+					this.OnSERINO_KULLANChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OZELLIK_TANIMI", DbType="VarChar(30)")]
+		public string OZELLIK_TANIMI
+		{
+			get
+			{
+				return this._OZELLIK_TANIMI;
+			}
+			set
+			{
+				if ((this._OZELLIK_TANIMI != value))
+				{
+					this.OnOZELLIK_TANIMIChanging(value);
+					this.SendPropertyChanging();
+					this._OZELLIK_TANIMI = value;
+					this.SendPropertyChanged("OZELLIK_TANIMI");
+					this.OnOZELLIK_TANIMIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_KDV_ORANI_ALIS", DbType="Float")]
+		public System.Nullable<double> KDV_ORANI_ALIS
+		{
+			get
+			{
+				return this._KDV_ORANI_ALIS;
+			}
+			set
+			{
+				if ((this._KDV_ORANI_ALIS != value))
+				{
+					this.OnKDV_ORANI_ALISChanging(value);
+					this.SendPropertyChanging();
+					this._KDV_ORANI_ALIS = value;
+					this.SendPropertyChanged("KDV_ORANI_ALIS");
+					this.OnKDV_ORANI_ALISChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BASIT_URETIM_BLKODU", DbType="Float")]
+		public System.Nullable<double> BASIT_URETIM_BLKODU
+		{
+			get
+			{
+				return this._BASIT_URETIM_BLKODU;
+			}
+			set
+			{
+				if ((this._BASIT_URETIM_BLKODU != value))
+				{
+					this.OnBASIT_URETIM_BLKODUChanging(value);
+					this.SendPropertyChanging();
+					this._BASIT_URETIM_BLKODU = value;
+					this.SendPropertyChanged("BASIT_URETIM_BLKODU");
+					this.OnBASIT_URETIM_BLKODUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RESIM_YOLU", DbType="VarChar(150)")]
+		public string RESIM_YOLU
+		{
+			get
+			{
+				return this._RESIM_YOLU;
+			}
+			set
+			{
+				if ((this._RESIM_YOLU != value))
+				{
+					this.OnRESIM_YOLUChanging(value);
+					this.SendPropertyChanging();
+					this._RESIM_YOLU = value;
+					this.SendPropertyChanged("RESIM_YOLU");
+					this.OnRESIM_YOLUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MRP_MAKINE_MINBSL_MIKTARI", DbType="Float")]
+		public System.Nullable<double> MRP_MAKINE_MINBSL_MIKTARI
+		{
+			get
+			{
+				return this._MRP_MAKINE_MINBSL_MIKTARI;
+			}
+			set
+			{
+				if ((this._MRP_MAKINE_MINBSL_MIKTARI != value))
+				{
+					this.OnMRP_MAKINE_MINBSL_MIKTARIChanging(value);
+					this.SendPropertyChanging();
+					this._MRP_MAKINE_MINBSL_MIKTARI = value;
+					this.SendPropertyChanged("MRP_MAKINE_MINBSL_MIKTARI");
+					this.OnMRP_MAKINE_MINBSL_MIKTARIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ALISISK1_KULLAN", DbType="SmallInt")]
+		public System.Nullable<short> ALISISK1_KULLAN
+		{
+			get
+			{
+				return this._ALISISK1_KULLAN;
+			}
+			set
+			{
+				if ((this._ALISISK1_KULLAN != value))
+				{
+					this.OnALISISK1_KULLANChanging(value);
+					this.SendPropertyChanging();
+					this._ALISISK1_KULLAN = value;
+					this.SendPropertyChanged("ALISISK1_KULLAN");
+					this.OnALISISK1_KULLANChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ALISISK1_ORANI", DbType="Float")]
+		public System.Nullable<double> ALISISK1_ORANI
+		{
+			get
+			{
+				return this._ALISISK1_ORANI;
+			}
+			set
+			{
+				if ((this._ALISISK1_ORANI != value))
+				{
+					this.OnALISISK1_ORANIChanging(value);
+					this.SendPropertyChanging();
+					this._ALISISK1_ORANI = value;
+					this.SendPropertyChanged("ALISISK1_ORANI");
+					this.OnALISISK1_ORANIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ALISISK2_KULLAN", DbType="SmallInt")]
+		public System.Nullable<short> ALISISK2_KULLAN
+		{
+			get
+			{
+				return this._ALISISK2_KULLAN;
+			}
+			set
+			{
+				if ((this._ALISISK2_KULLAN != value))
+				{
+					this.OnALISISK2_KULLANChanging(value);
+					this.SendPropertyChanging();
+					this._ALISISK2_KULLAN = value;
+					this.SendPropertyChanged("ALISISK2_KULLAN");
+					this.OnALISISK2_KULLANChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ALISISK2_ORANI", DbType="Float")]
+		public System.Nullable<double> ALISISK2_ORANI
+		{
+			get
+			{
+				return this._ALISISK2_ORANI;
+			}
+			set
+			{
+				if ((this._ALISISK2_ORANI != value))
+				{
+					this.OnALISISK2_ORANIChanging(value);
+					this.SendPropertyChanging();
+					this._ALISISK2_ORANI = value;
+					this.SendPropertyChanged("ALISISK2_ORANI");
+					this.OnALISISK2_ORANIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ALISISK3_KULLAN", DbType="SmallInt")]
+		public System.Nullable<short> ALISISK3_KULLAN
+		{
+			get
+			{
+				return this._ALISISK3_KULLAN;
+			}
+			set
+			{
+				if ((this._ALISISK3_KULLAN != value))
+				{
+					this.OnALISISK3_KULLANChanging(value);
+					this.SendPropertyChanging();
+					this._ALISISK3_KULLAN = value;
+					this.SendPropertyChanged("ALISISK3_KULLAN");
+					this.OnALISISK3_KULLANChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ALISISK3_ORANI", DbType="Float")]
+		public System.Nullable<double> ALISISK3_ORANI
+		{
+			get
+			{
+				return this._ALISISK3_ORANI;
+			}
+			set
+			{
+				if ((this._ALISISK3_ORANI != value))
+				{
+					this.OnALISISK3_ORANIChanging(value);
+					this.SendPropertyChanging();
+					this._ALISISK3_ORANI = value;
+					this.SendPropertyChanged("ALISISK3_ORANI");
+					this.OnALISISK3_ORANIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TEVKIFAT_ORANI_1", DbType="Float")]
+		public System.Nullable<double> TEVKIFAT_ORANI_1
+		{
+			get
+			{
+				return this._TEVKIFAT_ORANI_1;
+			}
+			set
+			{
+				if ((this._TEVKIFAT_ORANI_1 != value))
+				{
+					this.OnTEVKIFAT_ORANI_1Changing(value);
+					this.SendPropertyChanging();
+					this._TEVKIFAT_ORANI_1 = value;
+					this.SendPropertyChanged("TEVKIFAT_ORANI_1");
+					this.OnTEVKIFAT_ORANI_1Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TEVKIFAT_ORANI_2", DbType="Float")]
+		public System.Nullable<double> TEVKIFAT_ORANI_2
+		{
+			get
+			{
+				return this._TEVKIFAT_ORANI_2;
+			}
+			set
+			{
+				if ((this._TEVKIFAT_ORANI_2 != value))
+				{
+					this.OnTEVKIFAT_ORANI_2Changing(value);
+					this.SendPropertyChanging();
+					this._TEVKIFAT_ORANI_2 = value;
+					this.SendPropertyChanged("TEVKIFAT_ORANI_2");
+					this.OnTEVKIFAT_ORANI_2Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_KDV_85_KULLAN", DbType="SmallInt")]
+		public System.Nullable<short> KDV_85_KULLAN
+		{
+			get
+			{
+				return this._KDV_85_KULLAN;
+			}
+			set
+			{
+				if ((this._KDV_85_KULLAN != value))
+				{
+					this.OnKDV_85_KULLANChanging(value);
+					this.SendPropertyChanging();
+					this._KDV_85_KULLAN = value;
+					this.SendPropertyChanged("KDV_85_KULLAN");
+					this.OnKDV_85_KULLANChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MUH_MALIYET_HESABI", DbType="VarChar(30)")]
+		public string MUH_MALIYET_HESABI
+		{
+			get
+			{
+				return this._MUH_MALIYET_HESABI;
+			}
+			set
+			{
+				if ((this._MUH_MALIYET_HESABI != value))
+				{
+					this.OnMUH_MALIYET_HESABIChanging(value);
+					this.SendPropertyChanging();
+					this._MUH_MALIYET_HESABI = value;
+					this.SendPropertyChanged("MUH_MALIYET_HESABI");
+					this.OnMUH_MALIYET_HESABIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PAZARLAMACI_PRIM_TUTARI", DbType="Float")]
+		public System.Nullable<double> PAZARLAMACI_PRIM_TUTARI
+		{
+			get
+			{
+				return this._PAZARLAMACI_PRIM_TUTARI;
+			}
+			set
+			{
+				if ((this._PAZARLAMACI_PRIM_TUTARI != value))
+				{
+					this.OnPAZARLAMACI_PRIM_TUTARIChanging(value);
+					this.SendPropertyChanging();
+					this._PAZARLAMACI_PRIM_TUTARI = value;
+					this.SendPropertyChanged("PAZARLAMACI_PRIM_TUTARI");
+					this.OnPAZARLAMACI_PRIM_TUTARIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BIRIM_AGIRLIK_BRUT", DbType="Float")]
+		public System.Nullable<double> BIRIM_AGIRLIK_BRUT
+		{
+			get
+			{
+				return this._BIRIM_AGIRLIK_BRUT;
+			}
+			set
+			{
+				if ((this._BIRIM_AGIRLIK_BRUT != value))
+				{
+					this.OnBIRIM_AGIRLIK_BRUTChanging(value);
+					this.SendPropertyChanging();
+					this._BIRIM_AGIRLIK_BRUT = value;
+					this.SendPropertyChanged("BIRIM_AGIRLIK_BRUT");
+					this.OnBIRIM_AGIRLIK_BRUTChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FORMUL_HACIM", DbType="BigInt")]
+		public System.Nullable<long> FORMUL_HACIM
+		{
+			get
+			{
+				return this._FORMUL_HACIM;
+			}
+			set
+			{
+				if ((this._FORMUL_HACIM != value))
+				{
+					this.OnFORMUL_HACIMChanging(value);
+					this.SendPropertyChanging();
+					this._FORMUL_HACIM = value;
+					this.SendPropertyChanged("FORMUL_HACIM");
+					this.OnFORMUL_HACIMChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OFFLINE_DURUM", DbType="SmallInt")]
+		public System.Nullable<short> OFFLINE_DURUM
+		{
+			get
+			{
+				return this._OFFLINE_DURUM;
+			}
+			set
+			{
+				if ((this._OFFLINE_DURUM != value))
+				{
+					this.OnOFFLINE_DURUMChanging(value);
+					this.SendPropertyChanging();
+					this._OFFLINE_DURUM = value;
+					this.SendPropertyChanged("OFFLINE_DURUM");
+					this.OnOFFLINE_DURUMChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OFFLINEBLSTKODU", DbType="BigInt")]
+		public System.Nullable<long> OFFLINEBLSTKODU
+		{
+			get
+			{
+				return this._OFFLINEBLSTKODU;
+			}
+			set
+			{
+				if ((this._OFFLINEBLSTKODU != value))
+				{
+					this.OnOFFLINEBLSTKODUChanging(value);
+					this.SendPropertyChanging();
+					this._OFFLINEBLSTKODU = value;
+					this.SendPropertyChanged("OFFLINEBLSTKODU");
+					this.OnOFFLINEBLSTKODUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SERILOT_MALIYET_ESLESTIR", DbType="SmallInt")]
+		public System.Nullable<short> SERILOT_MALIYET_ESLESTIR
+		{
+			get
+			{
+				return this._SERILOT_MALIYET_ESLESTIR;
+			}
+			set
+			{
+				if ((this._SERILOT_MALIYET_ESLESTIR != value))
+				{
+					this.OnSERILOT_MALIYET_ESLESTIRChanging(value);
+					this.SendPropertyChanging();
+					this._SERILOT_MALIYET_ESLESTIR = value;
+					this.SendPropertyChanged("SERILOT_MALIYET_ESLESTIR");
+					this.OnSERILOT_MALIYET_ESLESTIRChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LOT_PARCALANABILIR", DbType="SmallInt")]
+		public System.Nullable<short> LOT_PARCALANABILIR
+		{
+			get
+			{
+				return this._LOT_PARCALANABILIR;
+			}
+			set
+			{
+				if ((this._LOT_PARCALANABILIR != value))
+				{
+					this.OnLOT_PARCALANABILIRChanging(value);
+					this.SendPropertyChanging();
+					this._LOT_PARCALANABILIR = value;
+					this.SendPropertyChanged("LOT_PARCALANABILIR");
+					this.OnLOT_PARCALANABILIRChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_KDV_ORANI_SATIS_TPT", DbType="Float")]
+		public System.Nullable<double> KDV_ORANI_SATIS_TPT
+		{
+			get
+			{
+				return this._KDV_ORANI_SATIS_TPT;
+			}
+			set
+			{
+				if ((this._KDV_ORANI_SATIS_TPT != value))
+				{
+					this.OnKDV_ORANI_SATIS_TPTChanging(value);
+					this.SendPropertyChanging();
+					this._KDV_ORANI_SATIS_TPT = value;
+					this.SendPropertyChanged("KDV_ORANI_SATIS_TPT");
+					this.OnKDV_ORANI_SATIS_TPTChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PDA_ENTEGRASYON", DbType="VarChar(50)")]
+		public string PDA_ENTEGRASYON
+		{
+			get
+			{
+				return this._PDA_ENTEGRASYON;
+			}
+			set
+			{
+				if ((this._PDA_ENTEGRASYON != value))
+				{
+					this.OnPDA_ENTEGRASYONChanging(value);
+					this.SendPropertyChanging();
+					this._PDA_ENTEGRASYON = value;
+					this.SendPropertyChanged("PDA_ENTEGRASYON");
+					this.OnPDA_ENTEGRASYONChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BONUS_ORANI", DbType="Float")]
+		public System.Nullable<double> BONUS_ORANI
+		{
+			get
+			{
+				return this._BONUS_ORANI;
+			}
+			set
+			{
+				if ((this._BONUS_ORANI != value))
+				{
+					this.OnBONUS_ORANIChanging(value);
+					this.SendPropertyChanging();
+					this._BONUS_ORANI = value;
+					this.SendPropertyChanged("BONUS_ORANI");
+					this.OnBONUS_ORANIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BONUS_BRFYT", DbType="Float")]
+		public System.Nullable<double> BONUS_BRFYT
+		{
+			get
+			{
+				return this._BONUS_BRFYT;
+			}
+			set
+			{
+				if ((this._BONUS_BRFYT != value))
+				{
+					this.OnBONUS_BRFYTChanging(value);
+					this.SendPropertyChanging();
+					this._BONUS_BRFYT = value;
+					this.SendPropertyChanged("BONUS_BRFYT");
+					this.OnBONUS_BRFYTChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SOURCE_APP", DbType="VarChar(20)")]
+		public string SOURCE_APP
+		{
+			get
+			{
+				return this._SOURCE_APP;
+			}
+			set
+			{
+				if ((this._SOURCE_APP != value))
+				{
+					this.OnSOURCE_APPChanging(value);
+					this.SendPropertyChanging();
+					this._SOURCE_APP = value;
+					this.SendPropertyChanged("SOURCE_APP");
+					this.OnSOURCE_APPChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MUH_SATIS_IND", DbType="VarChar(30)")]
+		public string MUH_SATIS_IND
+		{
+			get
+			{
+				return this._MUH_SATIS_IND;
+			}
+			set
+			{
+				if ((this._MUH_SATIS_IND != value))
+				{
+					this.OnMUH_SATIS_INDChanging(value);
+					this.SendPropertyChanging();
+					this._MUH_SATIS_IND = value;
+					this.SendPropertyChanged("MUH_SATIS_IND");
+					this.OnMUH_SATIS_INDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BLEKOZELLIK_KODU", DbType="BigInt")]
+		public System.Nullable<long> BLEKOZELLIK_KODU
+		{
+			get
+			{
+				return this._BLEKOZELLIK_KODU;
+			}
+			set
+			{
+				if ((this._BLEKOZELLIK_KODU != value))
+				{
+					this.OnBLEKOZELLIK_KODUChanging(value);
+					this.SendPropertyChanging();
+					this._BLEKOZELLIK_KODU = value;
+					this.SendPropertyChanged("BLEKOZELLIK_KODU");
+					this.OnBLEKOZELLIK_KODUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VARS_ISLEM_MIKTARI", DbType="Float")]
+		public System.Nullable<double> VARS_ISLEM_MIKTARI
+		{
+			get
+			{
+				return this._VARS_ISLEM_MIKTARI;
+			}
+			set
+			{
+				if ((this._VARS_ISLEM_MIKTARI != value))
+				{
+					this.OnVARS_ISLEM_MIKTARIChanging(value);
+					this.SendPropertyChanging();
+					this._VARS_ISLEM_MIKTARI = value;
+					this.SendPropertyChanged("VARS_ISLEM_MIKTARI");
+					this.OnVARS_ISLEM_MIKTARIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BARKOD_TIPI", DbType="SmallInt")]
+		public System.Nullable<short> BARKOD_TIPI
+		{
+			get
+			{
+				return this._BARKOD_TIPI;
+			}
+			set
+			{
+				if ((this._BARKOD_TIPI != value))
+				{
+					this.OnBARKOD_TIPIChanging(value);
+					this.SendPropertyChanging();
+					this._BARKOD_TIPI = value;
+					this.SendPropertyChanged("BARKOD_TIPI");
+					this.OnBARKOD_TIPIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ACIKLAMA4", DbType="VarChar(MAX)")]
+		public string ACIKLAMA4
+		{
+			get
+			{
+				return this._ACIKLAMA4;
+			}
+			set
+			{
+				if ((this._ACIKLAMA4 != value))
+				{
+					this.OnACIKLAMA4Changing(value);
+					this.SendPropertyChanging();
+					this._ACIKLAMA4 = value;
+					this.SendPropertyChanged("ACIKLAMA4");
+					this.OnACIKLAMA4Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OFFLINE_GUID", DbType="VarChar(40)")]
+		public string OFFLINE_GUID
+		{
+			get
+			{
+				return this._OFFLINE_GUID;
+			}
+			set
+			{
+				if ((this._OFFLINE_GUID != value))
+				{
+					this.OnOFFLINE_GUIDChanging(value);
+					this.SendPropertyChanging();
+					this._OFFLINE_GUID = value;
+					this.SendPropertyChanged("OFFLINE_GUID");
+					this.OnOFFLINE_GUIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_KDV_ISTISNA_KODU", DbType="VarChar(6)")]
+		public string KDV_ISTISNA_KODU
+		{
+			get
+			{
+				return this._KDV_ISTISNA_KODU;
+			}
+			set
+			{
+				if ((this._KDV_ISTISNA_KODU != value))
+				{
+					this.OnKDV_ISTISNA_KODUChanging(value);
+					this.SendPropertyChanging();
+					this._KDV_ISTISNA_KODU = value;
+					this.SendPropertyChanged("KDV_ISTISNA_KODU");
+					this.OnKDV_ISTISNA_KODUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DEPOZITO_BLSTKODU", DbType="BigInt")]
+		public System.Nullable<long> DEPOZITO_BLSTKODU
+		{
+			get
+			{
+				return this._DEPOZITO_BLSTKODU;
+			}
+			set
+			{
+				if ((this._DEPOZITO_BLSTKODU != value))
+				{
+					this.OnDEPOZITO_BLSTKODUChanging(value);
+					this.SendPropertyChanging();
+					this._DEPOZITO_BLSTKODU = value;
+					this.SendPropertyChanged("DEPOZITO_BLSTKODU");
+					this.OnDEPOZITO_BLSTKODUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GTIP_NO", DbType="VarChar(12)")]
+		public string GTIP_NO
+		{
+			get
+			{
+				return this._GTIP_NO;
+			}
+			set
+			{
+				if ((this._GTIP_NO != value))
+				{
+					this.OnGTIP_NOChanging(value);
+					this.SendPropertyChanging();
+					this._GTIP_NO = value;
+					this.SendPropertyChanged("GTIP_NO");
+					this.OnGTIP_NOChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_YERLI_URETIM", DbType="SmallInt")]
+		public System.Nullable<short> YERLI_URETIM
+		{
+			get
+			{
+				return this._YERLI_URETIM;
+			}
+			set
+			{
+				if ((this._YERLI_URETIM != value))
+				{
+					this.OnYERLI_URETIMChanging(value);
+					this.SendPropertyChanging();
+					this._YERLI_URETIM = value;
+					this.SendPropertyChanged("YERLI_URETIM");
+					this.OnYERLI_URETIMChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_URETIM_YERI", DbType="VarChar(35)")]
+		public string URETIM_YERI
+		{
+			get
+			{
+				return this._URETIM_YERI;
+			}
+			set
+			{
+				if ((this._URETIM_YERI != value))
+				{
+					this.OnURETIM_YERIChanging(value);
+					this.SendPropertyChanging();
+					this._URETIM_YERI = value;
+					this.SendPropertyChanged("URETIM_YERI");
+					this.OnURETIM_YERIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TEVKIFAT_KODU", DbType="VarChar(4)")]
+		public string TEVKIFAT_KODU
+		{
+			get
+			{
+				return this._TEVKIFAT_KODU;
+			}
+			set
+			{
+				if ((this._TEVKIFAT_KODU != value))
+				{
+					this.OnTEVKIFAT_KODUChanging(value);
+					this.SendPropertyChanging();
+					this._TEVKIFAT_KODU = value;
+					this.SendPropertyChanged("TEVKIFAT_KODU");
+					this.OnTEVKIFAT_KODUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OZELALANTANIM_2", DbType="VarChar(65)")]
+		public string OZELALANTANIM_2
+		{
+			get
+			{
+				return this._OZELALANTANIM_2;
+			}
+			set
+			{
+				if ((this._OZELALANTANIM_2 != value))
+				{
+					this.OnOZELALANTANIM_2Changing(value);
+					this.SendPropertyChanging();
+					this._OZELALANTANIM_2 = value;
+					this.SendPropertyChanged("OZELALANTANIM_2");
+					this.OnOZELALANTANIM_2Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OZELALANTANIM_4", DbType="Float")]
+		public System.Nullable<double> OZELALANTANIM_4
+		{
+			get
+			{
+				return this._OZELALANTANIM_4;
+			}
+			set
+			{
+				if ((this._OZELALANTANIM_4 != value))
+				{
+					this.OnOZELALANTANIM_4Changing(value);
+					this.SendPropertyChanging();
+					this._OZELALANTANIM_4 = value;
+					this.SendPropertyChanged("OZELALANTANIM_4");
+					this.OnOZELALANTANIM_4Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OZELALANTANIM_8", DbType="VarChar(500)")]
+		public string OZELALANTANIM_8
+		{
+			get
+			{
+				return this._OZELALANTANIM_8;
+			}
+			set
+			{
+				if ((this._OZELALANTANIM_8 != value))
+				{
+					this.OnOZELALANTANIM_8Changing(value);
+					this.SendPropertyChanging();
+					this._OZELALANTANIM_8 = value;
+					this.SendPropertyChanged("OZELALANTANIM_8");
+					this.OnOZELALANTANIM_8Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OZELALANTANIM_212", DbType="Int")]
+		public System.Nullable<int> OZELALANTANIM_212
+		{
+			get
+			{
+				return this._OZELALANTANIM_212;
+			}
+			set
+			{
+				if ((this._OZELALANTANIM_212 != value))
+				{
+					this.OnOZELALANTANIM_212Changing(value);
+					this.SendPropertyChanging();
+					this._OZELALANTANIM_212 = value;
+					this.SendPropertyChanged("OZELALANTANIM_212");
+					this.OnOZELALANTANIM_212Changed();
 				}
 			}
 		}
