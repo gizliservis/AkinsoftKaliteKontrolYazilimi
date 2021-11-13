@@ -376,6 +376,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colDEPOZITO_BLMASTERKODU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colBLPAKETKODU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colONAY = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnSiparisler = new DevExpress.XtraEditors.SimpleButton();
             this.btnToplayici = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -648,7 +649,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colBLKODU.Name = "colBLKODU";
             this.colBLKODU.OptionsColumn.AllowEdit = false;
             this.colBLKODU.Visible = true;
-            this.colBLKODU.VisibleIndex = 0;
+            this.colBLKODU.VisibleIndex = 26;
             // 
             // colFATURA_DURUMU
             // 
@@ -669,7 +670,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colCARIKODU.Name = "colCARIKODU";
             this.colCARIKODU.OptionsColumn.AllowEdit = false;
             this.colCARIKODU.Visible = true;
-            this.colCARIKODU.VisibleIndex = 1;
+            this.colCARIKODU.VisibleIndex = 0;
             this.colCARIKODU.Width = 96;
             // 
             // colTICARI_UNVANI
@@ -679,7 +680,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colTICARI_UNVANI.Name = "colTICARI_UNVANI";
             this.colTICARI_UNVANI.OptionsColumn.AllowEdit = false;
             this.colTICARI_UNVANI.Visible = true;
-            this.colTICARI_UNVANI.VisibleIndex = 2;
+            this.colTICARI_UNVANI.VisibleIndex = 4;
             this.colTICARI_UNVANI.Width = 287;
             // 
             // colADI_SOYADI
@@ -701,7 +702,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colVERGI_NO.Name = "colVERGI_NO";
             this.colVERGI_NO.OptionsColumn.AllowEdit = false;
             this.colVERGI_NO.Visible = true;
-            this.colVERGI_NO.VisibleIndex = 4;
+            this.colVERGI_NO.VisibleIndex = 10;
             // 
             // colVERGI_DAIRESI
             // 
@@ -710,7 +711,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colVERGI_DAIRESI.Name = "colVERGI_DAIRESI";
             this.colVERGI_DAIRESI.OptionsColumn.AllowEdit = false;
             this.colVERGI_DAIRESI.Visible = true;
-            this.colVERGI_DAIRESI.VisibleIndex = 5;
+            this.colVERGI_DAIRESI.VisibleIndex = 11;
             this.colVERGI_DAIRESI.Width = 88;
             // 
             // colTEL1
@@ -734,7 +735,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colADRESI.Name = "colADRESI";
             this.colADRESI.OptionsColumn.AllowEdit = false;
             this.colADRESI.Visible = true;
-            this.colADRESI.VisibleIndex = 8;
+            this.colADRESI.VisibleIndex = 13;
             // 
             // colILI
             // 
@@ -743,7 +744,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colILI.Name = "colILI";
             this.colILI.OptionsColumn.AllowEdit = false;
             this.colILI.Visible = true;
-            this.colILI.VisibleIndex = 6;
+            this.colILI.VisibleIndex = 12;
             // 
             // colILCESI
             // 
@@ -752,7 +753,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colILCESI.Name = "colILCESI";
             this.colILCESI.OptionsColumn.AllowEdit = false;
             this.colILCESI.Visible = true;
-            this.colILCESI.VisibleIndex = 7;
+            this.colILCESI.VisibleIndex = 14;
             // 
             // colOZEL_KODU
             // 
@@ -774,7 +775,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colFATURA_NO.Name = "colFATURA_NO";
             this.colFATURA_NO.OptionsColumn.AllowEdit = false;
             this.colFATURA_NO.Visible = true;
-            this.colFATURA_NO.VisibleIndex = 9;
+            this.colFATURA_NO.VisibleIndex = 8;
             // 
             // colTARIHI
             // 
@@ -783,16 +784,16 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colTARIHI.Name = "colTARIHI";
             this.colTARIHI.OptionsColumn.AllowEdit = false;
             this.colTARIHI.Visible = true;
-            this.colTARIHI.VisibleIndex = 11;
+            this.colTARIHI.VisibleIndex = 2;
             // 
             // colCARIGRUBU
             // 
-            this.colCARIGRUBU.Caption = "Cari Grubu";
+            this.colCARIGRUBU.Caption = "CARİ GRUBU";
             this.colCARIGRUBU.FieldName = "grubuu";
             this.colCARIGRUBU.Name = "colCARIGRUBU";
             this.colCARIGRUBU.OptionsColumn.AllowEdit = false;
             this.colCARIGRUBU.Visible = true;
-            this.colCARIGRUBU.VisibleIndex = 10;
+            this.colCARIGRUBU.VisibleIndex = 9;
             // 
             // colVADESI
             // 
@@ -801,7 +802,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colVADESI.Name = "colVADESI";
             this.colVADESI.OptionsColumn.AllowEdit = false;
             this.colVADESI.Visible = true;
-            this.colVADESI.VisibleIndex = 12;
+            this.colVADESI.VisibleIndex = 15;
             // 
             // colGRUBU
             // 
@@ -817,7 +818,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colACIKLAMA.Name = "colACIKLAMA";
             this.colACIKLAMA.OptionsColumn.AllowEdit = false;
             this.colACIKLAMA.Visible = true;
-            this.colACIKLAMA.VisibleIndex = 23;
+            this.colACIKLAMA.VisibleIndex = 24;
             // 
             // colKDV_DURUMU
             // 
@@ -833,7 +834,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colKDV_ORANI.Name = "colKDV_ORANI";
             this.colKDV_ORANI.OptionsColumn.AllowEdit = false;
             this.colKDV_ORANI.Visible = true;
-            this.colKDV_ORANI.VisibleIndex = 17;
+            this.colKDV_ORANI.VisibleIndex = 19;
             this.colKDV_ORANI.Width = 79;
             // 
             // colEKBILGI_1
@@ -843,7 +844,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colEKBILGI_1.Name = "colEKBILGI_1";
             this.colEKBILGI_1.OptionsColumn.AllowEdit = false;
             this.colEKBILGI_1.Visible = true;
-            this.colEKBILGI_1.VisibleIndex = 13;
+            this.colEKBILGI_1.VisibleIndex = 16;
             // 
             // colEKBILGI_2
             // 
@@ -852,7 +853,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colEKBILGI_2.Name = "colEKBILGI_2";
             this.colEKBILGI_2.OptionsColumn.AllowEdit = false;
             this.colEKBILGI_2.Visible = true;
-            this.colEKBILGI_2.VisibleIndex = 14;
+            this.colEKBILGI_2.VisibleIndex = 17;
             // 
             // colOTV_KULLAN
             // 
@@ -1089,7 +1090,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colTOPLAM_ALT_KPB.Name = "colTOPLAM_ALT_KPB";
             this.colTOPLAM_ALT_KPB.OptionsColumn.AllowEdit = false;
             this.colTOPLAM_ALT_KPB.Visible = true;
-            this.colTOPLAM_ALT_KPB.VisibleIndex = 19;
+            this.colTOPLAM_ALT_KPB.VisibleIndex = 21;
             this.colTOPLAM_ALT_KPB.Width = 108;
             // 
             // colTOPLAM_ISK_KPB
@@ -1099,7 +1100,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colTOPLAM_ISK_KPB.Name = "colTOPLAM_ISK_KPB";
             this.colTOPLAM_ISK_KPB.OptionsColumn.AllowEdit = false;
             this.colTOPLAM_ISK_KPB.Visible = true;
-            this.colTOPLAM_ISK_KPB.VisibleIndex = 18;
+            this.colTOPLAM_ISK_KPB.VisibleIndex = 20;
             this.colTOPLAM_ISK_KPB.Width = 97;
             // 
             // colTOPLAM_ARA_KPB
@@ -1109,7 +1110,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colTOPLAM_ARA_KPB.Name = "colTOPLAM_ARA_KPB";
             this.colTOPLAM_ARA_KPB.OptionsColumn.AllowEdit = false;
             this.colTOPLAM_ARA_KPB.Visible = true;
-            this.colTOPLAM_ARA_KPB.VisibleIndex = 20;
+            this.colTOPLAM_ARA_KPB.VisibleIndex = 22;
             this.colTOPLAM_ARA_KPB.Width = 108;
             // 
             // colYUVARLAMA_KPB
@@ -1125,7 +1126,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colTOPLAM_KDV_KPB.Name = "colTOPLAM_KDV_KPB";
             this.colTOPLAM_KDV_KPB.OptionsColumn.AllowEdit = false;
             this.colTOPLAM_KDV_KPB.Visible = true;
-            this.colTOPLAM_KDV_KPB.VisibleIndex = 21;
+            this.colTOPLAM_KDV_KPB.VisibleIndex = 23;
             this.colTOPLAM_KDV_KPB.Width = 105;
             // 
             // colTOPLAM_OTV_KPB
@@ -1141,7 +1142,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colTOPLAM_GENEL_KPB.Name = "colTOPLAM_GENEL_KPB";
             this.colTOPLAM_GENEL_KPB.OptionsColumn.AllowEdit = false;
             this.colTOPLAM_GENEL_KPB.Visible = true;
-            this.colTOPLAM_GENEL_KPB.VisibleIndex = 22;
+            this.colTOPLAM_GENEL_KPB.VisibleIndex = 5;
             this.colTOPLAM_GENEL_KPB.Width = 126;
             // 
             // colMIKTAR1_TOPLAM
@@ -1151,7 +1152,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colMIKTAR1_TOPLAM.Name = "colMIKTAR1_TOPLAM";
             this.colMIKTAR1_TOPLAM.OptionsColumn.AllowEdit = false;
             this.colMIKTAR1_TOPLAM.Visible = true;
-            this.colMIKTAR1_TOPLAM.VisibleIndex = 15;
+            this.colMIKTAR1_TOPLAM.VisibleIndex = 1;
             // 
             // colMIKTAR2_TOPLAM
             // 
@@ -1160,7 +1161,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colMIKTAR2_TOPLAM.Name = "colMIKTAR2_TOPLAM";
             this.colMIKTAR2_TOPLAM.OptionsColumn.AllowEdit = false;
             this.colMIKTAR2_TOPLAM.Visible = true;
-            this.colMIKTAR2_TOPLAM.VisibleIndex = 16;
+            this.colMIKTAR2_TOPLAM.VisibleIndex = 18;
             // 
             // colTOPLAM_ALT_DVZ
             // 
@@ -1704,9 +1705,12 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             // 
             // colKARGO_NO
             // 
+            this.colKARGO_NO.Caption = "KARGO NO";
             this.colKARGO_NO.FieldName = "KARGO_NO";
             this.colKARGO_NO.Name = "colKARGO_NO";
             this.colKARGO_NO.OptionsColumn.AllowEdit = false;
+            this.colKARGO_NO.Visible = true;
+            this.colKARGO_NO.VisibleIndex = 7;
             // 
             // colEDF_BELGE_TURU
             // 
@@ -1836,9 +1840,13 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             // 
             // colEFATURA_TFIRMA_ADI
             // 
+            this.colEFATURA_TFIRMA_ADI.Caption = "KARGO FİRMASI";
             this.colEFATURA_TFIRMA_ADI.FieldName = "EFATURA_TFIRMA_ADI";
             this.colEFATURA_TFIRMA_ADI.Name = "colEFATURA_TFIRMA_ADI";
             this.colEFATURA_TFIRMA_ADI.OptionsColumn.AllowEdit = false;
+            this.colEFATURA_TFIRMA_ADI.Visible = true;
+            this.colEFATURA_TFIRMA_ADI.VisibleIndex = 6;
+            this.colEFATURA_TFIRMA_ADI.Width = 129;
             // 
             // colEFATURA_MAILGOND
             // 
@@ -2051,7 +2059,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colEfaturakln.Name = "colEfaturakln";
             this.colEfaturakln.OptionsColumn.AllowEdit = false;
             this.colEfaturakln.Visible = true;
-            this.colEfaturakln.VisibleIndex = 24;
+            this.colEfaturakln.VisibleIndex = 25;
             // 
             // repositoryItemCheckEdit1
             // 
@@ -2235,6 +2243,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.gridControl2);
+            this.groupControl2.Controls.Add(this.simpleButton1);
             this.groupControl2.Controls.Add(this.btnSiparisler);
             this.groupControl2.Controls.Add(this.btnToplayici);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -2246,11 +2255,11 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             // 
             // gridControl2
             // 
-            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gridControl2.Location = new System.Drawing.Point(169, 22);
+            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl2.Location = new System.Drawing.Point(244, 22);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(1019, 163);
+            this.gridControl2.Size = new System.Drawing.Size(944, 156);
             this.gridControl2.TabIndex = 3;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -3056,6 +3065,16 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colONAY.VisibleIndex = 0;
             this.colONAY.Width = 84;
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.simpleButton1.Location = new System.Drawing.Point(169, 22);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(75, 156);
+            this.simpleButton1.TabIndex = 4;
+            this.simpleButton1.Text = "Son \r\nAtananları \r\nGeri Al";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
             // btnSiparisler
             // 
             this.btnSiparisler.Dock = System.Windows.Forms.DockStyle.Left;
@@ -3459,5 +3478,6 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
         private DevExpress.XtraEditors.SimpleButton txtFaturaOnayla;
         private DevExpress.XtraEditors.LabelControl lblDegisiklik;
         private DevExpress.XtraEditors.GroupControl groupControl3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

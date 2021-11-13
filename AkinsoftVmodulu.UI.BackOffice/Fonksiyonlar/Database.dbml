@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="D:\AKINSOFT_WOLVOX8_001_2020_WOLVOX" Class="DatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=GIZLISERVIS\MSSQLMASTER;Initial Catalog=D:\AKINSOFT_WOLVOX8_001_2020_WOLVOX;User ID=sa" SettingsObjectName="AkinsoftVmodulu.UI.BackOffice.Properties.Settings" SettingsPropertyName="D__AKINSOFT_WOLVOX8_001_2020_WOLVOXConnectionString2" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WOLVOX8_001_2021_WOLVOX" Class="DatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.44.254;Initial Catalog=WOLVOX8_001_2021_WOLVOX;User ID=sa" SettingsObjectName="AkinsoftVmodulu.UI.BackOffice.Properties.Settings" SettingsPropertyName="WOLVOX8_001_2021_WOLVOXConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.FATURA" Member="FATURA">
     <Type Name="FATURA">
       <Column Name="BLKODU" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -534,114 +534,147 @@
       <Column Name="ONAYLAMA" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.SIPARISHR" Member="SIPARISHR">
-    <Type Name="SIPARISHR">
+  <Table Name="dbo.SIPARIS" Member="SIPARIS">
+    <Type Name="SIPARIS">
       <Column Name="BLKODU" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="BLMASKODU" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Column Name="BLSTKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="STOKKODU" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="STOK_ADI" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
-      <Column Name="BIRIMI" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-      <Column Name="BIRIMI_2" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-      <Column Name="MIKTARI" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="MIKTARI_2" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="KPB_FIYATI" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="KPB_KDV_HARICFY" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="KPB_IND_FIYAT" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="KPB_ARA_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="KPB_IND_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DVZ_FIYATI" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DVZ_KDV_HARICFY" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DVZ_IND_FIYAT" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DVZ_ARA_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DVZ_IND_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DOVIZ_BIRIMI" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
-      <Column Name="BIRIM_CARPANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SIPARIS_TURU" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BLCRKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CARIKODU" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="TICARI_UNVANI" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ADI_SOYADI" Type="System.String" DbType="VarChar(101)" CanBeNull="true" />
+      <Column Name="VERGI_NO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="VERGI_DAIRESI" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TEL1" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="FAKS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ADRESI" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ILI" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ILCESI" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="OZEL_KODU" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="KUL_STOK_FIYATI" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SIPARIS_NO" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="TARIHI" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="VADESI" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MUH_EVRAK_TARIHI" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MUH_EVRAK_NO" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="GRUBU" Type="System.String" DbType="VarChar(35)" CanBeNull="true" />
+      <Column Name="ACIKLAMA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="KDV_DURUMU" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="KDV_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EKBILGI_1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EKBILGI_2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ISK_KUL_CARI" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
       <Column Name="ISK_ORAN_CARI" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="ISK_TUTAR_CARI" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_SNTUTAR_CARI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_KUL_1" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
       <Column Name="ISK_ORAN_1" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="ISK_TUTAR_1" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_SNTUTAR_1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_KUL_2" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
       <Column Name="ISK_ORAN_2" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="ISK_TUTAR_2" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_SNTUTAR_2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_KUL_3" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
       <Column Name="ISK_ORAN_3" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="ISK_TUTAR_3" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_SNTUTAR_3" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_ORAN_STOK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_KUL_STOK" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
       <Column Name="ISK_TUTAR_STOK" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_OZEL" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_SNTUTAR_OZEL" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_ARATUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="KDV_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="KDV_TUTARI" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="KPB_TOPLAM_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="KPB_KDVLI_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DVZ_TOPLAM_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DVZ_KDVLI_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="MUH_KODU_GENEL" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="OZEL_KODU" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="EKBILGI_1" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="EKBILGI_2" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="EKBILGI_3" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="EKBILGI_4" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="ISK_SNTUTAR_STOK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_KUL_OZEL" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_OZEL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_KUL_ALT" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ISK_ORAN_ALT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_ALT1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_ALT2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DOVIZ_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DOVIZ_BIRIMI" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="KPBDVZ" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PAZ_DURUMU" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
       <Column Name="PAZ_PERSONEL" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
       <Column Name="PAZ_PERS_BLKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="PAZ_URUN_TUTARI" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="PAZ_URUN_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="PAZ_ISC_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="PAZ_ISC_TUTARI" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="BARKODU" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="VADE_GUNU" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
-      <Column Name="BLHZMKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="BIRIMLER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="KPBDVZ" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
-      <Column Name="ANA_STOKKODU" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="ISK_TUTAR_CARI_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_SNTUTAR_CARI_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_TUTAR_1_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_SNTUTAR_1_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_TUTAR_2_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_SNTUTAR_2_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_TUTAR_3_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_SNTUTAR_3_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_TUTAR_STOK_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_OZEL_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_SNTUTAR_OZEL_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ISK_SNTUTAR_STOK_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DEPO_ADI" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="MIKTARI_TESLIM" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="MIKTARI_IPTAL" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="MIKTARI_KALAN" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ASORTI_HRK" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
-      <Column Name="ASORTI_MIKTARI" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="KDV_DURUMU" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
-      <Column Name="SIRA_NO" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
-      <Column Name="BLMRPEMIRKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="PAZ_ISC_TUTARI_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="PAZ_URUN_TUTARI_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DOVIZ_ALIS" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DOVIZ_SATIS" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="PAZ_URUN_BF" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="KPB_FIYATI_2" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="SERINO_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
-      <Column Name="STOK_ADI_YD" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
-      <Column Name="EK_DETAY_TUTARI" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="EK_DETAY_HESABI" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
-      <Column Name="BLEKOZELLIK_KODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="DVZ_FIYATI_2" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="BLBURTKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="OFFLINE_GUID" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="SEVK_ADRESI" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="SEVK_ILI" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="SEVK_ILCESI" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="SEVK_TARIHI" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TOPLAM_ALT_KPB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TOPLAM_ISK_KPB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TOPLAM_ARA_KPB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="YUVARLAMA_KPB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TOPLAM_KDV_KPB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TOPLAM_GENEL_KPB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MIKTAR1_TOPLAM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MIKTAR2_TOPLAM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TOPLAM_ALT_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TOPLAM_ISK_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TOPLAM_ARA_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="YUVARLAMA_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TOPLAM_KDV_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TOPLAM_GENEL_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TOPLAM_ISK_STOK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TOPLAM_ISK_FAT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TOPLAM_ISK_YUZDESI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DEGISTIRME_TARIHI" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="KAYDEDEN" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DEGISTIREN" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="VADE_DURUMU" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ORTALAMA_VADE" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SILINDI" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SIPARIS_DURUMU" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TESLIM_TARIHI" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TEKLIF_NO" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
       <Column Name="STOK_BLOKE" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BLFIRSATKODU" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ACIKLAMA_2" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SUBE_KODU" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ULKESI" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="SEVK_ULKESI" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ADRESI_FATURA" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ILI_FATURA" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ILCESI_FATURA" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ULKESI_FATURA" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_CARI_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_1_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_2_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_3_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_STOK_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_OZEL_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_ALT1_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_ALT2_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TOPLAM_ISK_STOK_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TOPLAM_ISK_FAT_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PAZ_URUN_TUTARI_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PAZ_ISC_TUTARI_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="YAZDIRILDI" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TARIHI2" Type="System.DateTime" DbType="DateTime" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ONODEMELI_SATIS" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="OFFLINE_DURUM" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BLSERVISARACKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SOURCE_APP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="YUVARLAMA_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CEP_TEL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="KAYIT_TARIHI" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BLKAMPANYAKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="KARGO_FIRMASI" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="KARGO_NO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SEVK_BLKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SEVK_TANIMI" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="SEVK_YETKILISI" Type="System.String" DbType="VarChar(101)" CanBeNull="true" />
+      <Column Name="SEVK_TEL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EFATURA_ETICARET" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="EFATURA_SITE_ADI" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EFATURA_TFIRMA_VKN" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="EFATURA_TFIRMA_ADI" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="OFFLINE_GUID" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="EFATURA_ODEME_TURU" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="EFATURA_ODEME_TURU_DIGER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EFATURA_ARACI_FIRMA" Type="System.String" DbType="VarChar(75)" CanBeNull="true" />
       <Column Name="BLITHALATKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="GENEL_BLOB" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="DEPOZITO_BLSTKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="DEPOZITO_BLMASTERKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="BLPAKETKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="OZELALANTANIM_17" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="OZELALANTANIM_18" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="KARGO_TARIHI" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BELGE_ONAY_DURUMU" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BELGE_ONAY_KULLANICI" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="VIRMAN_BLCRKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="E_MAIL" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="OZELALANTANIM_59" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.STOK" Member="STOK">
@@ -754,8 +787,122 @@
       <Column Name="TEVKIFAT_KODU" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
       <Column Name="OZELALANTANIM_2" Type="System.String" DbType="VarChar(65)" CanBeNull="true" />
       <Column Name="OZELALANTANIM_4" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="OZELALANTANIM_8" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
-      <Column Name="OZELALANTANIM_212" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OZELALANTANIM_10" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OZELALANTANIM_11" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OZELALANTANIM_24" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SIPARISHR" Member="SIPARISHR">
+    <Type Name="SIPARISHR">
+      <Column Name="BLKODU" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BLMASKODU" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="BLSTKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="STOKKODU" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="STOK_ADI" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="BIRIMI" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="BIRIMI_2" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MIKTARI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MIKTARI_2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KPB_FIYATI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KPB_KDV_HARICFY" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KPB_IND_FIYAT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KPB_ARA_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KPB_IND_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DVZ_FIYATI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DVZ_KDV_HARICFY" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DVZ_IND_FIYAT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DVZ_ARA_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DVZ_IND_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DOVIZ_BIRIMI" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="BIRIM_CARPANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_ORAN_CARI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_CARI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_SNTUTAR_CARI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_ORAN_1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_SNTUTAR_1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_ORAN_2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_SNTUTAR_2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_ORAN_3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_SNTUTAR_3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_ORAN_STOK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_STOK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_OZEL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_SNTUTAR_OZEL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_ARATUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KDV_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KDV_TUTARI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KPB_TOPLAM_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KPB_KDVLI_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DVZ_TOPLAM_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DVZ_KDVLI_TUTAR" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MUH_KODU_GENEL" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="OZEL_KODU" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EKBILGI_1" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="EKBILGI_2" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="EKBILGI_3" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="EKBILGI_4" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ISK_SNTUTAR_STOK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PAZ_PERSONEL" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="PAZ_PERS_BLKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PAZ_URUN_TUTARI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PAZ_URUN_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PAZ_ISC_ORANI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PAZ_ISC_TUTARI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BARKODU" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="VADE_GUNU" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BLHZMKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BIRIMLER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="KPBDVZ" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ANA_STOKKODU" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_CARI_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_SNTUTAR_CARI_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_1_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_SNTUTAR_1_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_2_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_SNTUTAR_2_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_3_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_SNTUTAR_3_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_TUTAR_STOK_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_OZEL_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_SNTUTAR_OZEL_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISK_SNTUTAR_STOK_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DEPO_ADI" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="MIKTARI_TESLIM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MIKTARI_IPTAL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MIKTARI_KALAN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ASORTI_HRK" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ASORTI_MIKTARI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KDV_DURUMU" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SIRA_NO" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BLMRPEMIRKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PAZ_ISC_TUTARI_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PAZ_URUN_TUTARI_DVZ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DOVIZ_ALIS" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DOVIZ_SATIS" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PAZ_URUN_BF" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KPB_FIYATI_2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SERINO_KULLAN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="STOK_ADI_YD" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="EK_DETAY_TUTARI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EK_DETAY_HESABI" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="BLEKOZELLIK_KODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DVZ_FIYATI_2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BLBURTKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="OFFLINE_GUID" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="STOK_BLOKE" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BLITHALATKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GENEL_BLOB" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DEPOZITO_BLSTKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DEPOZITO_BLMASTERKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BLPAKETKODU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="OZELALANTANIM_17" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OZELALANTANIM_18" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OZELALANTANIM_19" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OZELALANTANIM_20" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OZELALANTANIM_22" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

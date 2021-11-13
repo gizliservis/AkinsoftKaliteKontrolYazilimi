@@ -182,13 +182,13 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.grpAramaKriter = new DevExpress.XtraEditors.GroupControl();
+            this.btnIslemGeriAl = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.txtUrunBarkod = new DevExpress.XtraEditors.TextEdit();
             this.txtSiparisBarkod = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
-            this.btnIslemGeriAl = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             this.tabPageUrunler.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridSiparisListe)).BeginInit();
@@ -1686,6 +1686,16 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             this.grpAramaKriter.TabIndex = 6;
             this.grpAramaKriter.Text = "Arama Kriterleri";
             // 
+            // btnIslemGeriAl
+            // 
+            this.btnIslemGeriAl.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnIslemGeriAl.Location = new System.Drawing.Point(1124, 22);
+            this.btnIslemGeriAl.Name = "btnIslemGeriAl";
+            this.btnIslemGeriAl.Size = new System.Drawing.Size(129, 72);
+            this.btnIslemGeriAl.TabIndex = 6;
+            this.btnIslemGeriAl.Text = "Son İşlemi Geri Al";
+            this.btnIslemGeriAl.Click += new System.EventHandler(this.btnIslemGeriAl_Click);
+            // 
             // simpleButton3
             // 
             this.simpleButton3.Dock = System.Windows.Forms.DockStyle.Right;
@@ -1746,16 +1756,6 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             this.tabPageUrunler,
             this.xtraTabPage2});
             this.xtraTabControl1.Click += new System.EventHandler(this.xtraTabControl1_Click);
-            // 
-            // btnIslemGeriAl
-            // 
-            this.btnIslemGeriAl.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnIslemGeriAl.Location = new System.Drawing.Point(1124, 22);
-            this.btnIslemGeriAl.Name = "btnIslemGeriAl";
-            this.btnIslemGeriAl.Size = new System.Drawing.Size(129, 72);
-            this.btnIslemGeriAl.TabIndex = 6;
-            this.btnIslemGeriAl.Text = "Son İşlemi Geri Al";
-            this.btnIslemGeriAl.Click += new System.EventHandler(this.btnIslemGeriAl_Click);
             // 
             // frmV2Siparis
             // 

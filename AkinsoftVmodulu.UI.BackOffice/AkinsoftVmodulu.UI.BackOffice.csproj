@@ -198,11 +198,23 @@
     <Compile Include="Rapor\frmRaporGoruntule.Designer.cs">
       <DependentUpon>frmRaporGoruntule.cs</DependentUpon>
     </Compile>
+    <Compile Include="Rapor\frmRaporV1Goruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapor\frmRaporV1Goruntule.Designer.cs">
+      <DependentUpon>frmRaporV1Goruntule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Rapor\frmRoporDuzenle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Rapor\frmRoporDuzenle.Designer.cs">
       <DependentUpon>frmRoporDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapor\rprV2Rapor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapor\rprV2Rapor.Designer.cs">
+      <DependentUpon>rprV2Rapor.cs</DependentUpon>
     </Compile>
     <Compile Include="Rapor\rptBarkod.cs">
       <SubType>Component</SubType>
@@ -281,8 +293,14 @@
     <EmbeddedResource Include="Rapor\frmRaporGoruntule.resx">
       <DependentUpon>frmRaporGoruntule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Rapor\frmRaporV1Goruntule.resx">
+      <DependentUpon>frmRaporV1Goruntule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Rapor\frmRoporDuzenle.resx">
       <DependentUpon>frmRoporDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapor\rprV2Rapor.resx">
+      <DependentUpon>rprV2Rapor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Rapor\rptBarkod.resx">
       <DependentUpon>rptBarkod.cs</DependentUpon>

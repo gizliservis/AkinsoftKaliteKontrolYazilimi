@@ -23,6 +23,8 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
     {
         DatabaseKullaniciDataContext Db = new DatabaseKullaniciDataContext();
         DatabaseDataContext ds = new DatabaseDataContext();
+        DataTable dt;
+
         public frmYonetici()
         {
             InitializeComponent();
@@ -128,6 +130,13 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             adp.Parameters.AddWithValue("@blkodu", blkod);
             return KomutGetir(adp);
         }
+        public bool kullaniciataGeriAl(int blkod)//kullanıcılara atama işlemi burada yapılır 
+        {
+            SqlCommand adp = new SqlCommand(string.Format("SP_KULLANICIATAGERIAL"), Baglanti2);
+            adp.CommandType = CommandType.StoredProcedure;
+            adp.Parameters.AddWithValue("@blkodu", blkod);
+            return KomutGetir(adp);
+        }
         public bool otoFaturaBitir(int blkod)//kullanıcılara atama işlemi burada yapılır 
         {
             SqlCommand adp = new SqlCommand(string.Format("SP_V1_YONETICI_FAT_ONAY"), Baglanti2);
@@ -149,11 +158,16 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             if (txtKullanici.Text != "")
             {
                 int[] RowHandles = gridView1.GetSelectedRows();
+                dt = new DataTable();
+                dt.Columns.Add("BlKodu");
                 foreach (int i in RowHandles)
                 {
+                    
+                    
                     int blkod = Convert.ToInt32(gridView1.GetRowCellValue(i, gridView1.Columns["BLKODU"]));
                     int efatura = Convert.ToInt32(gridView1.GetRowCellValue(i, gridView1.Columns["efaturayir"]));
                     decimal genelkbp = Convert.ToDecimal(gridView1.GetRowCellValue(i, gridView1.Columns["TOPLAM_GENEL_KPB"]));
+                    dt.Rows.Add(blkod);
                     kullaniciata(blkod, txtKullanici.Text);
                     rptFis fis = new rptFis(blkod, efatura, genelkbp);
                     ReportPrintTool rpr = new ReportPrintTool(fis);
@@ -243,9 +257,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
         private void btnFiltre_Click(object sender, EventArgs e)
         {
             gridControl1.DataSource = FiltreSelect(txtStokKodu.Text, txtRenk.Text, txtBeden.Text);
-            txtStokKodu.Text = null;
-            txtRenk.Text = null;
-            txtBeden.Text = null;
+           
         }
 
         private void txtFaturaOnayla_Click(object sender, EventArgs e)
@@ -258,6 +270,24 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
                 gridControl1.DataSource = ToplayıcıListele();
 
             }
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            foreach (DataRow item in dt.Rows)
+            {
+                foreach (DataColumn col in dt.Columns)
+                {
+                    int blk = Convert.ToInt32(item["BlKodu"]);
+                    kullaniciataGeriAl(blk);
+                   
+                }
+                
+            }
+            MessageBox.Show("işlem tamamladı");
+            listele();
+
+
         }
     }
 }

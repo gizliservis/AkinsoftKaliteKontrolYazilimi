@@ -21,7 +21,7 @@ namespace AkinsoftVmodulu.UI.BackOffice
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmStokEtiket());
+            Application.Run(new frmKullanici());
         }
     }
 }

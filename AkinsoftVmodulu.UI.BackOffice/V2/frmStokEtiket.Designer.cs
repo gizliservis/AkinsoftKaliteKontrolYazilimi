@@ -162,7 +162,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemTextEdit1,
             this.repositoryItemCalcEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(1388, 720);
+            this.gridControl1.Size = new System.Drawing.Size(1380, 656);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -295,7 +295,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             // 
             this.colEtiketMiktar.Caption = "Etiket Miktari";
             this.colEtiketMiktar.ColumnEdit = this.repositoryItemCalcEdit1;
-            this.colEtiketMiktar.FieldName = "OZELALANTANIM_212";
+            this.colEtiketMiktar.FieldName = "OZELALANTANIM_24";
             this.colEtiketMiktar.Name = "colEtiketMiktar";
             this.colEtiketMiktar.Visible = true;
             this.colEtiketMiktar.VisibleIndex = 1;
@@ -977,16 +977,16 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             // 
             this.groupControl1.Controls.Add(this.btnYazdir);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl1.Location = new System.Drawing.Point(0, 720);
+            this.groupControl1.Location = new System.Drawing.Point(0, 656);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1388, 100);
+            this.groupControl1.Size = new System.Drawing.Size(1380, 100);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Menü ";
             // 
             // btnYazdir
             // 
             this.btnYazdir.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnYazdir.Location = new System.Drawing.Point(1264, 22);
+            this.btnYazdir.Location = new System.Drawing.Point(1256, 22);
             this.btnYazdir.Name = "btnYazdir";
             this.btnYazdir.Size = new System.Drawing.Size(122, 76);
             this.btnYazdir.TabIndex = 0;
@@ -997,7 +997,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1388, 820);
+            this.ClientSize = new System.Drawing.Size(1380, 756);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.groupControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

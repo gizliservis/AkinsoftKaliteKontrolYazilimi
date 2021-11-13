@@ -411,7 +411,6 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             {
                 btnTamamla.Enabled = true;
                 btnTamamla.PerformClick();
-
                 this.Close();
             }
         }

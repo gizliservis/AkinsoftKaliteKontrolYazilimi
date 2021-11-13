@@ -47,8 +47,11 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.btnEtiketYazdirma = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
@@ -78,9 +81,11 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             this.barEditItem4,
             this.barButtonItem2,
             this.skinRibbonGalleryBarItem1,
-            this.btnEtiketYazdirma});
+            this.btnEtiketYazdirma,
+            this.barButtonItem3,
+            this.barButtonItem4});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 13;
+            this.ribbon.MaxItemId = 15;
             this.ribbon.Name = "ribbon";
             this.ribbon.OptionsMenuMinWidth = 385;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -90,7 +95,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             this.repositoryItemHyperLinkEdit1,
             this.repositoryItemFontEdit1,
             this.repositoryItemTextEdit1});
-            this.ribbon.Size = new System.Drawing.Size(1384, 153);
+            this.ribbon.Size = new System.Drawing.Size(1378, 153);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // btnV1
@@ -197,10 +202,23 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             this.btnEtiketYazdirma.Name = "btnEtiketYazdirma";
             this.btnEtiketYazdirma.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEtiketYazdirma_ItemClick);
             // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "V1 Rapor";
+            this.barButtonItem3.Id = 13;
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "V2 Rapor";
+            this.barButtonItem4.Id = 14;
+            this.barButtonItem4.Name = "barButtonItem4";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
+            this.ribbonPageGroup3,
             this.ribbonPageGroup2});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Yönetici  Menüsü";
@@ -213,11 +231,18 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "İşlemler";
             // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "Raporlar";
+            // 
             // ribbonPageGroup2
             // 
             this.ribbonPageGroup2.ItemLinks.Add(this.skinRibbonGalleryBarItem1);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "Temalar";
             // 
             // ribbonStatusBar
             // 
@@ -225,7 +250,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 720);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1384, 25);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1378, 25);
             // 
             // xtraTabbedMdiManager1
             // 
@@ -246,7 +271,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Zoom;
             this.BackgroundImageStore = global::AkinsoftVmodulu.UI.BackOffice.Properties.Resources.Asset_21;
-            this.ClientSize = new System.Drawing.Size(1384, 745);
+            this.ClientSize = new System.Drawing.Size(1378, 745);
             this.Controls.Add(this.hyperlinkLabelControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
@@ -294,5 +319,8 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.BarButtonItem btnEtiketYazdirma;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
     }
 }

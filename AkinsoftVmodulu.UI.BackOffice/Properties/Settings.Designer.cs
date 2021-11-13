@@ -81,11 +81,22 @@ namespace AkinsoftVmodulu.UI.BackOffice.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=GIZLISERVIS\\MSSQLMASTER;Initial Catalog=D:\\AKINSOFT_WOLVOX8_001_2020_" +
-            "WOLVOX;User ID=sa;Password=17421742")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-9H52A3R;Initial Catalog=F:\\AKINSOFT_WOLVOX8_001_2020_WOLVOX;U" +
+            "ser ID=sa;Password=17421742")]
         public string D__AKINSOFT_WOLVOX8_001_2020_WOLVOXConnectionString2 {
             get {
                 return ((string)(this["D__AKINSOFT_WOLVOX8_001_2020_WOLVOXConnectionString2"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.44.254;Initial Catalog=WOLVOX8_001_2021_WOLVOX;User ID=sa;Pas" +
+            "sword=Abc123+-*q1")]
+        public string WOLVOX8_001_2021_WOLVOXConnectionString {
+            get {
+                return ((string)(this["WOLVOX8_001_2021_WOLVOXConnectionString"]));
             }
         }
     }

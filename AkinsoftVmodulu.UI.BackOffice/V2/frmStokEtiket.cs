@@ -25,12 +25,12 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             var lst = (from s in db.STOK select s).ToList();
             foreach (STOK i in lst)
             {
-                i.OZELALANTANIM_212 = 1;
+                i.OZELALANTANIM_24 = 1;
             }
             gridControl1.DataSource = lst;
             gridView1.OptionsSelection.MultiSelect = true;
             gridView1.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.RowSelect;
-            
+
 
         }
 
@@ -40,7 +40,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             foreach (int i in RowHandles)
             {
                 int blkod = Convert.ToInt32(gridView1.GetRowCellValue(i, gridView1.Columns["BLKODU"]));
-                string miktar = gridView1.GetRowCellValue(i, gridView1.Columns["OZELALANTANIM_212"]).ToString();
+                string miktar = gridView1.GetRowCellValue(i, gridView1.Columns["OZELALANTANIM_24"]).ToString();
                 rptBarkod fis = new rptBarkod(blkod);
                 ReportPrintTool barkode = new ReportPrintTool(fis);
                 for (int s = 1; s <= int.Parse(miktar); s++)

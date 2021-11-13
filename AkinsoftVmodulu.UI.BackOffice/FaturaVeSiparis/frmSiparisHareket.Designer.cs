@@ -207,7 +207,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             this.gridSiparisListe.Name = "gridSiparisListe";
             this.gridSiparisListe.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1});
-            this.gridSiparisListe.Size = new System.Drawing.Size(1621, 576);
+            this.gridSiparisListe.Size = new System.Drawing.Size(1375, 576);
             this.gridSiparisListe.TabIndex = 0;
             this.gridSiparisListe.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewSiparisListe});
@@ -1509,7 +1509,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             this.xtraTabControl1.Location = new System.Drawing.Point(0, 74);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.tabPageUrunler;
-            this.xtraTabControl1.Size = new System.Drawing.Size(1623, 603);
+            this.xtraTabControl1.Size = new System.Drawing.Size(1380, 603);
             this.xtraTabControl1.TabIndex = 2;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tabPageUrunler,
@@ -1520,7 +1520,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             // 
             this.tabPageUrunler.Controls.Add(this.gridSiparisListe);
             this.tabPageUrunler.Name = "tabPageUrunler";
-            this.tabPageUrunler.Size = new System.Drawing.Size(1621, 576);
+            this.tabPageUrunler.Size = new System.Drawing.Size(1375, 576);
             this.tabPageUrunler.Text = "Ürünler";
             // 
             // xtraTabPage2
@@ -1528,7 +1528,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             this.xtraTabPage2.Controls.Add(this.pictureEdit1);
             this.xtraTabPage2.Controls.Add(this.groupControl1);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1607, 566);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1375, 576);
             this.xtraTabPage2.Text = "Ürün Resmi";
             // 
             // pictureEdit1
@@ -1538,7 +1538,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.pictureEdit1.Size = new System.Drawing.Size(1607, 377);
+            this.pictureEdit1.Size = new System.Drawing.Size(1375, 387);
             this.pictureEdit1.TabIndex = 0;
             this.pictureEdit1.Click += new System.EventHandler(this.pictureEdit1_Click);
             // 
@@ -1551,9 +1551,9 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             this.groupControl1.Controls.Add(this.txtKargoFirması);
             this.groupControl1.Controls.Add(this.simpleButton2);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl1.Location = new System.Drawing.Point(0, 377);
+            this.groupControl1.Location = new System.Drawing.Point(0, 387);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1607, 189);
+            this.groupControl1.Size = new System.Drawing.Size(1375, 189);
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Menü";
             this.groupControl1.Click += new System.EventHandler(this.groupControl1_Click);
@@ -1569,9 +1569,9 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             this.txtMiktar.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.txtMiktar.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.txtMiktar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.txtMiktar.Location = new System.Drawing.Point(1033, 21);
+            this.txtMiktar.Location = new System.Drawing.Point(801, 22);
             this.txtMiktar.Name = "txtMiktar";
-            this.txtMiktar.Size = new System.Drawing.Size(204, 166);
+            this.txtMiktar.Size = new System.Drawing.Size(204, 165);
             this.txtMiktar.TabIndex = 4;
             // 
             // txtCariGrubu
@@ -1583,9 +1583,9 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             this.txtCariGrubu.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.txtCariGrubu.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.txtCariGrubu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.txtCariGrubu.Location = new System.Drawing.Point(1237, 21);
+            this.txtCariGrubu.Location = new System.Drawing.Point(1005, 22);
             this.txtCariGrubu.Name = "txtCariGrubu";
-            this.txtCariGrubu.Size = new System.Drawing.Size(204, 166);
+            this.txtCariGrubu.Size = new System.Drawing.Size(204, 165);
             this.txtCariGrubu.TabIndex = 3;
             // 
             // lblStkKodu
@@ -1597,9 +1597,9 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             this.lblStkKodu.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.lblStkKodu.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblStkKodu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblStkKodu.Location = new System.Drawing.Point(367, 21);
+            this.lblStkKodu.Location = new System.Drawing.Point(367, 22);
             this.lblStkKodu.Name = "lblStkKodu";
-            this.lblStkKodu.Size = new System.Drawing.Size(617, 166);
+            this.lblStkKodu.Size = new System.Drawing.Size(617, 165);
             this.lblStkKodu.TabIndex = 2;
             // 
             // simpleButton1
@@ -1607,9 +1607,9 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Right;
             this.simpleButton1.ImageOptions.Image = global::AkinsoftVmodulu.UI.BackOffice.Properties.Resources.check__1_;
             this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(1441, 21);
+            this.simpleButton1.Location = new System.Drawing.Point(1209, 22);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(164, 166);
+            this.simpleButton1.Size = new System.Drawing.Size(164, 165);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Tag = "false";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -1623,9 +1623,9 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             this.txtKargoFirması.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.txtKargoFirması.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.txtKargoFirması.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txtKargoFirması.Location = new System.Drawing.Point(163, 21);
+            this.txtKargoFirması.Location = new System.Drawing.Point(163, 22);
             this.txtKargoFirması.Name = "txtKargoFirması";
-            this.txtKargoFirması.Size = new System.Drawing.Size(204, 166);
+            this.txtKargoFirması.Size = new System.Drawing.Size(204, 165);
             this.txtKargoFirması.TabIndex = 3;
             // 
             // simpleButton2
@@ -1633,9 +1633,9 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             this.simpleButton2.Dock = System.Windows.Forms.DockStyle.Left;
             this.simpleButton2.ImageOptions.Image = global::AkinsoftVmodulu.UI.BackOffice.Properties.Resources.remove;
             this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(2, 21);
+            this.simpleButton2.Location = new System.Drawing.Point(2, 22);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(161, 166);
+            this.simpleButton2.Size = new System.Drawing.Size(161, 165);
             this.simpleButton2.TabIndex = 1;
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
@@ -1648,7 +1648,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             this.grpAramaKriter.Dock = System.Windows.Forms.DockStyle.Top;
             this.grpAramaKriter.Location = new System.Drawing.Point(0, 0);
             this.grpAramaKriter.Name = "grpAramaKriter";
-            this.grpAramaKriter.Size = new System.Drawing.Size(1623, 74);
+            this.grpAramaKriter.Size = new System.Drawing.Size(1380, 74);
             this.grpAramaKriter.TabIndex = 4;
             this.grpAramaKriter.Text = "Arama Kriterleri";
             // 
@@ -1656,9 +1656,9 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             // 
             this.btnİşlemİptal.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnİşlemİptal.Enabled = false;
-            this.btnİşlemİptal.Location = new System.Drawing.Point(1419, 21);
+            this.btnİşlemİptal.Location = new System.Drawing.Point(1176, 22);
             this.btnİşlemİptal.Name = "btnİşlemİptal";
-            this.btnİşlemİptal.Size = new System.Drawing.Size(101, 51);
+            this.btnİşlemİptal.Size = new System.Drawing.Size(101, 50);
             this.btnİşlemİptal.TabIndex = 3;
             this.btnİşlemİptal.Text = "Sipariş İptal";
             this.btnİşlemİptal.Click += new System.EventHandler(this.btnİşlemİptal_Click);
@@ -1667,9 +1667,9 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             // 
             this.btnTamamla.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnTamamla.Enabled = false;
-            this.btnTamamla.Location = new System.Drawing.Point(1520, 21);
+            this.btnTamamla.Location = new System.Drawing.Point(1277, 22);
             this.btnTamamla.Name = "btnTamamla";
-            this.btnTamamla.Size = new System.Drawing.Size(101, 51);
+            this.btnTamamla.Size = new System.Drawing.Size(101, 50);
             this.btnTamamla.TabIndex = 2;
             this.btnTamamla.Text = "Sİpariş Tamamla";
             this.btnTamamla.Click += new System.EventHandler(this.btnTamamla_Click);
@@ -1697,7 +1697,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1623, 677);
+            this.ClientSize = new System.Drawing.Size(1380, 677);
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.grpAramaKriter);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
