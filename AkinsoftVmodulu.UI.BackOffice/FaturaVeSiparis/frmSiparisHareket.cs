@@ -20,21 +20,21 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
     {
         DatabaseDataContext DB = new DatabaseDataContext();
         DatabaseResimlerDataContext dr = new DatabaseResimlerDataContext();
-       public  int kod;
+        public int kod;
         string _carigrubu = "";
         string _kargofirmasi = "";
         string _kullanici;
-        public frmSiparisHareket(int BlKodu,string cariGrubu ,string kargoFirmasi,string kullanici)
+        public frmSiparisHareket(int BlKodu, string cariGrubu, string kargoFirmasi, string kullanici)
         {
             InitializeComponent();
-           kod = BlKodu;
+            kod = BlKodu;
             _kargofirmasi = kargoFirmasi;
             _carigrubu = cariGrubu;
             txtCariGrubu.Text = _carigrubu;
             txtKargoFirması.Text = _kargofirmasi;
             _kullanici = kullanici;
 
-           
+
 
             hareketListele(DB, kod);
 
@@ -115,7 +115,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
 
             return dt;
         }
-        public bool FaturahrIptal(int blftkodu,string kullanici)//fatura hareketleri iptal
+        public bool FaturahrIptal(int blftkodu, string kullanici)//fatura hareketleri iptal
         {
 
             SqlCommand adp = new SqlCommand(string.Format("SP_V1_VAZGEC"), Baglanti2);
@@ -125,7 +125,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             return KomutGetir(adp);
 
         }
-        public bool FaturaTamamlandı(int blftkodu,string kullanici)//fatura hareketleri iptal
+        public bool FaturaTamamlandı(int blftkodu, string kullanici)//fatura hareketleri iptal
         {
 
             SqlCommand adp = new SqlCommand(string.Format("SP_TOPLANDI"), Baglanti2);
@@ -154,7 +154,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
         //}
         void heketListele(DatabaseResimlerDataContext db, string stokkodu)//resim getir
         {
-            string url = "http://192.168.44.254/"+stokkodu.Substring(0,stokkodu.Length-3)+".jpg";
+            string url = "http://192.168.44.254/" + stokkodu.Substring(0, stokkodu.Length - 3) + ".jpg";
             pictureEdit1.LoadAsync(url);
 
 
@@ -180,6 +180,20 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             txtBarkodNo.Focus();
 
         }
+        //void heketListele(DatabaseResimlerDataContext db, int blstkoduu)//resim getir
+        //{
+
+        //     DataTable dt = ImageSelect(blstkoduu);
+
+        //     byte[] image = (byte[])dt.Rows[0].ItemArray[0];
+
+        //      Stream imageFile = NefesWolvoxResimGetir.NTools.ResimGetir(image);
+        //     pictureEdit1.Image = Image.FromStream(imageFile);
+
+
+
+
+        //}
 
         private void txtBarkodNo_EditValueChanged(object sender, EventArgs e)
         {
@@ -191,7 +205,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             int Id;
             string stokKodu = "";
             int blkodu;
-            int miktar=0;
+            int miktar = 0;
             index = gridViewSiparisListe.FocusedRowHandle;
 
             Id = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "BLSTKODU").ToString());
@@ -200,12 +214,9 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             miktar = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "MIKTARI").ToString());
             xtraTabControl1.SelectedTabPage = xtraTabPage2;
             heketListele(dr, stokKodu);
-       
+
             lblStkKodu.Text = stokKodu;
-            if (miktar > 1)
-            {
-                txtMiktar.Text = miktar.ToString();
-            }
+            txtMiktar.Text = miktar.ToString();
             txtBarkodNo.Text = null;
             txtBarkodNo.Focus();
         }
@@ -225,10 +236,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             xtraTabControl1.SelectedTabPage = xtraTabPage2;
             heketListele(dr, stokKodu);
             lblStkKodu.Text = stokKodu;
-            if (miktar > 1)
-            {
-                txtMiktar.Text = miktar.ToString();
-            }
+            txtMiktar.Text = miktar.ToString();
             txtBarkodNo.Text = null;
             txtBarkodNo.Focus();
         }
@@ -260,7 +268,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
                     return;
 
                 }
-               
+
                 if (txtBarkodNo.Text == "URUNAC") //urun gösterme barkodu bu barkodda yok oldu şuan
                 {
                     urunac();
@@ -316,7 +324,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
         {
             if (gridViewSiparisListe.RowCount == 0)
             {
-                FaturaTamamlandı(kod,_kullanici);
+                FaturaTamamlandı(kod, _kullanici);
                 txtBarkodNo.Text = null;
                 txtBarkodNo.Focus();
                 this.Close();
@@ -337,7 +345,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
         void faturaIptal()
         {
             xtraTabControl1.SelectedTabPage = tabPageUrunler;
-            FaturahrIptal(kod,_kullanici);
+            FaturahrIptal(kod, _kullanici);
             hareketListele(DB, kod);
             txtBarkodNo.Text = null;
             txtBarkodNo.Focus();
@@ -378,46 +386,56 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             string stokKodu = "";
             int blkodu;
             int miktar = 0;
+            int dene = 0;
 
             index = gridViewSiparisListe.FocusedRowHandle;
 
             Id = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "BLSTKODU").ToString());
             blkodu = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "BLKODU").ToString());
             stokKodu = gridViewSiparisListe.GetRowCellValue(index, "STOKKODU").ToString();
-            onayselect(blkodu);
-            hareketListele(DB, kod);
-            txtBarkodNo.Text = null;
-            txtBarkodNo.Focus();
-            if (gridViewSiparisListe.RowCount > 0)
+            dene = Convert.ToInt32(txtMiktar.Text);
+            if (dene > 0)
             {
-                index = gridViewSiparisListe.FocusedRowHandle;
-
-                Id = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "BLSTKODU").ToString());
-                miktar = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "MIKTARI").ToString());
-                blkodu = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "BLKODU").ToString());
-                stokKodu = gridViewSiparisListe.GetRowCellValue(index, "STOKKODU").ToString();
-                xtraTabControl1.SelectedTabPage = xtraTabPage2;
-                heketListele(dr, stokKodu);
-                lblStkKodu.Text = stokKodu;
-                if (miktar > 1)
-                {
-                    txtMiktar.Text = miktar.ToString();
-                }
+                dene -= 1;
+                txtMiktar.Text = dene.ToString();
                 txtBarkodNo.Text = null;
                 txtBarkodNo.Focus();
-              
             }
-            if (gridViewSiparisListe.RowCount == 0)
+            if (dene == 0)
             {
-                btnTamamla.Enabled = true;
-                btnTamamla.PerformClick();
-                this.Close();
+                onayselect(blkodu);
+                hareketListele(DB, kod);
+                txtBarkodNo.Text = null;
+                txtBarkodNo.Focus();
+                if (gridViewSiparisListe.RowCount > 0)
+                {
+                    index = gridViewSiparisListe.FocusedRowHandle;
+
+                    Id = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "BLSTKODU").ToString());
+                    miktar = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "MIKTARI").ToString());
+                    blkodu = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "BLKODU").ToString());
+                    stokKodu = gridViewSiparisListe.GetRowCellValue(index, "STOKKODU").ToString();
+                    xtraTabControl1.SelectedTabPage = xtraTabPage2;
+                    heketListele(dr, stokKodu);
+                    lblStkKodu.Text = stokKodu;
+                    txtMiktar.Text = miktar.ToString();
+                    txtBarkodNo.Text = null;
+                    txtBarkodNo.Focus();
+
+                }
+                if (gridViewSiparisListe.RowCount == 0)
+                {
+                    btnTamamla.Enabled = true;
+                    btnTamamla.PerformClick();
+                    this.Close();
+                }
             }
+
         }
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             urunOnayla();
-           
+
 
         }
 

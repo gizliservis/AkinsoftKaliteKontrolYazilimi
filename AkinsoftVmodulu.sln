@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkinsoftVmodulu.UI.BackOffi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsbaRestaurant.UserControls", "IsbaRestaurant.UserControls\IsbaRestaurant.UserControls.csproj", "{DCB37C2B-EA78-4D88-ADFC-A9BA9EB3F44E}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Tum Teknoloji V Modülü", "Tum Teknoloji V Modülü\Tum Teknoloji V Modülü.vdproj", "{B54E8121-15F8-4174-A81D-C47826D0F8CF}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Tüm Teknoloji V Modülü", "Tüm Teknoloji V Modülü\Tüm Teknoloji V Modülü.vdproj", "{320D42A7-B0A1-40EC-B0BC-100AD38C7AC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,8 +23,8 @@ Global
 		{DCB37C2B-EA78-4D88-ADFC-A9BA9EB3F44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCB37C2B-EA78-4D88-ADFC-A9BA9EB3F44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCB37C2B-EA78-4D88-ADFC-A9BA9EB3F44E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B54E8121-15F8-4174-A81D-C47826D0F8CF}.Debug|Any CPU.ActiveCfg = Debug
-		{B54E8121-15F8-4174-A81D-C47826D0F8CF}.Release|Any CPU.ActiveCfg = Release
+		{320D42A7-B0A1-40EC-B0BC-100AD38C7AC0}.Debug|Any CPU.ActiveCfg = Debug
+		{320D42A7-B0A1-40EC-B0BC-100AD38C7AC0}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

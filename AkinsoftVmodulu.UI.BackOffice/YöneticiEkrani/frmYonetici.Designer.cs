@@ -2256,7 +2256,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             // gridControl2
             // 
             this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl2.Location = new System.Drawing.Point(244, 22);
+            this.gridControl2.Location = new System.Drawing.Point(169, 22);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
             this.gridControl2.Size = new System.Drawing.Size(944, 156);
@@ -3067,8 +3067,8 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.simpleButton1.Location = new System.Drawing.Point(169, 22);
+            this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.simpleButton1.Location = new System.Drawing.Point(1113, 22);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(75, 156);
             this.simpleButton1.TabIndex = 4;

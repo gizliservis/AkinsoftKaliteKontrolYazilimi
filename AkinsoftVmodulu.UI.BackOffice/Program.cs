@@ -1,4 +1,5 @@
 ﻿using AkinsoftVmodulu.UI.BackOffice.AnaMenu;
+using AkinsoftVmodulu.UI.BackOffice.Ayarlar;
 using AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis;
 using AkinsoftVmodulu.UI.BackOffice.V2;
 using DevExpress.LookAndFeel;

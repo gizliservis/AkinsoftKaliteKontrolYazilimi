@@ -1569,6 +1569,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             this.groupControl1.Size = new System.Drawing.Size(1375, 203);
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Menü";
+            this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
             // 
             // lblStkKodu
             // 
@@ -1685,6 +1686,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             this.grpAramaKriter.Size = new System.Drawing.Size(1380, 96);
             this.grpAramaKriter.TabIndex = 6;
             this.grpAramaKriter.Text = "Arama Kriterleri";
+            this.grpAramaKriter.Paint += new System.Windows.Forms.PaintEventHandler(this.grpAramaKriter_Paint);
             // 
             // btnIslemGeriAl
             // 

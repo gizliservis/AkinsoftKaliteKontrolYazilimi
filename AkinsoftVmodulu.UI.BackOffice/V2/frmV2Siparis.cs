@@ -239,6 +239,10 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
                 SiparisleriListele();
                 xtraTabControl1.SelectedTabPage = tabPageUrunler;
             }
+            else if (txtTeslimMiktari.Value==0)
+            {
+                xtraTabControl1.SelectedTabPage = tabPageUrunler;
+            }
       
         }
         void siparisKapat()
@@ -247,8 +251,8 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             int blkodu = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "BLKODU").ToString());
             Onaylandi_Iptal(blkodu, Convert.ToInt32(txtTeslimMiktari.Value), Convert.ToInt32(txtKalanMiktar.Value), "Onaylandı", _kullaniciad);
             gridViewSiparisListe.ActiveFilter.Clear();
-            xtraTabControl1.SelectedTabPage = tabPageUrunler;
             SiparisleriListele();
+            xtraTabControl1.SelectedTabPage = tabPageUrunler;
             txtUrunBarkod.Text = null;
             txtUrunBarkod.Focus();
         }
@@ -335,12 +339,13 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
         }
         void bitir()
         {
-            gridSiparisListe.DataSource = null;
-            txtSiparisBarkod.Enabled = true;
-            txtSiparisBarkod.Text = null;
-            txtSiparisBarkod.Focus();
             txtUrunBarkod.Text = null;
             txtUrunBarkod.Enabled = false;
+            txtSiparisBarkod.Enabled = true;
+            txtSiparisBarkod.Text = null;
+            gridSiparisListe.DataSource = null;
+            txtSiparisBarkod.Focus();
+            
 
         }
 
@@ -359,6 +364,16 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
         {
             GeriAl(kod);
             SiparisleriListele();
+        }
+
+        private void grpAramaKriter_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void groupControl1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
