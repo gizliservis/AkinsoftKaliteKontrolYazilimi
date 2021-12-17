@@ -1599,7 +1599,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.FaturaVeSiparis
             this.lblStkKodu.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblStkKodu.Location = new System.Drawing.Point(367, 22);
             this.lblStkKodu.Name = "lblStkKodu";
-            this.lblStkKodu.Size = new System.Drawing.Size(617, 165);
+            this.lblStkKodu.Size = new System.Drawing.Size(415, 165);
             this.lblStkKodu.TabIndex = 2;
             // 
             // simpleButton1

@@ -220,6 +220,18 @@
     <Compile Include="Rapor\frmRoporDuzenle.Designer.cs">
       <DependentUpon>frmRoporDuzenle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Rapor\frmV1Raporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapor\frmV1Raporu.Designer.cs">
+      <DependentUpon>frmV1Raporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapor\frmV2Raporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapor\frmV2Raporu.Designer.cs">
+      <DependentUpon>frmV2Raporu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Rapor\rprV2Rapor.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -243,6 +255,18 @@
     </Compile>
     <Compile Include="Rapor\rptStok.Designer.cs">
       <DependentUpon>rptStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapor\rptV1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapor\rptV1.Designer.cs">
+      <DependentUpon>rptV1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapor\rptV1Toplam.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapor\rptV1Toplam.Designer.cs">
+      <DependentUpon>rptV1Toplam.cs</DependentUpon>
     </Compile>
     <Compile Include="Tools\SettingsTool.cs" />
     <Compile Include="V2\frmStokEtiket.cs">
@@ -313,6 +337,12 @@
     <EmbeddedResource Include="Rapor\frmRoporDuzenle.resx">
       <DependentUpon>frmRoporDuzenle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Rapor\frmV1Raporu.resx">
+      <DependentUpon>frmV1Raporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapor\frmV2Raporu.resx">
+      <DependentUpon>frmV2Raporu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Rapor\rprV2Rapor.resx">
       <DependentUpon>rprV2Rapor.cs</DependentUpon>
     </EmbeddedResource>
@@ -324,6 +354,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Rapor\rptStok.resx">
       <DependentUpon>rptStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapor\rptV1.resx">
+      <DependentUpon>rptV1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapor\rptV1Toplam.resx">
+      <DependentUpon>rptV1Toplam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="V2\frmStokEtiket.resx">
       <DependentUpon>frmStokEtiket.cs</DependentUpon>
@@ -427,6 +463,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\barcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fatura_Satis32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fatura_AlisIade32x32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

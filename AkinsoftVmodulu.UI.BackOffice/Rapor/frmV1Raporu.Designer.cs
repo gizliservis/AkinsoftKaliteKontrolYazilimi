@@ -1,7 +1,7 @@
 ﻿
-namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
+namespace AkinsoftVmodulu.UI.BackOffice.Rapor
 {
-    partial class frmYonetici
+    partial class frmV1Raporu
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,17 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnYazdir = new DevExpress.XtraEditors.SimpleButton();
+            this.btnFiltre = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.dtBitis = new DevExpress.XtraEditors.DateEdit();
+            this.dtBaslangic = new DevExpress.XtraEditors.DateEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMiktar = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colBLKODU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colFATURA_DURUMU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colBLCRKODU = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -48,7 +57,6 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colKUL_STOK_FIYATI = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colFATURA_NO = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTARIHI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCARIGRUBU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colVADESI = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colGRUBU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colACIKLAMA = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -247,175 +255,141 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colOTO_GONDERIM_HATA = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colOZELALANTANIM_6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEFATURA_HBIRIMI_VERGINO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEBELGE = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colOZELALANTANIM_107 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colOZELALANTANIM_157 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEfaturakln = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.repositoryItemCheckedComboBoxEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckedComboBoxEdit();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.btnFiltre = new DevExpress.XtraEditors.SimpleButton();
-            this.txtBeden = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.txtRenk = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtStokKodu = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.txtKullanici = new DevExpress.XtraEditors.ButtonEdit();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.lblDegisiklik = new DevExpress.XtraEditors.LabelControl();
-            this.txtFaturaOnayla = new DevExpress.XtraEditors.SimpleButton();
-            this.btnTkrYazdir = new DevExpress.XtraEditors.SimpleButton();
-            this.btnYetkiVer = new DevExpress.XtraEditors.SimpleButton();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colBLKODU2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colBLMASKODU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colBLSTKODU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSTOKKODU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSTOK_ADI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colBIRIMI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colBIRIMI_2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMIKTARI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMIKTARI_2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colKPB_FIYATI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colKPB_KDV_HARICFY = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colKPB_IND_FIYAT = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colKPB_ARA_TUTAR = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colKPB_IND_TUTAR = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDVZ_FIYATI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDVZ_KDV_HARICFY = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDVZ_IND_FIYAT = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDVZ_ARA_TUTAR = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDVZ_IND_TUTAR = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDOVIZ_BIRIMI1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colBIRIM_CARPANI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_ORAN_CARI1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_TUTAR_CARI1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_SNTUTAR_CARI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_ORAN_11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_TUTAR_11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_SNTUTAR_1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_ORAN_21 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_TUTAR_21 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_SNTUTAR_2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_ORAN_31 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_TUTAR_31 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_SNTUTAR_3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_ORAN_STOK = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_TUTAR_STOK1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_OZEL = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_SNTUTAR_OZEL = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_ARATUTAR = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colKDV_ORANI1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colKDV_TUTARI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colKPB_TOPLAM_TUTAR = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colKPB_KDVLI_TUTAR = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDVZ_TOPLAM_TUTAR = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDVZ_KDVLI_TUTAR = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMUH_KODU_GENEL = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colOZEL_KODU1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEKBILGI_11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEKBILGI_21 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEKBILGI_3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEKBILGI_4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_SNTUTAR_STOK = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPAZ_PERSONEL1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPAZ_PERS_BLKODU1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPAZ_URUN_TUTARI1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPAZ_URUN_ORANI1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPAZ_ISC_ORANI1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPAZ_ISC_TUTARI1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colBARKODU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colVADE_GUNU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colBLHZMKODU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colBIRIMLER = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colKPBDVZ1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colOZELALANTANIM_13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colOZELALANTANIM_14 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colOZELALANTANIM_15 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colOZELALANTANIM_21 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colANA_STOKKODU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_TUTAR_CARI_DVZ1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_SNTUTAR_CARI_DVZ = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_TUTAR_1_DVZ1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_SNTUTAR_1_DVZ = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_TUTAR_2_DVZ1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_SNTUTAR_2_DVZ = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_TUTAR_3_DVZ1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_SNTUTAR_3_DVZ = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_TUTAR_STOK_DVZ1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_OZEL_DVZ = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_SNTUTAR_OZEL_DVZ = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colISK_SNTUTAR_STOK_DVZ = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colBARKODU = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colBIRIMI = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDEPO_ADI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMIKTARI_TESLIM = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMIKTARI_IPTAL = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMIKTARI_KALAN = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colASORTI_HRK = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colASORTI_MIKTARI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colKDV_DURUMU1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSIRA_NO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colBLMRPEMIRKODU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPAZ_ISC_TUTARI_DVZ1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPAZ_URUN_TUTARI_DVZ1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDOVIZ_ALIS = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDOVIZ_SATIS = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPAZ_URUN_BF = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colKPB_FIYATI_2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSERINO_KULLAN = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSTOK_ADI_YD = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEK_DETAY_TUTARI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEK_DETAY_HESABI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colBLEKOZELLIK_KODU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDVZ_FIYATI_2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colBLBURTKODU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colOFFLINE_GUID1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSTOK_BLOKE1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colBLITHALATKODU1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colGENEL_BLOB = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDEPOZITO_BLSTKODU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDEPOZITO_BLMASTERKODU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colBLPAKETKODU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colONAY = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnSiparisler = new DevExpress.XtraEditors.SimpleButton();
-            this.btnToplayici = new DevExpress.XtraEditors.SimpleButton();
+            this.colrenk = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colbeden = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSTOK_ADI = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSTOKKODU = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colKPB_FIYATI = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colKPB_IND_TUTAR = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colKPB_KDVLI_TUTAR = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colKPB_TOPLAM_TUTAR = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colgrubuu = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSaat = new DevExpress.XtraGrid.Columns.GridColumn();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckedComboBoxEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
-            this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBeden.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRenk.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtStokKodu.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKullanici.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
-            this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtBitis.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtBitis.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtBaslangic.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtBaslangic.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.Controls.Add(this.simpleButton2);
+            this.groupControl1.Controls.Add(this.btnYazdir);
+            this.groupControl1.Controls.Add(this.btnFiltre);
+            this.groupControl1.Controls.Add(this.labelControl2);
+            this.groupControl1.Controls.Add(this.labelControl1);
+            this.groupControl1.Controls.Add(this.dtBitis);
+            this.groupControl1.Controls.Add(this.dtBaslangic);
+            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(1256, 100);
+            this.groupControl1.TabIndex = 0;
+            this.groupControl1.Text = "flitre";
+            // 
+            // btnYazdir
+            // 
+            this.btnYazdir.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnYazdir.Location = new System.Drawing.Point(1060, 22);
+            this.btnYazdir.Name = "btnYazdir";
+            this.btnYazdir.Size = new System.Drawing.Size(101, 76);
+            this.btnYazdir.TabIndex = 3;
+            this.btnYazdir.Text = "Yazdır";
+            this.btnYazdir.Click += new System.EventHandler(this.btnYazdir_Click);
+            // 
+            // btnFiltre
+            // 
+            this.btnFiltre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnFiltre.Location = new System.Drawing.Point(1161, 22);
+            this.btnFiltre.Name = "btnFiltre";
+            this.btnFiltre.Size = new System.Drawing.Size(93, 76);
+            this.btnFiltre.TabIndex = 2;
+            this.btnFiltre.Text = "Filitrele";
+            this.btnFiltre.Click += new System.EventHandler(this.btnFiltre_Click);
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(5, 53);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(88, 15);
+            this.labelControl2.TabIndex = 1;
+            this.labelControl2.Text = "Başlangıc Tarihi :";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(304, 53);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(60, 15);
+            this.labelControl1.TabIndex = 1;
+            this.labelControl1.Text = "Bitiş Tarihi :";
+            // 
+            // dtBitis
+            // 
+            this.dtBitis.EditValue = null;
+            this.dtBitis.Location = new System.Drawing.Point(374, 50);
+            this.dtBitis.Name = "dtBitis";
+            this.dtBitis.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtBitis.Properties.CalendarTimeEditing = DevExpress.Utils.DefaultBoolean.True;
+            this.dtBitis.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtBitis.Properties.DisplayFormat.FormatString = "yyyy-MM-dd HH:mm:ss";
+            this.dtBitis.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dtBitis.Properties.EditFormat.FormatString = "yyyy-MM-dd HH:mm:ss";
+            this.dtBitis.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dtBitis.Properties.Mask.EditMask = "yyyy-MM-dd HH:mm:ss";
+            this.dtBitis.Size = new System.Drawing.Size(224, 22);
+            this.dtBitis.TabIndex = 0;
+            // 
+            // dtBaslangic
+            // 
+            this.dtBaslangic.EditValue = null;
+            this.dtBaslangic.Location = new System.Drawing.Point(95, 50);
+            this.dtBaslangic.Name = "dtBaslangic";
+            this.dtBaslangic.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtBaslangic.Properties.CalendarTimeEditing = DevExpress.Utils.DefaultBoolean.True;
+            this.dtBaslangic.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtBaslangic.Properties.DisplayFormat.FormatString = "yyyy-MM-dd HH:mm:ss";
+            this.dtBaslangic.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dtBaslangic.Properties.EditFormat.FormatString = "yyyy-MM-dd HH:mm:ss";
+            this.dtBaslangic.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dtBaslangic.Properties.Mask.EditMask = "yyyy-MM-dd HH:mm:ss";
+            this.dtBaslangic.Size = new System.Drawing.Size(182, 22);
+            this.dtBaslangic.TabIndex = 0;
             // 
             // gridControl1
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(0, 63);
+            gridLevelNode1.RelationName = "Level1";
+            this.gridControl1.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode1});
+            this.gridControl1.Location = new System.Drawing.Point(0, 100);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemCheckEdit1,
-            this.repositoryItemCheckedComboBoxEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(1190, 412);
-            this.gridControl1.TabIndex = 0;
+            this.gridControl1.Size = new System.Drawing.Size(1256, 401);
+            this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMiktar,
             this.colBLKODU,
             this.colFATURA_DURUMU,
             this.colBLCRKODU,
@@ -433,7 +407,6 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colKUL_STOK_FIYATI,
             this.colFATURA_NO,
             this.colTARIHI,
-            this.colCARIGRUBU,
             this.colVADESI,
             this.colGRUBU,
             this.colACIKLAMA,
@@ -632,25 +605,48 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colOTO_GONDERIM_HATA,
             this.colOZELALANTANIM_6,
             this.colEFATURA_HBIRIMI_VERGINO,
-            this.colEBELGE,
-            this.colOZELALANTANIM_107,
-            this.colOZELALANTANIM_157,
-            this.colEfaturakln});
-            this.gridView1.CustomizationFormBounds = new System.Drawing.Rectangle(889, 374, 252, 266);
+            this.colOZELALANTANIM_13,
+            this.colOZELALANTANIM_14,
+            this.colOZELALANTANIM_15,
+            this.colOZELALANTANIM_21,
+            this.colANA_STOKKODU,
+            this.colBARKODU,
+            this.colBIRIMI,
+            this.colDEPO_ADI,
+            this.colrenk,
+            this.colbeden,
+            this.colSTOK_ADI,
+            this.colSTOKKODU,
+            this.colKPB_FIYATI,
+            this.colKPB_IND_TUTAR,
+            this.colKPB_KDVLI_TUTAR,
+            this.colKPB_TOPLAM_TUTAR,
+            this.colgrubuu,
+            this.colSaat});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ColumnAutoWidth = false;
             this.gridView1.OptionsView.ShowAutoFilterRow = true;
+            this.gridView1.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.ShowAlways;
             this.gridView1.OptionsView.ShowFooter = true;
-            this.gridView1.Click += new System.EventHandler(this.gridView1_Click);
+            // 
+            // colMiktar
+            // 
+            this.colMiktar.Caption = "Miktarı";
+            this.colMiktar.FieldName = "MIKTARI";
+            this.colMiktar.Name = "colMiktar";
+            this.colMiktar.OptionsColumn.AllowEdit = false;
+            this.colMiktar.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "MIKTARI", "Toplam={0:0.##}")});
+            this.colMiktar.Visible = true;
+            this.colMiktar.VisibleIndex = 12;
+            this.colMiktar.Width = 201;
             // 
             // colBLKODU
             // 
             this.colBLKODU.FieldName = "BLKODU";
             this.colBLKODU.Name = "colBLKODU";
             this.colBLKODU.OptionsColumn.AllowEdit = false;
-            this.colBLKODU.Visible = true;
-            this.colBLKODU.VisibleIndex = 26;
             // 
             // colFATURA_DURUMU
             // 
@@ -666,99 +662,86 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             // 
             // colCARIKODU
             // 
-            this.colCARIKODU.Caption = "CARI KODU";
+            this.colCARIKODU.Caption = "CariKod";
             this.colCARIKODU.FieldName = "CARIKODU";
             this.colCARIKODU.Name = "colCARIKODU";
             this.colCARIKODU.OptionsColumn.AllowEdit = false;
             this.colCARIKODU.Visible = true;
-            this.colCARIKODU.VisibleIndex = 0;
-            this.colCARIKODU.Width = 96;
+            this.colCARIKODU.VisibleIndex = 5;
+            this.colCARIKODU.Width = 62;
             // 
             // colTICARI_UNVANI
             // 
-            this.colTICARI_UNVANI.Caption = "TİCARİ UNVANI";
+            this.colTICARI_UNVANI.Caption = "Unvanı";
             this.colTICARI_UNVANI.FieldName = "TICARI_UNVANI";
             this.colTICARI_UNVANI.Name = "colTICARI_UNVANI";
             this.colTICARI_UNVANI.OptionsColumn.AllowEdit = false;
             this.colTICARI_UNVANI.Visible = true;
-            this.colTICARI_UNVANI.VisibleIndex = 4;
-            this.colTICARI_UNVANI.Width = 287;
+            this.colTICARI_UNVANI.VisibleIndex = 7;
+            this.colTICARI_UNVANI.Width = 108;
             // 
             // colADI_SOYADI
             // 
-            this.colADI_SOYADI.Caption = "ADI SOYADI";
+            this.colADI_SOYADI.Caption = "Ad Soyad";
             this.colADI_SOYADI.FieldName = "ADI_SOYADI";
             this.colADI_SOYADI.Name = "colADI_SOYADI";
             this.colADI_SOYADI.OptionsColumn.AllowEdit = false;
-            this.colADI_SOYADI.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "ADI_SOYADI", "FATURA SAYISI={0}")});
             this.colADI_SOYADI.Visible = true;
-            this.colADI_SOYADI.VisibleIndex = 3;
-            this.colADI_SOYADI.Width = 151;
+            this.colADI_SOYADI.VisibleIndex = 6;
+            this.colADI_SOYADI.Width = 99;
             // 
             // colVERGI_NO
             // 
-            this.colVERGI_NO.Caption = "VERGINO";
             this.colVERGI_NO.FieldName = "VERGI_NO";
             this.colVERGI_NO.Name = "colVERGI_NO";
             this.colVERGI_NO.OptionsColumn.AllowEdit = false;
-            this.colVERGI_NO.Visible = true;
-            this.colVERGI_NO.VisibleIndex = 10;
             // 
             // colVERGI_DAIRESI
             // 
-            this.colVERGI_DAIRESI.Caption = "VERGİ DAİRESİ";
             this.colVERGI_DAIRESI.FieldName = "VERGI_DAIRESI";
             this.colVERGI_DAIRESI.Name = "colVERGI_DAIRESI";
             this.colVERGI_DAIRESI.OptionsColumn.AllowEdit = false;
-            this.colVERGI_DAIRESI.Visible = true;
-            this.colVERGI_DAIRESI.VisibleIndex = 11;
-            this.colVERGI_DAIRESI.Width = 88;
             // 
             // colTEL1
             // 
-            this.colTEL1.Caption = "TEL1";
             this.colTEL1.FieldName = "TEL1";
             this.colTEL1.Name = "colTEL1";
             this.colTEL1.OptionsColumn.AllowEdit = false;
             // 
             // colFAKS
             // 
-            this.colFAKS.Caption = "FAKS";
             this.colFAKS.FieldName = "FAKS";
             this.colFAKS.Name = "colFAKS";
             this.colFAKS.OptionsColumn.AllowEdit = false;
             // 
             // colADRESI
             // 
-            this.colADRESI.Caption = "ADRESİ";
             this.colADRESI.FieldName = "ADRESI";
             this.colADRESI.Name = "colADRESI";
             this.colADRESI.OptionsColumn.AllowEdit = false;
-            this.colADRESI.Visible = true;
-            this.colADRESI.VisibleIndex = 13;
             // 
             // colILI
             // 
-            this.colILI.Caption = "İLİ";
+            this.colILI.Caption = "İli";
             this.colILI.FieldName = "ILI";
             this.colILI.Name = "colILI";
             this.colILI.OptionsColumn.AllowEdit = false;
             this.colILI.Visible = true;
-            this.colILI.VisibleIndex = 12;
+            this.colILI.VisibleIndex = 9;
+            this.colILI.Width = 80;
             // 
             // colILCESI
             // 
-            this.colILCESI.Caption = "İLÇESİ";
+            this.colILCESI.Caption = "ilçesi";
             this.colILCESI.FieldName = "ILCESI";
             this.colILCESI.Name = "colILCESI";
             this.colILCESI.OptionsColumn.AllowEdit = false;
             this.colILCESI.Visible = true;
-            this.colILCESI.VisibleIndex = 14;
+            this.colILCESI.VisibleIndex = 8;
+            this.colILCESI.Width = 74;
             // 
             // colOZEL_KODU
             // 
-            this.colOZEL_KODU.Caption = "ÖZEL KODU";
             this.colOZEL_KODU.FieldName = "OZEL_KODU";
             this.colOZEL_KODU.Name = "colOZEL_KODU";
             this.colOZEL_KODU.OptionsColumn.AllowEdit = false;
@@ -771,90 +754,61 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             // 
             // colFATURA_NO
             // 
-            this.colFATURA_NO.Caption = "FATURA NO";
+            this.colFATURA_NO.Caption = "FaturaNo";
             this.colFATURA_NO.FieldName = "FATURA_NO";
             this.colFATURA_NO.Name = "colFATURA_NO";
             this.colFATURA_NO.OptionsColumn.AllowEdit = false;
             this.colFATURA_NO.Visible = true;
-            this.colFATURA_NO.VisibleIndex = 8;
+            this.colFATURA_NO.VisibleIndex = 4;
+            this.colFATURA_NO.Width = 93;
             // 
             // colTARIHI
             // 
-            this.colTARIHI.Caption = "TARİHİ";
             this.colTARIHI.FieldName = "TARIHI";
             this.colTARIHI.Name = "colTARIHI";
             this.colTARIHI.OptionsColumn.AllowEdit = false;
-            this.colTARIHI.Visible = true;
-            this.colTARIHI.VisibleIndex = 2;
-            // 
-            // colCARIGRUBU
-            // 
-            this.colCARIGRUBU.Caption = "CARİ GRUBU";
-            this.colCARIGRUBU.FieldName = "grubuu";
-            this.colCARIGRUBU.Name = "colCARIGRUBU";
-            this.colCARIGRUBU.OptionsColumn.AllowEdit = false;
-            this.colCARIGRUBU.Visible = true;
-            this.colCARIGRUBU.VisibleIndex = 9;
             // 
             // colVADESI
             // 
-            this.colVADESI.Caption = "VADESİ";
             this.colVADESI.FieldName = "VADESI";
             this.colVADESI.Name = "colVADESI";
             this.colVADESI.OptionsColumn.AllowEdit = false;
-            this.colVADESI.Visible = true;
-            this.colVADESI.VisibleIndex = 15;
             // 
             // colGRUBU
             // 
-            this.colGRUBU.Caption = "FATURA GRUBU";
             this.colGRUBU.FieldName = "GRUBU";
             this.colGRUBU.Name = "colGRUBU";
             this.colGRUBU.OptionsColumn.AllowEdit = false;
             // 
             // colACIKLAMA
             // 
-            this.colACIKLAMA.Caption = "AÇIKLAMA";
             this.colACIKLAMA.FieldName = "ACIKLAMA";
             this.colACIKLAMA.Name = "colACIKLAMA";
             this.colACIKLAMA.OptionsColumn.AllowEdit = false;
-            this.colACIKLAMA.Visible = true;
-            this.colACIKLAMA.VisibleIndex = 24;
             // 
             // colKDV_DURUMU
             // 
-            this.colKDV_DURUMU.Caption = "KDV DURUMU";
             this.colKDV_DURUMU.FieldName = "KDV_DURUMU";
             this.colKDV_DURUMU.Name = "colKDV_DURUMU";
             this.colKDV_DURUMU.OptionsColumn.AllowEdit = false;
             // 
             // colKDV_ORANI
             // 
-            this.colKDV_ORANI.Caption = "KDV ORANI";
             this.colKDV_ORANI.FieldName = "KDV_ORANI";
             this.colKDV_ORANI.Name = "colKDV_ORANI";
             this.colKDV_ORANI.OptionsColumn.AllowEdit = false;
-            this.colKDV_ORANI.Visible = true;
-            this.colKDV_ORANI.VisibleIndex = 19;
-            this.colKDV_ORANI.Width = 79;
             // 
             // colEKBILGI_1
             // 
-            this.colEKBILGI_1.Caption = "EKBİLGİ 1";
             this.colEKBILGI_1.FieldName = "EKBILGI_1";
             this.colEKBILGI_1.Name = "colEKBILGI_1";
             this.colEKBILGI_1.OptionsColumn.AllowEdit = false;
-            this.colEKBILGI_1.Visible = true;
-            this.colEKBILGI_1.VisibleIndex = 16;
             // 
             // colEKBILGI_2
             // 
-            this.colEKBILGI_2.Caption = "EKBİLGİ 2";
             this.colEKBILGI_2.FieldName = "EKBILGI_2";
             this.colEKBILGI_2.Name = "colEKBILGI_2";
             this.colEKBILGI_2.OptionsColumn.AllowEdit = false;
-            this.colEKBILGI_2.Visible = true;
-            this.colEKBILGI_2.VisibleIndex = 17;
             // 
             // colOTV_KULLAN
             // 
@@ -1086,33 +1040,21 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             // 
             // colTOPLAM_ALT_KPB
             // 
-            this.colTOPLAM_ALT_KPB.Caption = "Alt Toplam";
             this.colTOPLAM_ALT_KPB.FieldName = "TOPLAM_ALT_KPB";
             this.colTOPLAM_ALT_KPB.Name = "colTOPLAM_ALT_KPB";
             this.colTOPLAM_ALT_KPB.OptionsColumn.AllowEdit = false;
-            this.colTOPLAM_ALT_KPB.Visible = true;
-            this.colTOPLAM_ALT_KPB.VisibleIndex = 21;
-            this.colTOPLAM_ALT_KPB.Width = 108;
             // 
             // colTOPLAM_ISK_KPB
             // 
-            this.colTOPLAM_ISK_KPB.Caption = "Toplam İndirim";
             this.colTOPLAM_ISK_KPB.FieldName = "TOPLAM_ISK_KPB";
             this.colTOPLAM_ISK_KPB.Name = "colTOPLAM_ISK_KPB";
             this.colTOPLAM_ISK_KPB.OptionsColumn.AllowEdit = false;
-            this.colTOPLAM_ISK_KPB.Visible = true;
-            this.colTOPLAM_ISK_KPB.VisibleIndex = 20;
-            this.colTOPLAM_ISK_KPB.Width = 97;
             // 
             // colTOPLAM_ARA_KPB
             // 
-            this.colTOPLAM_ARA_KPB.Caption = "Ara Toplam";
             this.colTOPLAM_ARA_KPB.FieldName = "TOPLAM_ARA_KPB";
             this.colTOPLAM_ARA_KPB.Name = "colTOPLAM_ARA_KPB";
             this.colTOPLAM_ARA_KPB.OptionsColumn.AllowEdit = false;
-            this.colTOPLAM_ARA_KPB.Visible = true;
-            this.colTOPLAM_ARA_KPB.VisibleIndex = 22;
-            this.colTOPLAM_ARA_KPB.Width = 108;
             // 
             // colYUVARLAMA_KPB
             // 
@@ -1122,13 +1064,9 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             // 
             // colTOPLAM_KDV_KPB
             // 
-            this.colTOPLAM_KDV_KPB.Caption = "Toplam Kdv Tutarı";
             this.colTOPLAM_KDV_KPB.FieldName = "TOPLAM_KDV_KPB";
             this.colTOPLAM_KDV_KPB.Name = "colTOPLAM_KDV_KPB";
             this.colTOPLAM_KDV_KPB.OptionsColumn.AllowEdit = false;
-            this.colTOPLAM_KDV_KPB.Visible = true;
-            this.colTOPLAM_KDV_KPB.VisibleIndex = 23;
-            this.colTOPLAM_KDV_KPB.Width = 105;
             // 
             // colTOPLAM_OTV_KPB
             // 
@@ -1138,31 +1076,21 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             // 
             // colTOPLAM_GENEL_KPB
             // 
-            this.colTOPLAM_GENEL_KPB.Caption = "Genel Toplam";
             this.colTOPLAM_GENEL_KPB.FieldName = "TOPLAM_GENEL_KPB";
             this.colTOPLAM_GENEL_KPB.Name = "colTOPLAM_GENEL_KPB";
             this.colTOPLAM_GENEL_KPB.OptionsColumn.AllowEdit = false;
-            this.colTOPLAM_GENEL_KPB.Visible = true;
-            this.colTOPLAM_GENEL_KPB.VisibleIndex = 5;
-            this.colTOPLAM_GENEL_KPB.Width = 126;
             // 
             // colMIKTAR1_TOPLAM
             // 
-            this.colMIKTAR1_TOPLAM.Caption = "Miktar1";
             this.colMIKTAR1_TOPLAM.FieldName = "MIKTAR1_TOPLAM";
             this.colMIKTAR1_TOPLAM.Name = "colMIKTAR1_TOPLAM";
             this.colMIKTAR1_TOPLAM.OptionsColumn.AllowEdit = false;
-            this.colMIKTAR1_TOPLAM.Visible = true;
-            this.colMIKTAR1_TOPLAM.VisibleIndex = 1;
             // 
             // colMIKTAR2_TOPLAM
             // 
-            this.colMIKTAR2_TOPLAM.Caption = "Miktar2";
             this.colMIKTAR2_TOPLAM.FieldName = "MIKTAR2_TOPLAM";
             this.colMIKTAR2_TOPLAM.Name = "colMIKTAR2_TOPLAM";
             this.colMIKTAR2_TOPLAM.OptionsColumn.AllowEdit = false;
-            this.colMIKTAR2_TOPLAM.Visible = true;
-            this.colMIKTAR2_TOPLAM.VisibleIndex = 18;
             // 
             // colTOPLAM_ALT_DVZ
             // 
@@ -1232,9 +1160,15 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             // 
             // colDEGISTIRME_TARIHI
             // 
+            this.colDEGISTIRME_TARIHI.Caption = "Değiştirme Tarihi";
+            this.colDEGISTIRME_TARIHI.DisplayFormat.FormatString = "d";
+            this.colDEGISTIRME_TARIHI.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.colDEGISTIRME_TARIHI.FieldName = "DEGISTIRME_TARIHI";
             this.colDEGISTIRME_TARIHI.Name = "colDEGISTIRME_TARIHI";
             this.colDEGISTIRME_TARIHI.OptionsColumn.AllowEdit = false;
+            this.colDEGISTIRME_TARIHI.Visible = true;
+            this.colDEGISTIRME_TARIHI.VisibleIndex = 0;
+            this.colDEGISTIRME_TARIHI.Width = 89;
             // 
             // colKAYDEDEN
             // 
@@ -1706,12 +1640,9 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             // 
             // colKARGO_NO
             // 
-            this.colKARGO_NO.Caption = "KARGO NO";
             this.colKARGO_NO.FieldName = "KARGO_NO";
             this.colKARGO_NO.Name = "colKARGO_NO";
             this.colKARGO_NO.OptionsColumn.AllowEdit = false;
-            this.colKARGO_NO.Visible = true;
-            this.colKARGO_NO.VisibleIndex = 7;
             // 
             // colEDF_BELGE_TURU
             // 
@@ -1841,13 +1772,9 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             // 
             // colEFATURA_TFIRMA_ADI
             // 
-            this.colEFATURA_TFIRMA_ADI.Caption = "KARGO FİRMASI";
             this.colEFATURA_TFIRMA_ADI.FieldName = "EFATURA_TFIRMA_ADI";
             this.colEFATURA_TFIRMA_ADI.Name = "colEFATURA_TFIRMA_ADI";
             this.colEFATURA_TFIRMA_ADI.OptionsColumn.AllowEdit = false;
-            this.colEFATURA_TFIRMA_ADI.Visible = true;
-            this.colEFATURA_TFIRMA_ADI.VisibleIndex = 6;
-            this.colEFATURA_TFIRMA_ADI.Width = 129;
             // 
             // colEFATURA_MAILGOND
             // 
@@ -2035,1230 +1962,213 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             this.colEFATURA_HBIRIMI_VERGINO.Name = "colEFATURA_HBIRIMI_VERGINO";
             this.colEFATURA_HBIRIMI_VERGINO.OptionsColumn.AllowEdit = false;
             // 
-            // colEBELGE
+            // colOZELALANTANIM_13
             // 
-            this.colEBELGE.FieldName = "EBELGE";
-            this.colEBELGE.Name = "colEBELGE";
-            this.colEBELGE.OptionsColumn.AllowEdit = false;
+            this.colOZELALANTANIM_13.Caption = "Sip No";
+            this.colOZELALANTANIM_13.FieldName = "OZELALANTANIM_13";
+            this.colOZELALANTANIM_13.Name = "colOZELALANTANIM_13";
+            this.colOZELALANTANIM_13.OptionsColumn.AllowEdit = false;
             // 
-            // colOZELALANTANIM_107
+            // colOZELALANTANIM_14
             // 
-            this.colOZELALANTANIM_107.FieldName = "OZELALANTANIM_107";
-            this.colOZELALANTANIM_107.Name = "colOZELALANTANIM_107";
-            this.colOZELALANTANIM_107.OptionsColumn.AllowEdit = false;
+            this.colOZELALANTANIM_14.Caption = "İşlemler";
+            this.colOZELALANTANIM_14.FieldName = "OZELALANTANIM_14";
+            this.colOZELALANTANIM_14.Name = "colOZELALANTANIM_14";
+            this.colOZELALANTANIM_14.OptionsColumn.AllowEdit = false;
+            this.colOZELALANTANIM_14.Visible = true;
+            this.colOZELALANTANIM_14.VisibleIndex = 3;
+            this.colOZELALANTANIM_14.Width = 60;
             // 
-            // colOZELALANTANIM_157
+            // colOZELALANTANIM_15
             // 
-            this.colOZELALANTANIM_157.FieldName = "OZELALANTANIM_157";
-            this.colOZELALANTANIM_157.Name = "colOZELALANTANIM_157";
-            this.colOZELALANTANIM_157.OptionsColumn.AllowEdit = false;
+            this.colOZELALANTANIM_15.Caption = "Toplayıcı";
+            this.colOZELALANTANIM_15.FieldName = "OZELALANTANIM_15";
+            this.colOZELALANTANIM_15.Name = "colOZELALANTANIM_15";
+            this.colOZELALANTANIM_15.OptionsColumn.AllowEdit = false;
+            this.colOZELALANTANIM_15.Visible = true;
+            this.colOZELALANTANIM_15.VisibleIndex = 2;
+            this.colOZELALANTANIM_15.Width = 73;
             // 
-            // colEfaturakln
+            // colOZELALANTANIM_21
             // 
-            this.colEfaturakln.Caption = "E Fatura Ayir";
-            this.colEfaturakln.FieldName = "efaturayir";
-            this.colEfaturakln.Name = "colEfaturakln";
-            this.colEfaturakln.OptionsColumn.AllowEdit = false;
-            this.colEfaturakln.Visible = true;
-            this.colEfaturakln.VisibleIndex = 25;
+            this.colOZELALANTANIM_21.Caption = "Kontrolcü";
+            this.colOZELALANTANIM_21.FieldName = "OZELALANTANIM_21";
+            this.colOZELALANTANIM_21.Name = "colOZELALANTANIM_21";
+            this.colOZELALANTANIM_21.OptionsColumn.AllowEdit = false;
+            this.colOZELALANTANIM_21.Visible = true;
+            this.colOZELALANTANIM_21.VisibleIndex = 11;
+            this.colOZELALANTANIM_21.Width = 70;
             // 
-            // repositoryItemCheckEdit1
+            // colANA_STOKKODU
             // 
-            this.repositoryItemCheckEdit1.AutoHeight = false;
-            this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
+            this.colANA_STOKKODU.Caption = "A.StokKodu";
+            this.colANA_STOKKODU.FieldName = "ANA_STOKKODU";
+            this.colANA_STOKKODU.Name = "colANA_STOKKODU";
+            this.colANA_STOKKODU.OptionsColumn.AllowEdit = false;
+            this.colANA_STOKKODU.Visible = true;
+            this.colANA_STOKKODU.VisibleIndex = 13;
+            this.colANA_STOKKODU.Width = 104;
             // 
-            // repositoryItemCheckedComboBoxEdit1
+            // colBARKODU
             // 
-            this.repositoryItemCheckedComboBoxEdit1.AutoHeight = false;
-            this.repositoryItemCheckedComboBoxEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemCheckedComboBoxEdit1.Name = "repositoryItemCheckedComboBoxEdit1";
+            this.colBARKODU.Caption = "Barkodu";
+            this.colBARKODU.FieldName = "BARKODU";
+            this.colBARKODU.Name = "colBARKODU";
+            this.colBARKODU.OptionsColumn.AllowEdit = false;
+            this.colBARKODU.Visible = true;
+            this.colBARKODU.VisibleIndex = 16;
+            this.colBARKODU.Width = 135;
             // 
-            // groupControl1
+            // colBIRIMI
             // 
-            this.groupControl1.Controls.Add(this.simpleButton2);
-            this.groupControl1.Controls.Add(this.groupControl3);
-            this.groupControl1.Controls.Add(this.lblDegisiklik);
-            this.groupControl1.Controls.Add(this.txtFaturaOnayla);
-            this.groupControl1.Controls.Add(this.btnTkrYazdir);
-            this.groupControl1.Controls.Add(this.btnYetkiVer);
-            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupControl1.Location = new System.Drawing.Point(0, 0);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1190, 63);
-            this.groupControl1.TabIndex = 1;
-            this.groupControl1.Text = "Filtreler";
+            this.colBIRIMI.Caption = "Birim";
+            this.colBIRIMI.FieldName = "BIRIMI";
+            this.colBIRIMI.Name = "colBIRIMI";
+            this.colBIRIMI.OptionsColumn.AllowEdit = false;
+            this.colBIRIMI.Width = 50;
             // 
-            // groupControl3
+            // colDEPO_ADI
             // 
-            this.groupControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.groupControl3.Controls.Add(this.btnFiltre);
-            this.groupControl3.Controls.Add(this.txtBeden);
-            this.groupControl3.Controls.Add(this.labelControl3);
-            this.groupControl3.Controls.Add(this.txtRenk);
-            this.groupControl3.Controls.Add(this.labelControl2);
-            this.groupControl3.Controls.Add(this.txtStokKodu);
-            this.groupControl3.Controls.Add(this.labelControl1);
-            this.groupControl3.Controls.Add(this.txtKullanici);
-            this.groupControl3.Controls.Add(this.labelControl4);
-            this.groupControl3.Location = new System.Drawing.Point(5, 21);
-            this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(661, 24);
-            this.groupControl3.TabIndex = 11;
+            this.colDEPO_ADI.Caption = "Depo";
+            this.colDEPO_ADI.FieldName = "DEPO_ADI";
+            this.colDEPO_ADI.Name = "colDEPO_ADI";
+            this.colDEPO_ADI.OptionsColumn.AllowEdit = false;
+            this.colDEPO_ADI.Width = 50;
             // 
-            // btnFiltre
+            // colrenk
             // 
-            this.btnFiltre.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFiltre.Location = new System.Drawing.Point(578, 0);
-            this.btnFiltre.Name = "btnFiltre";
-            this.btnFiltre.Size = new System.Drawing.Size(83, 22);
-            this.btnFiltre.TabIndex = 9;
-            this.btnFiltre.Text = "Filtrele";
-            this.btnFiltre.Click += new System.EventHandler(this.btnFiltre_Click);
+            this.colrenk.Caption = "Renk";
+            this.colrenk.FieldName = "renk";
+            this.colrenk.Name = "colrenk";
+            this.colrenk.OptionsColumn.AllowEdit = false;
+            this.colrenk.Width = 41;
             // 
-            // txtBeden
+            // colbeden
             // 
-            this.txtBeden.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txtBeden.Location = new System.Drawing.Point(502, 0);
-            this.txtBeden.Name = "txtBeden";
-            this.txtBeden.Size = new System.Drawing.Size(76, 22);
-            this.txtBeden.TabIndex = 8;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Options.UseTextOptions = true;
-            this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelControl3.Location = new System.Drawing.Point(453, 0);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(49, 24);
-            this.labelControl3.TabIndex = 6;
-            this.labelControl3.Text = "Beden :";
-            // 
-            // txtRenk
-            // 
-            this.txtRenk.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txtRenk.Location = new System.Drawing.Point(376, 0);
-            this.txtRenk.Name = "txtRenk";
-            this.txtRenk.Size = new System.Drawing.Size(77, 22);
-            this.txtRenk.TabIndex = 8;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Options.UseTextOptions = true;
-            this.labelControl2.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelControl2.Location = new System.Drawing.Point(331, 0);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(45, 24);
-            this.labelControl2.TabIndex = 6;
-            this.labelControl2.Text = "Renk :";
-            // 
-            // txtStokKodu
-            // 
-            this.txtStokKodu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txtStokKodu.Location = new System.Drawing.Point(242, 0);
-            this.txtStokKodu.Name = "txtStokKodu";
-            this.txtStokKodu.Size = new System.Drawing.Size(89, 22);
-            this.txtStokKodu.TabIndex = 8;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelControl1.Location = new System.Drawing.Point(179, 0);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(63, 24);
-            this.labelControl1.TabIndex = 6;
-            this.labelControl1.Text = "Stok Kodu :";
-            // 
-            // txtKullanici
-            // 
-            this.txtKullanici.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txtKullanici.Location = new System.Drawing.Point(79, 0);
-            this.txtKullanici.Name = "txtKullanici";
-            this.txtKullanici.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtKullanici.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.txtKullanici.Size = new System.Drawing.Size(100, 22);
-            this.txtKullanici.TabIndex = 5;
-            this.txtKullanici.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txtKullanici_ButtonClick);
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelControl4.Location = new System.Drawing.Point(0, 0);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(79, 24);
-            this.labelControl4.TabIndex = 6;
-            this.labelControl4.Text = "Toplayıcı Seç :";
-            // 
-            // lblDegisiklik
-            // 
-            this.lblDegisiklik.Appearance.Options.UseTextOptions = true;
-            this.lblDegisiklik.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.lblDegisiklik.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.lblDegisiklik.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblDegisiklik.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.lblDegisiklik.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblDegisiklik.Location = new System.Drawing.Point(682, 22);
-            this.lblDegisiklik.Name = "lblDegisiklik";
-            this.lblDegisiklik.Size = new System.Drawing.Size(95, 39);
-            this.lblDegisiklik.TabIndex = 6;
-            this.lblDegisiklik.Text = "ATANMAYAN FATURALAR";
-            // 
-            // txtFaturaOnayla
-            // 
-            this.txtFaturaOnayla.Dock = System.Windows.Forms.DockStyle.Right;
-            this.txtFaturaOnayla.Enabled = false;
-            this.txtFaturaOnayla.Location = new System.Drawing.Point(777, 22);
-            this.txtFaturaOnayla.Name = "txtFaturaOnayla";
-            this.txtFaturaOnayla.Size = new System.Drawing.Size(127, 39);
-            this.txtFaturaOnayla.TabIndex = 10;
-            this.txtFaturaOnayla.Text = "Faturaları Onayla";
-            this.txtFaturaOnayla.Click += new System.EventHandler(this.txtFaturaOnayla_Click);
-            // 
-            // btnTkrYazdir
-            // 
-            this.btnTkrYazdir.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnTkrYazdir.Enabled = false;
-            this.btnTkrYazdir.Location = new System.Drawing.Point(904, 22);
-            this.btnTkrYazdir.Name = "btnTkrYazdir";
-            this.btnTkrYazdir.Size = new System.Drawing.Size(140, 39);
-            this.btnTkrYazdir.TabIndex = 7;
-            this.btnTkrYazdir.Text = "Tekrar Yazdır";
-            this.btnTkrYazdir.Click += new System.EventHandler(this.btnTkrYazdir_Click);
-            // 
-            // btnYetkiVer
-            // 
-            this.btnYetkiVer.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnYetkiVer.Location = new System.Drawing.Point(1044, 22);
-            this.btnYetkiVer.Name = "btnYetkiVer";
-            this.btnYetkiVer.Size = new System.Drawing.Size(144, 39);
-            this.btnYetkiVer.TabIndex = 4;
-            this.btnYetkiVer.Text = "Toplayıcıya Aktar\r\nYazdır";
-            this.btnYetkiVer.Click += new System.EventHandler(this.btnYetkiVer_Click);
-            // 
-            // groupControl2
-            // 
-            this.groupControl2.Controls.Add(this.gridControl2);
-            this.groupControl2.Controls.Add(this.simpleButton1);
-            this.groupControl2.Controls.Add(this.btnSiparisler);
-            this.groupControl2.Controls.Add(this.btnToplayici);
-            this.groupControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl2.Location = new System.Drawing.Point(0, 475);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1190, 180);
-            this.groupControl2.TabIndex = 2;
-            this.groupControl2.Text = "Menü";
-            // 
-            // gridControl2
-            // 
-            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl2.Location = new System.Drawing.Point(169, 22);
-            this.gridControl2.MainView = this.gridView2;
-            this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(944, 156);
-            this.gridControl2.TabIndex = 3;
-            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView2});
-            // 
-            // gridView2
-            // 
-            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colBLKODU2,
-            this.colBLMASKODU,
-            this.colBLSTKODU,
-            this.colSTOKKODU,
-            this.colSTOK_ADI,
-            this.colBIRIMI,
-            this.colBIRIMI_2,
-            this.colMIKTARI,
-            this.colMIKTARI_2,
-            this.colKPB_FIYATI,
-            this.colKPB_KDV_HARICFY,
-            this.colKPB_IND_FIYAT,
-            this.colKPB_ARA_TUTAR,
-            this.colKPB_IND_TUTAR,
-            this.colDVZ_FIYATI,
-            this.colDVZ_KDV_HARICFY,
-            this.colDVZ_IND_FIYAT,
-            this.colDVZ_ARA_TUTAR,
-            this.colDVZ_IND_TUTAR,
-            this.colDOVIZ_BIRIMI1,
-            this.colBIRIM_CARPANI,
-            this.colISK_ORAN_CARI1,
-            this.colISK_TUTAR_CARI1,
-            this.colISK_SNTUTAR_CARI,
-            this.colISK_ORAN_11,
-            this.colISK_TUTAR_11,
-            this.colISK_SNTUTAR_1,
-            this.colISK_ORAN_21,
-            this.colISK_TUTAR_21,
-            this.colISK_SNTUTAR_2,
-            this.colISK_ORAN_31,
-            this.colISK_TUTAR_31,
-            this.colISK_SNTUTAR_3,
-            this.colISK_ORAN_STOK,
-            this.colISK_TUTAR_STOK1,
-            this.colISK_OZEL,
-            this.colISK_SNTUTAR_OZEL,
-            this.colISK_ARATUTAR,
-            this.colKDV_ORANI1,
-            this.colKDV_TUTARI,
-            this.colKPB_TOPLAM_TUTAR,
-            this.colKPB_KDVLI_TUTAR,
-            this.colDVZ_TOPLAM_TUTAR,
-            this.colDVZ_KDVLI_TUTAR,
-            this.colMUH_KODU_GENEL,
-            this.colOZEL_KODU1,
-            this.colEKBILGI_11,
-            this.colEKBILGI_21,
-            this.colEKBILGI_3,
-            this.colEKBILGI_4,
-            this.colISK_SNTUTAR_STOK,
-            this.colPAZ_PERSONEL1,
-            this.colPAZ_PERS_BLKODU1,
-            this.colPAZ_URUN_TUTARI1,
-            this.colPAZ_URUN_ORANI1,
-            this.colPAZ_ISC_ORANI1,
-            this.colPAZ_ISC_TUTARI1,
-            this.colBARKODU,
-            this.colVADE_GUNU,
-            this.colBLHZMKODU,
-            this.colBIRIMLER,
-            this.colKPBDVZ1,
-            this.colANA_STOKKODU,
-            this.colISK_TUTAR_CARI_DVZ1,
-            this.colISK_SNTUTAR_CARI_DVZ,
-            this.colISK_TUTAR_1_DVZ1,
-            this.colISK_SNTUTAR_1_DVZ,
-            this.colISK_TUTAR_2_DVZ1,
-            this.colISK_SNTUTAR_2_DVZ,
-            this.colISK_TUTAR_3_DVZ1,
-            this.colISK_SNTUTAR_3_DVZ,
-            this.colISK_TUTAR_STOK_DVZ1,
-            this.colISK_OZEL_DVZ,
-            this.colISK_SNTUTAR_OZEL_DVZ,
-            this.colISK_SNTUTAR_STOK_DVZ,
-            this.colDEPO_ADI,
-            this.colMIKTARI_TESLIM,
-            this.colMIKTARI_IPTAL,
-            this.colMIKTARI_KALAN,
-            this.colASORTI_HRK,
-            this.colASORTI_MIKTARI,
-            this.colKDV_DURUMU1,
-            this.colSIRA_NO,
-            this.colBLMRPEMIRKODU,
-            this.colPAZ_ISC_TUTARI_DVZ1,
-            this.colPAZ_URUN_TUTARI_DVZ1,
-            this.colDOVIZ_ALIS,
-            this.colDOVIZ_SATIS,
-            this.colPAZ_URUN_BF,
-            this.colKPB_FIYATI_2,
-            this.colSERINO_KULLAN,
-            this.colSTOK_ADI_YD,
-            this.colEK_DETAY_TUTARI,
-            this.colEK_DETAY_HESABI,
-            this.colBLEKOZELLIK_KODU,
-            this.colDVZ_FIYATI_2,
-            this.colBLBURTKODU,
-            this.colOFFLINE_GUID1,
-            this.colSTOK_BLOKE1,
-            this.colBLITHALATKODU1,
-            this.colGENEL_BLOB,
-            this.colDEPOZITO_BLSTKODU,
-            this.colDEPOZITO_BLMASTERKODU,
-            this.colBLPAKETKODU,
-            this.colONAY});
-            this.gridView2.GridControl = this.gridControl2;
-            this.gridView2.Name = "gridView2";
-            // 
-            // colBLKODU2
-            // 
-            this.colBLKODU2.FieldName = "BLKODU";
-            this.colBLKODU2.Name = "colBLKODU2";
-            this.colBLKODU2.OptionsColumn.AllowEdit = false;
-            // 
-            // colBLMASKODU
-            // 
-            this.colBLMASKODU.FieldName = "BLMASKODU";
-            this.colBLMASKODU.Name = "colBLMASKODU";
-            this.colBLMASKODU.OptionsColumn.AllowEdit = false;
-            // 
-            // colBLSTKODU
-            // 
-            this.colBLSTKODU.FieldName = "BLSTKODU";
-            this.colBLSTKODU.Name = "colBLSTKODU";
-            this.colBLSTKODU.OptionsColumn.AllowEdit = false;
-            // 
-            // colSTOKKODU
-            // 
-            this.colSTOKKODU.Caption = "Stok Kodu";
-            this.colSTOKKODU.FieldName = "STOKKODU";
-            this.colSTOKKODU.Name = "colSTOKKODU";
-            this.colSTOKKODU.OptionsColumn.AllowEdit = false;
-            this.colSTOKKODU.Visible = true;
-            this.colSTOKKODU.VisibleIndex = 1;
-            this.colSTOKKODU.Width = 84;
+            this.colbeden.Caption = "Beden";
+            this.colbeden.FieldName = "beden";
+            this.colbeden.Name = "colbeden";
+            this.colbeden.OptionsColumn.AllowEdit = false;
+            this.colbeden.Width = 46;
             // 
             // colSTOK_ADI
             // 
-            this.colSTOK_ADI.Caption = "Stok Adı";
+            this.colSTOK_ADI.Caption = "StokAdı";
             this.colSTOK_ADI.FieldName = "STOK_ADI";
             this.colSTOK_ADI.Name = "colSTOK_ADI";
             this.colSTOK_ADI.OptionsColumn.AllowEdit = false;
             this.colSTOK_ADI.Visible = true;
-            this.colSTOK_ADI.VisibleIndex = 2;
-            this.colSTOK_ADI.Width = 334;
+            this.colSTOK_ADI.VisibleIndex = 14;
+            this.colSTOK_ADI.Width = 236;
             // 
-            // colBIRIMI
+            // colSTOKKODU
             // 
-            this.colBIRIMI.Caption = "Birimi";
-            this.colBIRIMI.FieldName = "BIRIMI";
-            this.colBIRIMI.Name = "colBIRIMI";
-            this.colBIRIMI.OptionsColumn.AllowEdit = false;
-            this.colBIRIMI.Visible = true;
-            this.colBIRIMI.VisibleIndex = 3;
-            this.colBIRIMI.Width = 62;
-            // 
-            // colBIRIMI_2
-            // 
-            this.colBIRIMI_2.Caption = "Birimi2";
-            this.colBIRIMI_2.FieldName = "BIRIMI_2";
-            this.colBIRIMI_2.Name = "colBIRIMI_2";
-            this.colBIRIMI_2.OptionsColumn.AllowEdit = false;
-            this.colBIRIMI_2.Visible = true;
-            this.colBIRIMI_2.VisibleIndex = 4;
-            this.colBIRIMI_2.Width = 62;
-            // 
-            // colMIKTARI
-            // 
-            this.colMIKTARI.Caption = "Mıiktarı";
-            this.colMIKTARI.FieldName = "MIKTARI";
-            this.colMIKTARI.Name = "colMIKTARI";
-            this.colMIKTARI.OptionsColumn.AllowEdit = false;
-            this.colMIKTARI.Visible = true;
-            this.colMIKTARI.VisibleIndex = 6;
-            this.colMIKTARI.Width = 57;
-            // 
-            // colMIKTARI_2
-            // 
-            this.colMIKTARI_2.Caption = "Miktarı";
-            this.colMIKTARI_2.FieldName = "MIKTARI_2";
-            this.colMIKTARI_2.Name = "colMIKTARI_2";
-            this.colMIKTARI_2.OptionsColumn.AllowEdit = false;
-            this.colMIKTARI_2.Visible = true;
-            this.colMIKTARI_2.VisibleIndex = 5;
-            this.colMIKTARI_2.Width = 57;
+            this.colSTOKKODU.Caption = "StokKodu";
+            this.colSTOKKODU.FieldName = "STOKKODU";
+            this.colSTOKKODU.Name = "colSTOKKODU";
+            this.colSTOKKODU.OptionsColumn.AllowEdit = false;
+            this.colSTOKKODU.Visible = true;
+            this.colSTOKKODU.VisibleIndex = 15;
+            this.colSTOKKODU.Width = 161;
             // 
             // colKPB_FIYATI
             // 
-            this.colKPB_FIYATI.Caption = "KPB Fıyatı";
+            this.colKPB_FIYATI.Caption = "Fiyatı";
             this.colKPB_FIYATI.FieldName = "KPB_FIYATI";
             this.colKPB_FIYATI.Name = "colKPB_FIYATI";
             this.colKPB_FIYATI.OptionsColumn.AllowEdit = false;
-            this.colKPB_FIYATI.Visible = true;
-            this.colKPB_FIYATI.VisibleIndex = 8;
-            this.colKPB_FIYATI.Width = 55;
-            // 
-            // colKPB_KDV_HARICFY
-            // 
-            this.colKPB_KDV_HARICFY.Caption = "KPB K.H Fiyat";
-            this.colKPB_KDV_HARICFY.FieldName = "KPB_KDV_HARICFY";
-            this.colKPB_KDV_HARICFY.Name = "colKPB_KDV_HARICFY";
-            this.colKPB_KDV_HARICFY.OptionsColumn.AllowEdit = false;
-            this.colKPB_KDV_HARICFY.Visible = true;
-            this.colKPB_KDV_HARICFY.VisibleIndex = 7;
-            this.colKPB_KDV_HARICFY.Width = 64;
-            // 
-            // colKPB_IND_FIYAT
-            // 
-            this.colKPB_IND_FIYAT.Caption = "KPB İnd Fiyat";
-            this.colKPB_IND_FIYAT.FieldName = "KPB_IND_FIYAT";
-            this.colKPB_IND_FIYAT.Name = "colKPB_IND_FIYAT";
-            this.colKPB_IND_FIYAT.OptionsColumn.AllowEdit = false;
-            this.colKPB_IND_FIYAT.Visible = true;
-            this.colKPB_IND_FIYAT.VisibleIndex = 9;
-            this.colKPB_IND_FIYAT.Width = 66;
-            // 
-            // colKPB_ARA_TUTAR
-            // 
-            this.colKPB_ARA_TUTAR.Caption = "KPB Ara Tutar";
-            this.colKPB_ARA_TUTAR.FieldName = "KPB_ARA_TUTAR";
-            this.colKPB_ARA_TUTAR.Name = "colKPB_ARA_TUTAR";
-            this.colKPB_ARA_TUTAR.OptionsColumn.AllowEdit = false;
-            this.colKPB_ARA_TUTAR.Visible = true;
-            this.colKPB_ARA_TUTAR.VisibleIndex = 10;
-            this.colKPB_ARA_TUTAR.Width = 70;
+            this.colKPB_FIYATI.Width = 47;
             // 
             // colKPB_IND_TUTAR
             // 
-            this.colKPB_IND_TUTAR.Caption = "KPB İnd Tutar";
+            this.colKPB_IND_TUTAR.Caption = "İnd.Tutar";
             this.colKPB_IND_TUTAR.FieldName = "KPB_IND_TUTAR";
             this.colKPB_IND_TUTAR.Name = "colKPB_IND_TUTAR";
             this.colKPB_IND_TUTAR.OptionsColumn.AllowEdit = false;
-            this.colKPB_IND_TUTAR.Visible = true;
-            this.colKPB_IND_TUTAR.VisibleIndex = 11;
-            this.colKPB_IND_TUTAR.Width = 66;
-            // 
-            // colDVZ_FIYATI
-            // 
-            this.colDVZ_FIYATI.FieldName = "DVZ_FIYATI";
-            this.colDVZ_FIYATI.Name = "colDVZ_FIYATI";
-            this.colDVZ_FIYATI.OptionsColumn.AllowEdit = false;
-            // 
-            // colDVZ_KDV_HARICFY
-            // 
-            this.colDVZ_KDV_HARICFY.FieldName = "DVZ_KDV_HARICFY";
-            this.colDVZ_KDV_HARICFY.Name = "colDVZ_KDV_HARICFY";
-            this.colDVZ_KDV_HARICFY.OptionsColumn.AllowEdit = false;
-            // 
-            // colDVZ_IND_FIYAT
-            // 
-            this.colDVZ_IND_FIYAT.FieldName = "DVZ_IND_FIYAT";
-            this.colDVZ_IND_FIYAT.Name = "colDVZ_IND_FIYAT";
-            this.colDVZ_IND_FIYAT.OptionsColumn.AllowEdit = false;
-            // 
-            // colDVZ_ARA_TUTAR
-            // 
-            this.colDVZ_ARA_TUTAR.FieldName = "DVZ_ARA_TUTAR";
-            this.colDVZ_ARA_TUTAR.Name = "colDVZ_ARA_TUTAR";
-            this.colDVZ_ARA_TUTAR.OptionsColumn.AllowEdit = false;
-            // 
-            // colDVZ_IND_TUTAR
-            // 
-            this.colDVZ_IND_TUTAR.FieldName = "DVZ_IND_TUTAR";
-            this.colDVZ_IND_TUTAR.Name = "colDVZ_IND_TUTAR";
-            this.colDVZ_IND_TUTAR.OptionsColumn.AllowEdit = false;
-            // 
-            // colDOVIZ_BIRIMI1
-            // 
-            this.colDOVIZ_BIRIMI1.FieldName = "DOVIZ_BIRIMI";
-            this.colDOVIZ_BIRIMI1.Name = "colDOVIZ_BIRIMI1";
-            this.colDOVIZ_BIRIMI1.OptionsColumn.AllowEdit = false;
-            // 
-            // colBIRIM_CARPANI
-            // 
-            this.colBIRIM_CARPANI.FieldName = "BIRIM_CARPANI";
-            this.colBIRIM_CARPANI.Name = "colBIRIM_CARPANI";
-            this.colBIRIM_CARPANI.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_ORAN_CARI1
-            // 
-            this.colISK_ORAN_CARI1.FieldName = "ISK_ORAN_CARI";
-            this.colISK_ORAN_CARI1.Name = "colISK_ORAN_CARI1";
-            this.colISK_ORAN_CARI1.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_TUTAR_CARI1
-            // 
-            this.colISK_TUTAR_CARI1.FieldName = "ISK_TUTAR_CARI";
-            this.colISK_TUTAR_CARI1.Name = "colISK_TUTAR_CARI1";
-            this.colISK_TUTAR_CARI1.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_SNTUTAR_CARI
-            // 
-            this.colISK_SNTUTAR_CARI.FieldName = "ISK_SNTUTAR_CARI";
-            this.colISK_SNTUTAR_CARI.Name = "colISK_SNTUTAR_CARI";
-            this.colISK_SNTUTAR_CARI.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_ORAN_11
-            // 
-            this.colISK_ORAN_11.FieldName = "ISK_ORAN_1";
-            this.colISK_ORAN_11.Name = "colISK_ORAN_11";
-            this.colISK_ORAN_11.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_TUTAR_11
-            // 
-            this.colISK_TUTAR_11.FieldName = "ISK_TUTAR_1";
-            this.colISK_TUTAR_11.Name = "colISK_TUTAR_11";
-            this.colISK_TUTAR_11.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_SNTUTAR_1
-            // 
-            this.colISK_SNTUTAR_1.FieldName = "ISK_SNTUTAR_1";
-            this.colISK_SNTUTAR_1.Name = "colISK_SNTUTAR_1";
-            this.colISK_SNTUTAR_1.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_ORAN_21
-            // 
-            this.colISK_ORAN_21.FieldName = "ISK_ORAN_2";
-            this.colISK_ORAN_21.Name = "colISK_ORAN_21";
-            this.colISK_ORAN_21.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_TUTAR_21
-            // 
-            this.colISK_TUTAR_21.FieldName = "ISK_TUTAR_2";
-            this.colISK_TUTAR_21.Name = "colISK_TUTAR_21";
-            this.colISK_TUTAR_21.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_SNTUTAR_2
-            // 
-            this.colISK_SNTUTAR_2.FieldName = "ISK_SNTUTAR_2";
-            this.colISK_SNTUTAR_2.Name = "colISK_SNTUTAR_2";
-            this.colISK_SNTUTAR_2.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_ORAN_31
-            // 
-            this.colISK_ORAN_31.FieldName = "ISK_ORAN_3";
-            this.colISK_ORAN_31.Name = "colISK_ORAN_31";
-            this.colISK_ORAN_31.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_TUTAR_31
-            // 
-            this.colISK_TUTAR_31.FieldName = "ISK_TUTAR_3";
-            this.colISK_TUTAR_31.Name = "colISK_TUTAR_31";
-            this.colISK_TUTAR_31.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_SNTUTAR_3
-            // 
-            this.colISK_SNTUTAR_3.FieldName = "ISK_SNTUTAR_3";
-            this.colISK_SNTUTAR_3.Name = "colISK_SNTUTAR_3";
-            this.colISK_SNTUTAR_3.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_ORAN_STOK
-            // 
-            this.colISK_ORAN_STOK.FieldName = "ISK_ORAN_STOK";
-            this.colISK_ORAN_STOK.Name = "colISK_ORAN_STOK";
-            this.colISK_ORAN_STOK.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_TUTAR_STOK1
-            // 
-            this.colISK_TUTAR_STOK1.FieldName = "ISK_TUTAR_STOK";
-            this.colISK_TUTAR_STOK1.Name = "colISK_TUTAR_STOK1";
-            this.colISK_TUTAR_STOK1.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_OZEL
-            // 
-            this.colISK_OZEL.FieldName = "ISK_OZEL";
-            this.colISK_OZEL.Name = "colISK_OZEL";
-            this.colISK_OZEL.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_SNTUTAR_OZEL
-            // 
-            this.colISK_SNTUTAR_OZEL.FieldName = "ISK_SNTUTAR_OZEL";
-            this.colISK_SNTUTAR_OZEL.Name = "colISK_SNTUTAR_OZEL";
-            this.colISK_SNTUTAR_OZEL.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_ARATUTAR
-            // 
-            this.colISK_ARATUTAR.FieldName = "ISK_ARATUTAR";
-            this.colISK_ARATUTAR.Name = "colISK_ARATUTAR";
-            this.colISK_ARATUTAR.OptionsColumn.AllowEdit = false;
-            // 
-            // colKDV_ORANI1
-            // 
-            this.colKDV_ORANI1.FieldName = "KDV_ORANI";
-            this.colKDV_ORANI1.Name = "colKDV_ORANI1";
-            this.colKDV_ORANI1.OptionsColumn.AllowEdit = false;
-            // 
-            // colKDV_TUTARI
-            // 
-            this.colKDV_TUTARI.Caption = "Kdv Tutarı";
-            this.colKDV_TUTARI.FieldName = "KDV_TUTARI";
-            this.colKDV_TUTARI.Name = "colKDV_TUTARI";
-            this.colKDV_TUTARI.OptionsColumn.AllowEdit = false;
-            this.colKDV_TUTARI.Visible = true;
-            this.colKDV_TUTARI.VisibleIndex = 12;
-            this.colKDV_TUTARI.Width = 50;
-            // 
-            // colKPB_TOPLAM_TUTAR
-            // 
-            this.colKPB_TOPLAM_TUTAR.Caption = "KPB Toplam Tutar";
-            this.colKPB_TOPLAM_TUTAR.FieldName = "KPB_TOPLAM_TUTAR";
-            this.colKPB_TOPLAM_TUTAR.Name = "colKPB_TOPLAM_TUTAR";
-            this.colKPB_TOPLAM_TUTAR.OptionsColumn.AllowEdit = false;
-            this.colKPB_TOPLAM_TUTAR.Visible = true;
-            this.colKPB_TOPLAM_TUTAR.VisibleIndex = 14;
-            this.colKPB_TOPLAM_TUTAR.Width = 95;
+            this.colKPB_IND_TUTAR.Width = 47;
             // 
             // colKPB_KDVLI_TUTAR
             // 
-            this.colKPB_KDVLI_TUTAR.Caption = "KPB KDV\'li tutar";
+            this.colKPB_KDVLI_TUTAR.Caption = "KDVliTutar";
             this.colKPB_KDVLI_TUTAR.FieldName = "KPB_KDVLI_TUTAR";
             this.colKPB_KDVLI_TUTAR.Name = "colKPB_KDVLI_TUTAR";
             this.colKPB_KDVLI_TUTAR.OptionsColumn.AllowEdit = false;
-            this.colKPB_KDVLI_TUTAR.Visible = true;
-            this.colKPB_KDVLI_TUTAR.VisibleIndex = 13;
-            this.colKPB_KDVLI_TUTAR.Width = 60;
-            // 
-            // colDVZ_TOPLAM_TUTAR
-            // 
-            this.colDVZ_TOPLAM_TUTAR.FieldName = "DVZ_TOPLAM_TUTAR";
-            this.colDVZ_TOPLAM_TUTAR.Name = "colDVZ_TOPLAM_TUTAR";
-            this.colDVZ_TOPLAM_TUTAR.OptionsColumn.AllowEdit = false;
-            // 
-            // colDVZ_KDVLI_TUTAR
-            // 
-            this.colDVZ_KDVLI_TUTAR.FieldName = "DVZ_KDVLI_TUTAR";
-            this.colDVZ_KDVLI_TUTAR.Name = "colDVZ_KDVLI_TUTAR";
-            this.colDVZ_KDVLI_TUTAR.OptionsColumn.AllowEdit = false;
-            // 
-            // colMUH_KODU_GENEL
-            // 
-            this.colMUH_KODU_GENEL.FieldName = "MUH_KODU_GENEL";
-            this.colMUH_KODU_GENEL.Name = "colMUH_KODU_GENEL";
-            this.colMUH_KODU_GENEL.OptionsColumn.AllowEdit = false;
-            // 
-            // colOZEL_KODU1
-            // 
-            this.colOZEL_KODU1.FieldName = "OZEL_KODU";
-            this.colOZEL_KODU1.Name = "colOZEL_KODU1";
-            this.colOZEL_KODU1.OptionsColumn.AllowEdit = false;
-            // 
-            // colEKBILGI_11
-            // 
-            this.colEKBILGI_11.FieldName = "EKBILGI_1";
-            this.colEKBILGI_11.Name = "colEKBILGI_11";
-            this.colEKBILGI_11.OptionsColumn.AllowEdit = false;
-            // 
-            // colEKBILGI_21
-            // 
-            this.colEKBILGI_21.FieldName = "EKBILGI_2";
-            this.colEKBILGI_21.Name = "colEKBILGI_21";
-            this.colEKBILGI_21.OptionsColumn.AllowEdit = false;
-            // 
-            // colEKBILGI_3
-            // 
-            this.colEKBILGI_3.FieldName = "EKBILGI_3";
-            this.colEKBILGI_3.Name = "colEKBILGI_3";
-            this.colEKBILGI_3.OptionsColumn.AllowEdit = false;
-            // 
-            // colEKBILGI_4
-            // 
-            this.colEKBILGI_4.FieldName = "EKBILGI_4";
-            this.colEKBILGI_4.Name = "colEKBILGI_4";
-            this.colEKBILGI_4.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_SNTUTAR_STOK
-            // 
-            this.colISK_SNTUTAR_STOK.FieldName = "ISK_SNTUTAR_STOK";
-            this.colISK_SNTUTAR_STOK.Name = "colISK_SNTUTAR_STOK";
-            this.colISK_SNTUTAR_STOK.OptionsColumn.AllowEdit = false;
-            // 
-            // colPAZ_PERSONEL1
-            // 
-            this.colPAZ_PERSONEL1.FieldName = "PAZ_PERSONEL";
-            this.colPAZ_PERSONEL1.Name = "colPAZ_PERSONEL1";
-            this.colPAZ_PERSONEL1.OptionsColumn.AllowEdit = false;
-            // 
-            // colPAZ_PERS_BLKODU1
-            // 
-            this.colPAZ_PERS_BLKODU1.FieldName = "PAZ_PERS_BLKODU";
-            this.colPAZ_PERS_BLKODU1.Name = "colPAZ_PERS_BLKODU1";
-            this.colPAZ_PERS_BLKODU1.OptionsColumn.AllowEdit = false;
-            // 
-            // colPAZ_URUN_TUTARI1
-            // 
-            this.colPAZ_URUN_TUTARI1.FieldName = "PAZ_URUN_TUTARI";
-            this.colPAZ_URUN_TUTARI1.Name = "colPAZ_URUN_TUTARI1";
-            this.colPAZ_URUN_TUTARI1.OptionsColumn.AllowEdit = false;
-            // 
-            // colPAZ_URUN_ORANI1
-            // 
-            this.colPAZ_URUN_ORANI1.FieldName = "PAZ_URUN_ORANI";
-            this.colPAZ_URUN_ORANI1.Name = "colPAZ_URUN_ORANI1";
-            this.colPAZ_URUN_ORANI1.OptionsColumn.AllowEdit = false;
-            // 
-            // colPAZ_ISC_ORANI1
-            // 
-            this.colPAZ_ISC_ORANI1.FieldName = "PAZ_ISC_ORANI";
-            this.colPAZ_ISC_ORANI1.Name = "colPAZ_ISC_ORANI1";
-            this.colPAZ_ISC_ORANI1.OptionsColumn.AllowEdit = false;
-            // 
-            // colPAZ_ISC_TUTARI1
-            // 
-            this.colPAZ_ISC_TUTARI1.FieldName = "PAZ_ISC_TUTARI";
-            this.colPAZ_ISC_TUTARI1.Name = "colPAZ_ISC_TUTARI1";
-            this.colPAZ_ISC_TUTARI1.OptionsColumn.AllowEdit = false;
-            // 
-            // colBARKODU
-            // 
-            this.colBARKODU.FieldName = "BARKODU";
-            this.colBARKODU.Name = "colBARKODU";
-            this.colBARKODU.OptionsColumn.AllowEdit = false;
-            // 
-            // colVADE_GUNU
-            // 
-            this.colVADE_GUNU.FieldName = "VADE_GUNU";
-            this.colVADE_GUNU.Name = "colVADE_GUNU";
-            this.colVADE_GUNU.OptionsColumn.AllowEdit = false;
-            // 
-            // colBLHZMKODU
-            // 
-            this.colBLHZMKODU.FieldName = "BLHZMKODU";
-            this.colBLHZMKODU.Name = "colBLHZMKODU";
-            this.colBLHZMKODU.OptionsColumn.AllowEdit = false;
-            // 
-            // colBIRIMLER
-            // 
-            this.colBIRIMLER.FieldName = "BIRIMLER";
-            this.colBIRIMLER.Name = "colBIRIMLER";
-            this.colBIRIMLER.OptionsColumn.AllowEdit = false;
-            // 
-            // colKPBDVZ1
-            // 
-            this.colKPBDVZ1.FieldName = "KPBDVZ";
-            this.colKPBDVZ1.Name = "colKPBDVZ1";
-            this.colKPBDVZ1.OptionsColumn.AllowEdit = false;
-            // 
-            // colANA_STOKKODU
-            // 
-            this.colANA_STOKKODU.FieldName = "ANA_STOKKODU";
-            this.colANA_STOKKODU.Name = "colANA_STOKKODU";
-            this.colANA_STOKKODU.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_TUTAR_CARI_DVZ1
-            // 
-            this.colISK_TUTAR_CARI_DVZ1.FieldName = "ISK_TUTAR_CARI_DVZ";
-            this.colISK_TUTAR_CARI_DVZ1.Name = "colISK_TUTAR_CARI_DVZ1";
-            this.colISK_TUTAR_CARI_DVZ1.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_SNTUTAR_CARI_DVZ
-            // 
-            this.colISK_SNTUTAR_CARI_DVZ.FieldName = "ISK_SNTUTAR_CARI_DVZ";
-            this.colISK_SNTUTAR_CARI_DVZ.Name = "colISK_SNTUTAR_CARI_DVZ";
-            this.colISK_SNTUTAR_CARI_DVZ.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_TUTAR_1_DVZ1
-            // 
-            this.colISK_TUTAR_1_DVZ1.FieldName = "ISK_TUTAR_1_DVZ";
-            this.colISK_TUTAR_1_DVZ1.Name = "colISK_TUTAR_1_DVZ1";
-            this.colISK_TUTAR_1_DVZ1.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_SNTUTAR_1_DVZ
-            // 
-            this.colISK_SNTUTAR_1_DVZ.FieldName = "ISK_SNTUTAR_1_DVZ";
-            this.colISK_SNTUTAR_1_DVZ.Name = "colISK_SNTUTAR_1_DVZ";
-            this.colISK_SNTUTAR_1_DVZ.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_TUTAR_2_DVZ1
-            // 
-            this.colISK_TUTAR_2_DVZ1.FieldName = "ISK_TUTAR_2_DVZ";
-            this.colISK_TUTAR_2_DVZ1.Name = "colISK_TUTAR_2_DVZ1";
-            this.colISK_TUTAR_2_DVZ1.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_SNTUTAR_2_DVZ
-            // 
-            this.colISK_SNTUTAR_2_DVZ.FieldName = "ISK_SNTUTAR_2_DVZ";
-            this.colISK_SNTUTAR_2_DVZ.Name = "colISK_SNTUTAR_2_DVZ";
-            this.colISK_SNTUTAR_2_DVZ.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_TUTAR_3_DVZ1
-            // 
-            this.colISK_TUTAR_3_DVZ1.FieldName = "ISK_TUTAR_3_DVZ";
-            this.colISK_TUTAR_3_DVZ1.Name = "colISK_TUTAR_3_DVZ1";
-            this.colISK_TUTAR_3_DVZ1.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_SNTUTAR_3_DVZ
-            // 
-            this.colISK_SNTUTAR_3_DVZ.FieldName = "ISK_SNTUTAR_3_DVZ";
-            this.colISK_SNTUTAR_3_DVZ.Name = "colISK_SNTUTAR_3_DVZ";
-            this.colISK_SNTUTAR_3_DVZ.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_TUTAR_STOK_DVZ1
-            // 
-            this.colISK_TUTAR_STOK_DVZ1.FieldName = "ISK_TUTAR_STOK_DVZ";
-            this.colISK_TUTAR_STOK_DVZ1.Name = "colISK_TUTAR_STOK_DVZ1";
-            this.colISK_TUTAR_STOK_DVZ1.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_OZEL_DVZ
-            // 
-            this.colISK_OZEL_DVZ.FieldName = "ISK_OZEL_DVZ";
-            this.colISK_OZEL_DVZ.Name = "colISK_OZEL_DVZ";
-            this.colISK_OZEL_DVZ.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_SNTUTAR_OZEL_DVZ
-            // 
-            this.colISK_SNTUTAR_OZEL_DVZ.FieldName = "ISK_SNTUTAR_OZEL_DVZ";
-            this.colISK_SNTUTAR_OZEL_DVZ.Name = "colISK_SNTUTAR_OZEL_DVZ";
-            this.colISK_SNTUTAR_OZEL_DVZ.OptionsColumn.AllowEdit = false;
-            // 
-            // colISK_SNTUTAR_STOK_DVZ
-            // 
-            this.colISK_SNTUTAR_STOK_DVZ.FieldName = "ISK_SNTUTAR_STOK_DVZ";
-            this.colISK_SNTUTAR_STOK_DVZ.Name = "colISK_SNTUTAR_STOK_DVZ";
-            this.colISK_SNTUTAR_STOK_DVZ.OptionsColumn.AllowEdit = false;
-            // 
-            // colDEPO_ADI
-            // 
-            this.colDEPO_ADI.FieldName = "DEPO_ADI";
-            this.colDEPO_ADI.Name = "colDEPO_ADI";
-            this.colDEPO_ADI.OptionsColumn.AllowEdit = false;
-            // 
-            // colMIKTARI_TESLIM
-            // 
-            this.colMIKTARI_TESLIM.FieldName = "MIKTARI_TESLIM";
-            this.colMIKTARI_TESLIM.Name = "colMIKTARI_TESLIM";
-            this.colMIKTARI_TESLIM.OptionsColumn.AllowEdit = false;
-            // 
-            // colMIKTARI_IPTAL
-            // 
-            this.colMIKTARI_IPTAL.FieldName = "MIKTARI_IPTAL";
-            this.colMIKTARI_IPTAL.Name = "colMIKTARI_IPTAL";
-            this.colMIKTARI_IPTAL.OptionsColumn.AllowEdit = false;
-            // 
-            // colMIKTARI_KALAN
-            // 
-            this.colMIKTARI_KALAN.FieldName = "MIKTARI_KALAN";
-            this.colMIKTARI_KALAN.Name = "colMIKTARI_KALAN";
-            this.colMIKTARI_KALAN.OptionsColumn.AllowEdit = false;
-            // 
-            // colASORTI_HRK
-            // 
-            this.colASORTI_HRK.FieldName = "ASORTI_HRK";
-            this.colASORTI_HRK.Name = "colASORTI_HRK";
-            this.colASORTI_HRK.OptionsColumn.AllowEdit = false;
-            // 
-            // colASORTI_MIKTARI
-            // 
-            this.colASORTI_MIKTARI.FieldName = "ASORTI_MIKTARI";
-            this.colASORTI_MIKTARI.Name = "colASORTI_MIKTARI";
-            this.colASORTI_MIKTARI.OptionsColumn.AllowEdit = false;
-            // 
-            // colKDV_DURUMU1
-            // 
-            this.colKDV_DURUMU1.FieldName = "KDV_DURUMU";
-            this.colKDV_DURUMU1.Name = "colKDV_DURUMU1";
-            this.colKDV_DURUMU1.OptionsColumn.AllowEdit = false;
-            // 
-            // colSIRA_NO
-            // 
-            this.colSIRA_NO.FieldName = "SIRA_NO";
-            this.colSIRA_NO.Name = "colSIRA_NO";
-            this.colSIRA_NO.OptionsColumn.AllowEdit = false;
-            // 
-            // colBLMRPEMIRKODU
-            // 
-            this.colBLMRPEMIRKODU.FieldName = "BLMRPEMIRKODU";
-            this.colBLMRPEMIRKODU.Name = "colBLMRPEMIRKODU";
-            this.colBLMRPEMIRKODU.OptionsColumn.AllowEdit = false;
-            // 
-            // colPAZ_ISC_TUTARI_DVZ1
-            // 
-            this.colPAZ_ISC_TUTARI_DVZ1.FieldName = "PAZ_ISC_TUTARI_DVZ";
-            this.colPAZ_ISC_TUTARI_DVZ1.Name = "colPAZ_ISC_TUTARI_DVZ1";
-            this.colPAZ_ISC_TUTARI_DVZ1.OptionsColumn.AllowEdit = false;
-            // 
-            // colPAZ_URUN_TUTARI_DVZ1
-            // 
-            this.colPAZ_URUN_TUTARI_DVZ1.FieldName = "PAZ_URUN_TUTARI_DVZ";
-            this.colPAZ_URUN_TUTARI_DVZ1.Name = "colPAZ_URUN_TUTARI_DVZ1";
-            this.colPAZ_URUN_TUTARI_DVZ1.OptionsColumn.AllowEdit = false;
-            // 
-            // colDOVIZ_ALIS
-            // 
-            this.colDOVIZ_ALIS.FieldName = "DOVIZ_ALIS";
-            this.colDOVIZ_ALIS.Name = "colDOVIZ_ALIS";
-            this.colDOVIZ_ALIS.OptionsColumn.AllowEdit = false;
-            // 
-            // colDOVIZ_SATIS
-            // 
-            this.colDOVIZ_SATIS.FieldName = "DOVIZ_SATIS";
-            this.colDOVIZ_SATIS.Name = "colDOVIZ_SATIS";
-            this.colDOVIZ_SATIS.OptionsColumn.AllowEdit = false;
-            // 
-            // colPAZ_URUN_BF
-            // 
-            this.colPAZ_URUN_BF.FieldName = "PAZ_URUN_BF";
-            this.colPAZ_URUN_BF.Name = "colPAZ_URUN_BF";
-            this.colPAZ_URUN_BF.OptionsColumn.AllowEdit = false;
-            // 
-            // colKPB_FIYATI_2
-            // 
-            this.colKPB_FIYATI_2.FieldName = "KPB_FIYATI_2";
-            this.colKPB_FIYATI_2.Name = "colKPB_FIYATI_2";
-            this.colKPB_FIYATI_2.OptionsColumn.AllowEdit = false;
-            // 
-            // colSERINO_KULLAN
-            // 
-            this.colSERINO_KULLAN.FieldName = "SERINO_KULLAN";
-            this.colSERINO_KULLAN.Name = "colSERINO_KULLAN";
-            this.colSERINO_KULLAN.OptionsColumn.AllowEdit = false;
-            // 
-            // colSTOK_ADI_YD
-            // 
-            this.colSTOK_ADI_YD.FieldName = "STOK_ADI_YD";
-            this.colSTOK_ADI_YD.Name = "colSTOK_ADI_YD";
-            this.colSTOK_ADI_YD.OptionsColumn.AllowEdit = false;
-            // 
-            // colEK_DETAY_TUTARI
-            // 
-            this.colEK_DETAY_TUTARI.FieldName = "EK_DETAY_TUTARI";
-            this.colEK_DETAY_TUTARI.Name = "colEK_DETAY_TUTARI";
-            this.colEK_DETAY_TUTARI.OptionsColumn.AllowEdit = false;
-            // 
-            // colEK_DETAY_HESABI
-            // 
-            this.colEK_DETAY_HESABI.FieldName = "EK_DETAY_HESABI";
-            this.colEK_DETAY_HESABI.Name = "colEK_DETAY_HESABI";
-            this.colEK_DETAY_HESABI.OptionsColumn.AllowEdit = false;
-            // 
-            // colBLEKOZELLIK_KODU
-            // 
-            this.colBLEKOZELLIK_KODU.FieldName = "BLEKOZELLIK_KODU";
-            this.colBLEKOZELLIK_KODU.Name = "colBLEKOZELLIK_KODU";
-            this.colBLEKOZELLIK_KODU.OptionsColumn.AllowEdit = false;
-            // 
-            // colDVZ_FIYATI_2
-            // 
-            this.colDVZ_FIYATI_2.FieldName = "DVZ_FIYATI_2";
-            this.colDVZ_FIYATI_2.Name = "colDVZ_FIYATI_2";
-            this.colDVZ_FIYATI_2.OptionsColumn.AllowEdit = false;
-            // 
-            // colBLBURTKODU
-            // 
-            this.colBLBURTKODU.FieldName = "BLBURTKODU";
-            this.colBLBURTKODU.Name = "colBLBURTKODU";
-            this.colBLBURTKODU.OptionsColumn.AllowEdit = false;
-            // 
-            // colOFFLINE_GUID1
-            // 
-            this.colOFFLINE_GUID1.FieldName = "OFFLINE_GUID";
-            this.colOFFLINE_GUID1.Name = "colOFFLINE_GUID1";
-            this.colOFFLINE_GUID1.OptionsColumn.AllowEdit = false;
-            // 
-            // colSTOK_BLOKE1
-            // 
-            this.colSTOK_BLOKE1.FieldName = "STOK_BLOKE";
-            this.colSTOK_BLOKE1.Name = "colSTOK_BLOKE1";
-            this.colSTOK_BLOKE1.OptionsColumn.AllowEdit = false;
-            // 
-            // colBLITHALATKODU1
-            // 
-            this.colBLITHALATKODU1.FieldName = "BLITHALATKODU";
-            this.colBLITHALATKODU1.Name = "colBLITHALATKODU1";
-            this.colBLITHALATKODU1.OptionsColumn.AllowEdit = false;
-            // 
-            // colGENEL_BLOB
-            // 
-            this.colGENEL_BLOB.FieldName = "GENEL_BLOB";
-            this.colGENEL_BLOB.Name = "colGENEL_BLOB";
-            this.colGENEL_BLOB.OptionsColumn.AllowEdit = false;
-            // 
-            // colDEPOZITO_BLSTKODU
-            // 
-            this.colDEPOZITO_BLSTKODU.FieldName = "DEPOZITO_BLSTKODU";
-            this.colDEPOZITO_BLSTKODU.Name = "colDEPOZITO_BLSTKODU";
-            this.colDEPOZITO_BLSTKODU.OptionsColumn.AllowEdit = false;
-            // 
-            // colDEPOZITO_BLMASTERKODU
-            // 
-            this.colDEPOZITO_BLMASTERKODU.FieldName = "DEPOZITO_BLMASTERKODU";
-            this.colDEPOZITO_BLMASTERKODU.Name = "colDEPOZITO_BLMASTERKODU";
-            this.colDEPOZITO_BLMASTERKODU.OptionsColumn.AllowEdit = false;
-            // 
-            // colBLPAKETKODU
-            // 
-            this.colBLPAKETKODU.FieldName = "BLPAKETKODU";
-            this.colBLPAKETKODU.Name = "colBLPAKETKODU";
-            this.colBLPAKETKODU.OptionsColumn.AllowEdit = false;
-            // 
-            // colONAY
-            // 
-            this.colONAY.Caption = "Onaylar";
-            this.colONAY.FieldName = "ONAY";
-            this.colONAY.Name = "colONAY";
-            this.colONAY.OptionsColumn.AllowEdit = false;
-            this.colONAY.Visible = true;
-            this.colONAY.VisibleIndex = 0;
-            this.colONAY.Width = 84;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.simpleButton1.Location = new System.Drawing.Point(1113, 22);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 156);
-            this.simpleButton1.TabIndex = 4;
-            this.simpleButton1.Text = "Son \r\nAtananları \r\nGeri Al";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
-            // 
-            // btnSiparisler
-            // 
-            this.btnSiparisler.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnSiparisler.Location = new System.Drawing.Point(90, 22);
-            this.btnSiparisler.Name = "btnSiparisler";
-            this.btnSiparisler.Size = new System.Drawing.Size(79, 156);
-            this.btnSiparisler.TabIndex = 2;
-            this.btnSiparisler.Text = "Atanmayan\r\n Siparişleri \r\nListele";
-            this.btnSiparisler.Click += new System.EventHandler(this.btnSiparisler_Click);
-            // 
-            // btnToplayici
-            // 
-            this.btnToplayici.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnToplayici.Location = new System.Drawing.Point(2, 22);
-            this.btnToplayici.Name = "btnToplayici";
-            this.btnToplayici.Size = new System.Drawing.Size(88, 156);
-            this.btnToplayici.TabIndex = 1;
-            this.btnToplayici.Text = "Toplayıcıdakileri \r\nListele";
-            this.btnToplayici.Click += new System.EventHandler(this.btnToplayici_Click);
+            this.colKPB_KDVLI_TUTAR.Width = 47;
+            // 
+            // colKPB_TOPLAM_TUTAR
+            // 
+            this.colKPB_TOPLAM_TUTAR.Caption = "ToplamTutar";
+            this.colKPB_TOPLAM_TUTAR.FieldName = "KPB_TOPLAM_TUTAR";
+            this.colKPB_TOPLAM_TUTAR.Name = "colKPB_TOPLAM_TUTAR";
+            this.colKPB_TOPLAM_TUTAR.OptionsColumn.AllowEdit = false;
+            this.colKPB_TOPLAM_TUTAR.Width = 70;
+            // 
+            // colgrubuu
+            // 
+            this.colgrubuu.Caption = "Grubu";
+            this.colgrubuu.FieldName = "grubuu";
+            this.colgrubuu.Name = "colgrubuu";
+            this.colgrubuu.OptionsColumn.AllowEdit = false;
+            this.colgrubuu.Visible = true;
+            this.colgrubuu.VisibleIndex = 10;
+            this.colgrubuu.Width = 68;
+            // 
+            // colSaat
+            // 
+            this.colSaat.Caption = "Saat";
+            this.colSaat.DisplayFormat.FormatString = "HH:mm";
+            this.colSaat.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.colSaat.FieldName = "DEGISTIRME_TARIHI";
+            this.colSaat.Name = "colSaat";
+            this.colSaat.OptionsColumn.AllowEdit = false;
+            this.colSaat.Visible = true;
+            this.colSaat.VisibleIndex = 1;
+            this.colSaat.Width = 47;
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(582, 44);
+            this.simpleButton2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.simpleButton2.Location = new System.Drawing.Point(966, 22);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(84, 19);
-            this.simpleButton2.TabIndex = 12;
-            this.simpleButton2.Text = "Miktar Filtre";
+            this.simpleButton2.Size = new System.Drawing.Size(94, 76);
+            this.simpleButton2.TabIndex = 4;
+            this.simpleButton2.Text = "Execell  Aktar";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
-            // frmYonetici
+            // frmV1Raporu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1190, 655);
+            this.ClientSize = new System.Drawing.Size(1256, 501);
             this.Controls.Add(this.gridControl1);
-            this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "frmYonetici";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Yönetici V1";
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckedComboBoxEdit1)).EndInit();
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "frmV1Raporu";
+            this.Text = "frmV1Raporu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
-            this.groupControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtBeden.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRenk.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtStokKodu.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKullanici.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
-            this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtBitis.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtBitis.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtBaslangic.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtBaslangic.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraEditors.SimpleButton btnFiltre;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.DateEdit dtBitis;
+        private DevExpress.XtraEditors.DateEdit dtBaslangic;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.GroupControl groupControl2;
-        private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
-        private DevExpress.XtraEditors.Repository.RepositoryItemCheckedComboBoxEdit repositoryItemCheckedComboBoxEdit1;
-        private DevExpress.XtraEditors.SimpleButton btnYetkiVer;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        public DevExpress.XtraEditors.ButtonEdit txtKullanici;
-        private DevExpress.XtraEditors.SimpleButton btnSiparisler;
-        private DevExpress.XtraEditors.SimpleButton btnToplayici;
-        private DevExpress.XtraEditors.SimpleButton btnTkrYazdir;
-        private DevExpress.XtraGrid.GridControl gridControl2;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private DevExpress.XtraGrid.Columns.GridColumn colBLKODU2;
-        private DevExpress.XtraGrid.Columns.GridColumn colBLMASKODU;
-        private DevExpress.XtraGrid.Columns.GridColumn colBLSTKODU;
-        private DevExpress.XtraGrid.Columns.GridColumn colSTOKKODU;
-        private DevExpress.XtraGrid.Columns.GridColumn colSTOK_ADI;
-        private DevExpress.XtraGrid.Columns.GridColumn colBIRIMI;
-        private DevExpress.XtraGrid.Columns.GridColumn colBIRIMI_2;
-        private DevExpress.XtraGrid.Columns.GridColumn colMIKTARI;
-        private DevExpress.XtraGrid.Columns.GridColumn colMIKTARI_2;
-        private DevExpress.XtraGrid.Columns.GridColumn colKPB_FIYATI;
-        private DevExpress.XtraGrid.Columns.GridColumn colKPB_KDV_HARICFY;
-        private DevExpress.XtraGrid.Columns.GridColumn colKPB_IND_FIYAT;
-        private DevExpress.XtraGrid.Columns.GridColumn colKPB_ARA_TUTAR;
-        private DevExpress.XtraGrid.Columns.GridColumn colKPB_IND_TUTAR;
-        private DevExpress.XtraGrid.Columns.GridColumn colDVZ_FIYATI;
-        private DevExpress.XtraGrid.Columns.GridColumn colDVZ_KDV_HARICFY;
-        private DevExpress.XtraGrid.Columns.GridColumn colDVZ_IND_FIYAT;
-        private DevExpress.XtraGrid.Columns.GridColumn colDVZ_ARA_TUTAR;
-        private DevExpress.XtraGrid.Columns.GridColumn colDVZ_IND_TUTAR;
-        private DevExpress.XtraGrid.Columns.GridColumn colDOVIZ_BIRIMI1;
-        private DevExpress.XtraGrid.Columns.GridColumn colBIRIM_CARPANI;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_ORAN_CARI1;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_TUTAR_CARI1;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_SNTUTAR_CARI;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_ORAN_11;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_TUTAR_11;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_SNTUTAR_1;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_ORAN_21;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_TUTAR_21;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_SNTUTAR_2;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_ORAN_31;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_TUTAR_31;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_SNTUTAR_3;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_ORAN_STOK;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_TUTAR_STOK1;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_OZEL;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_SNTUTAR_OZEL;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_ARATUTAR;
-        private DevExpress.XtraGrid.Columns.GridColumn colKDV_ORANI1;
-        private DevExpress.XtraGrid.Columns.GridColumn colKDV_TUTARI;
-        private DevExpress.XtraGrid.Columns.GridColumn colKPB_TOPLAM_TUTAR;
-        private DevExpress.XtraGrid.Columns.GridColumn colKPB_KDVLI_TUTAR;
-        private DevExpress.XtraGrid.Columns.GridColumn colDVZ_TOPLAM_TUTAR;
-        private DevExpress.XtraGrid.Columns.GridColumn colDVZ_KDVLI_TUTAR;
-        private DevExpress.XtraGrid.Columns.GridColumn colMUH_KODU_GENEL;
-        private DevExpress.XtraGrid.Columns.GridColumn colOZEL_KODU1;
-        private DevExpress.XtraGrid.Columns.GridColumn colEKBILGI_11;
-        private DevExpress.XtraGrid.Columns.GridColumn colEKBILGI_21;
-        private DevExpress.XtraGrid.Columns.GridColumn colEKBILGI_3;
-        private DevExpress.XtraGrid.Columns.GridColumn colEKBILGI_4;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_SNTUTAR_STOK;
-        private DevExpress.XtraGrid.Columns.GridColumn colPAZ_PERSONEL1;
-        private DevExpress.XtraGrid.Columns.GridColumn colPAZ_PERS_BLKODU1;
-        private DevExpress.XtraGrid.Columns.GridColumn colPAZ_URUN_TUTARI1;
-        private DevExpress.XtraGrid.Columns.GridColumn colPAZ_URUN_ORANI1;
-        private DevExpress.XtraGrid.Columns.GridColumn colPAZ_ISC_ORANI1;
-        private DevExpress.XtraGrid.Columns.GridColumn colPAZ_ISC_TUTARI1;
-        private DevExpress.XtraGrid.Columns.GridColumn colBARKODU;
-        private DevExpress.XtraGrid.Columns.GridColumn colVADE_GUNU;
-        private DevExpress.XtraGrid.Columns.GridColumn colBLHZMKODU;
-        private DevExpress.XtraGrid.Columns.GridColumn colBIRIMLER;
-        private DevExpress.XtraGrid.Columns.GridColumn colKPBDVZ1;
-        private DevExpress.XtraGrid.Columns.GridColumn colANA_STOKKODU;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_TUTAR_CARI_DVZ1;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_SNTUTAR_CARI_DVZ;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_TUTAR_1_DVZ1;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_SNTUTAR_1_DVZ;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_TUTAR_2_DVZ1;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_SNTUTAR_2_DVZ;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_TUTAR_3_DVZ1;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_SNTUTAR_3_DVZ;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_TUTAR_STOK_DVZ1;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_OZEL_DVZ;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_SNTUTAR_OZEL_DVZ;
-        private DevExpress.XtraGrid.Columns.GridColumn colISK_SNTUTAR_STOK_DVZ;
-        private DevExpress.XtraGrid.Columns.GridColumn colDEPO_ADI;
-        private DevExpress.XtraGrid.Columns.GridColumn colMIKTARI_TESLIM;
-        private DevExpress.XtraGrid.Columns.GridColumn colMIKTARI_IPTAL;
-        private DevExpress.XtraGrid.Columns.GridColumn colMIKTARI_KALAN;
-        private DevExpress.XtraGrid.Columns.GridColumn colASORTI_HRK;
-        private DevExpress.XtraGrid.Columns.GridColumn colASORTI_MIKTARI;
-        private DevExpress.XtraGrid.Columns.GridColumn colKDV_DURUMU1;
-        private DevExpress.XtraGrid.Columns.GridColumn colSIRA_NO;
-        private DevExpress.XtraGrid.Columns.GridColumn colBLMRPEMIRKODU;
-        private DevExpress.XtraGrid.Columns.GridColumn colPAZ_ISC_TUTARI_DVZ1;
-        private DevExpress.XtraGrid.Columns.GridColumn colPAZ_URUN_TUTARI_DVZ1;
-        private DevExpress.XtraGrid.Columns.GridColumn colDOVIZ_ALIS;
-        private DevExpress.XtraGrid.Columns.GridColumn colDOVIZ_SATIS;
-        private DevExpress.XtraGrid.Columns.GridColumn colPAZ_URUN_BF;
-        private DevExpress.XtraGrid.Columns.GridColumn colKPB_FIYATI_2;
-        private DevExpress.XtraGrid.Columns.GridColumn colSERINO_KULLAN;
-        private DevExpress.XtraGrid.Columns.GridColumn colSTOK_ADI_YD;
-        private DevExpress.XtraGrid.Columns.GridColumn colEK_DETAY_TUTARI;
-        private DevExpress.XtraGrid.Columns.GridColumn colEK_DETAY_HESABI;
-        private DevExpress.XtraGrid.Columns.GridColumn colBLEKOZELLIK_KODU;
-        private DevExpress.XtraGrid.Columns.GridColumn colDVZ_FIYATI_2;
-        private DevExpress.XtraGrid.Columns.GridColumn colBLBURTKODU;
-        private DevExpress.XtraGrid.Columns.GridColumn colOFFLINE_GUID1;
-        private DevExpress.XtraGrid.Columns.GridColumn colSTOK_BLOKE1;
-        private DevExpress.XtraGrid.Columns.GridColumn colBLITHALATKODU1;
-        private DevExpress.XtraGrid.Columns.GridColumn colGENEL_BLOB;
-        private DevExpress.XtraGrid.Columns.GridColumn colDEPOZITO_BLSTKODU;
-        private DevExpress.XtraGrid.Columns.GridColumn colDEPOZITO_BLMASTERKODU;
-        private DevExpress.XtraGrid.Columns.GridColumn colBLPAKETKODU;
-        private DevExpress.XtraGrid.Columns.GridColumn colONAY;
         private DevExpress.XtraGrid.Columns.GridColumn colBLKODU;
         private DevExpress.XtraGrid.Columns.GridColumn colFATURA_DURUMU;
         private DevExpress.XtraGrid.Columns.GridColumn colBLCRKODU;
@@ -3474,22 +2384,26 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
         private DevExpress.XtraGrid.Columns.GridColumn colOTO_GONDERIM_HATA;
         private DevExpress.XtraGrid.Columns.GridColumn colOZELALANTANIM_6;
         private DevExpress.XtraGrid.Columns.GridColumn colEFATURA_HBIRIMI_VERGINO;
-        private DevExpress.XtraGrid.Columns.GridColumn colEBELGE;
-        private DevExpress.XtraGrid.Columns.GridColumn colOZELALANTANIM_107;
-        private DevExpress.XtraGrid.Columns.GridColumn colOZELALANTANIM_157;
-        private DevExpress.XtraGrid.Columns.GridColumn colCARIGRUBU;
-        private DevExpress.XtraEditors.SimpleButton btnFiltre;
-        private DevExpress.XtraGrid.Columns.GridColumn colEfaturakln;
-        private DevExpress.XtraEditors.TextEdit txtBeden;
-        private DevExpress.XtraEditors.TextEdit txtRenk;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit txtStokKodu;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SimpleButton txtFaturaOnayla;
-        private DevExpress.XtraEditors.LabelControl lblDegisiklik;
-        private DevExpress.XtraEditors.GroupControl groupControl3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraGrid.Columns.GridColumn colOZELALANTANIM_13;
+        private DevExpress.XtraGrid.Columns.GridColumn colOZELALANTANIM_14;
+        private DevExpress.XtraGrid.Columns.GridColumn colOZELALANTANIM_15;
+        private DevExpress.XtraGrid.Columns.GridColumn colOZELALANTANIM_21;
+        private DevExpress.XtraGrid.Columns.GridColumn colANA_STOKKODU;
+        private DevExpress.XtraGrid.Columns.GridColumn colBARKODU;
+        private DevExpress.XtraGrid.Columns.GridColumn colBIRIMI;
+        private DevExpress.XtraGrid.Columns.GridColumn colDEPO_ADI;
+        private DevExpress.XtraGrid.Columns.GridColumn colSTOK_ADI;
+        private DevExpress.XtraGrid.Columns.GridColumn colSTOKKODU;
+        private DevExpress.XtraGrid.Columns.GridColumn colKPB_FIYATI;
+        private DevExpress.XtraGrid.Columns.GridColumn colKPB_IND_TUTAR;
+        private DevExpress.XtraGrid.Columns.GridColumn colKPB_KDVLI_TUTAR;
+        private DevExpress.XtraGrid.Columns.GridColumn colKPB_TOPLAM_TUTAR;
+        private DevExpress.XtraGrid.Columns.GridColumn colgrubuu;
+        private DevExpress.XtraGrid.Columns.GridColumn colrenk;
+        private DevExpress.XtraGrid.Columns.GridColumn colbeden;
+        private DevExpress.XtraGrid.Columns.GridColumn colMiktar;
+        private DevExpress.XtraEditors.SimpleButton btnYazdir;
+        private DevExpress.XtraGrid.Columns.GridColumn colSaat;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
     }
 }

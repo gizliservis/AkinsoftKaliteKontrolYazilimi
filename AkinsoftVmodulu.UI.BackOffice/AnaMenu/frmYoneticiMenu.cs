@@ -1,4 +1,5 @@
-﻿using AkinsoftVmodulu.UI.BackOffice.V2;
+﻿using AkinsoftVmodulu.UI.BackOffice.Rapor;
+using AkinsoftVmodulu.UI.BackOffice.V2;
 using AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani;
 using DevExpress.XtraBars;
 using System;
@@ -39,6 +40,18 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             frmStokEtiket frm = new frmStokEtiket();
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void barButtonItem3_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmV1Raporu frm = new frmV1Raporu();
+            frm.ShowDialog();
+        }
+
+        private void barButtonItem4_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmV2Raporu frm = new frmV2Raporu();
+            frm.ShowDialog();
         }
     }
 }

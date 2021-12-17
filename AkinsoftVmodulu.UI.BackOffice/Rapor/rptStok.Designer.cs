@@ -33,31 +33,31 @@ namespace AkinsoftVmodulu.UI.BackOffice.Rapor
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
-            this.barcodeCariKodu = new DevExpress.XtraReports.UI.XRBarCode();
-            this.dateTimeChartRangeControlClient1 = new DevExpress.XtraEditors.DateTimeChartRangeControlClient();
-            this.dateTimeChartRangeControlClient2 = new DevExpress.XtraEditors.DateTimeChartRangeControlClient();
-            this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.tablexr = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
             this.txtStokKodu = new DevExpress.XtraReports.UI.XRTableCell();
             this.txtMiktar = new DevExpress.XtraReports.UI.XRTableCell();
             this.txtNot = new DevExpress.XtraReports.UI.XRTableCell();
+            this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.barcodeCariKodu = new DevExpress.XtraReports.UI.XRBarCode();
+            this.dateTimeChartRangeControlClient1 = new DevExpress.XtraEditors.DateTimeChartRangeControlClient();
+            this.dateTimeChartRangeControlClient2 = new DevExpress.XtraEditors.DateTimeChartRangeControlClient();
+            this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
             this.lblToplammiktar = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell6 = new DevExpress.XtraReports.UI.XRTableCell();
-            ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablexr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -77,47 +77,6 @@ namespace AkinsoftVmodulu.UI.BackOffice.Rapor
             this.tablexr});
             this.Detail.HeightF = 24.99999F;
             this.Detail.Name = "Detail";
-            // 
-            // ReportHeader
-            // 
-            this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrTable1,
-            this.xrLabel1,
-            this.barcodeCariKodu});
-            this.ReportHeader.HeightF = 113.0834F;
-            this.ReportHeader.Name = "ReportHeader";
-            // 
-            // xrLabel1
-            // 
-            this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Now()")});
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(613.2917F, 10.00001F);
-            this.xrLabel1.Multiline = true;
-            this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.xrLabel1.Text = "xrLabel1";
-            this.xrLabel1.TextFormatString = "{0:d MMMM yyyy HH:mm}";
-            // 
-            // barcodeCariKodu
-            // 
-            this.barcodeCariKodu.AutoModule = true;
-            this.barcodeCariKodu.LocationFloat = new DevExpress.Utils.PointFloat(234.7222F, 6.00001F);
-            this.barcodeCariKodu.Name = "barcodeCariKodu";
-            this.barcodeCariKodu.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
-            this.barcodeCariKodu.SizeF = new System.Drawing.SizeF(276.0417F, 75F);
-            this.barcodeCariKodu.StylePriority.UseTextAlignment = false;
-            this.barcodeCariKodu.Symbology = code128Generator1;
-            this.barcodeCariKodu.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // GroupHeader1
-            // 
-            this.GroupHeader1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrTable2});
-            this.GroupHeader1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("stokkodu", DevExpress.XtraReports.UI.XRColumnSortOrder.None)});
-            this.GroupHeader1.HeightF = 25F;
-            this.GroupHeader1.Name = "GroupHeader1";
             // 
             // tablexr
             // 
@@ -176,6 +135,15 @@ namespace AkinsoftVmodulu.UI.BackOffice.Rapor
             this.txtNot.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.txtNot.Weight = 3.375376571581481D;
             // 
+            // ReportHeader
+            // 
+            this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable1,
+            this.xrLabel1,
+            this.barcodeCariKodu});
+            this.ReportHeader.HeightF = 113.0834F;
+            this.ReportHeader.Name = "ReportHeader";
+            // 
             // xrTable1
             // 
             this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 85.00001F);
@@ -226,6 +194,38 @@ namespace AkinsoftVmodulu.UI.BackOffice.Rapor
             this.xrTableCell3.StylePriority.UseBorders = false;
             this.xrTableCell3.Text = "Not";
             this.xrTableCell3.Weight = 4.7899987792968748D;
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Now()")});
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(613.2917F, 10.00001F);
+            this.xrLabel1.Multiline = true;
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(100F, 23F);
+            this.xrLabel1.Text = "xrLabel1";
+            this.xrLabel1.TextFormatString = "{0:d MMMM yyyy HH:mm}";
+            // 
+            // barcodeCariKodu
+            // 
+            this.barcodeCariKodu.AutoModule = true;
+            this.barcodeCariKodu.LocationFloat = new DevExpress.Utils.PointFloat(234.7222F, 6.00001F);
+            this.barcodeCariKodu.Name = "barcodeCariKodu";
+            this.barcodeCariKodu.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
+            this.barcodeCariKodu.SizeF = new System.Drawing.SizeF(276.0417F, 75F);
+            this.barcodeCariKodu.StylePriority.UseTextAlignment = false;
+            this.barcodeCariKodu.Symbology = code128Generator1;
+            this.barcodeCariKodu.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // GroupHeader1
+            // 
+            this.GroupHeader1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable2});
+            this.GroupHeader1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("stokkodu", DevExpress.XtraReports.UI.XRColumnSortOrder.None)});
+            this.GroupHeader1.HeightF = 25F;
+            this.GroupHeader1.Name = "GroupHeader1";
             // 
             // xrTable2
             // 
@@ -291,10 +291,10 @@ namespace AkinsoftVmodulu.UI.BackOffice.Rapor
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
             this.Version = "20.1";
-            ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablexr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 

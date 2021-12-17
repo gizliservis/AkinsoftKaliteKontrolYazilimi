@@ -70,7 +70,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             return dt;
         }
 
-        public bool Onaylandi_Iptal(int blkod, int teslimMiktar, int kalanMiktar, string durum, string kullanici)//siparişlerin satırlarını onaylama ve iptal etme
+        public bool Onaylandi_Iptal(int blkod, int teslimMiktar, int kalanMiktar, string durum, string kullanici,int blmaskodu)//siparişlerin satırlarını onaylama ve iptal etme
         {
             // SqlConnection bg = new SqlConnection(@"Data Source=GIZLISERVIS\MSSQLMASTER;Initial Catalog=D:\AKINSOFT_WOLVOX8_001_2020_WOLVOX;Persist Security Info=True;User ID=sa;Password=17421742");
             //bg.Open();
@@ -81,6 +81,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             adp.Parameters.AddWithValue("@kalanmiktar", kalanMiktar);
             adp.Parameters.AddWithValue("@durum", durum);
             adp.Parameters.AddWithValue("@kullanici", kullanici);
+            adp.Parameters.AddWithValue("@blmaskodu ", blmaskodu);
 
             return KomutGetir(adp);
 
@@ -215,8 +216,9 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
                 txtUrunBarkod.Focus();
                 int index = gridViewSiparisListe.FocusedRowHandle;
                 int blkodu = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "BLKODU").ToString());
+                int blkMasKodu= Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "BLMASKODU").ToString());
                 kod = blkodu;
-                Onaylandi_Iptal(blkodu, Convert.ToInt32(txtTeslimMiktari.Value), Convert.ToInt32(txtKalanMiktar.Value), "Onaylandı", _kullaniciad);
+                Onaylandi_Iptal(blkodu, Convert.ToInt32(txtTeslimMiktari.Value), Convert.ToInt32(txtKalanMiktar.Value), "Onaylandı", _kullaniciad,blkMasKodu);
                 gridViewSiparisListe.ActiveFilter.Clear();
                 SiparisleriListele();
                 xtraTabControl1.SelectedTabPage = tabPageUrunler;
@@ -234,7 +236,8 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
                 txtUrunBarkod.Focus();
                 int index = gridViewSiparisListe.FocusedRowHandle;
                 int blkodu = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "BLKODU").ToString());
-                Onaylandi_Iptal(blkodu, Convert.ToInt32(txtTeslimMiktari.Value), Convert.ToInt32(txtKalanMiktar.Value), "Onaylanmadı", _kullaniciad);
+                int blkMasKodu = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "BLMASKODU").ToString());
+                Onaylandi_Iptal(blkodu, Convert.ToInt32(txtTeslimMiktari.Value), Convert.ToInt32(txtKalanMiktar.Value), "Onaylanmadı", _kullaniciad,blkMasKodu);
                 gridViewSiparisListe.ActiveFilter.Clear();
                 SiparisleriListele();
                 xtraTabControl1.SelectedTabPage = tabPageUrunler;
@@ -249,7 +252,8 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
         {
             int index = gridViewSiparisListe.FocusedRowHandle;
             int blkodu = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "BLKODU").ToString());
-            Onaylandi_Iptal(blkodu, Convert.ToInt32(txtTeslimMiktari.Value), Convert.ToInt32(txtKalanMiktar.Value), "Onaylandı", _kullaniciad);
+            int blkMasKodu = Convert.ToInt32(gridViewSiparisListe.GetRowCellValue(index, "BLMASKODU").ToString());
+            Onaylandi_Iptal(blkodu, Convert.ToInt32(txtTeslimMiktari.Value), Convert.ToInt32(txtKalanMiktar.Value), "Onaylandı", _kullaniciad,blkMasKodu);
             gridViewSiparisListe.ActiveFilter.Clear();
             SiparisleriListele();
             xtraTabControl1.SelectedTabPage = tabPageUrunler;

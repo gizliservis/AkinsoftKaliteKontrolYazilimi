@@ -206,13 +206,17 @@ namespace AkinsoftVmodulu.UI.BackOffice.AnaMenu
             // 
             this.barButtonItem3.Caption = "V1 Rapor";
             this.barButtonItem3.Id = 13;
+            this.barButtonItem3.ImageOptions.LargeImage = global::AkinsoftVmodulu.UI.BackOffice.Properties.Resources.Fatura_Satis32x32;
             this.barButtonItem3.Name = "barButtonItem3";
+            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
             // 
             // barButtonItem4
             // 
             this.barButtonItem4.Caption = "V2 Rapor";
             this.barButtonItem4.Id = 14;
+            this.barButtonItem4.ImageOptions.LargeImage = global::AkinsoftVmodulu.UI.BackOffice.Properties.Resources.Fatura_AlisIade32x32;
             this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
             // ribbonPage1
             // 

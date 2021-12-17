@@ -42,39 +42,6 @@ namespace AkinsoftVmodulu.UI.BackOffice.Rapor
             this.txtMiktar = new DevExpress.XtraReports.UI.XRTableCell();
             this.txtBirimFiyat = new DevExpress.XtraReports.UI.XRTableCell();
             this.txtUrunToplamTutar = new DevExpress.XtraReports.UI.XRTableCell();
-            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
-            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
-            this.txtYaziIle = new DevExpress.XtraReports.UI.XRLabel();
-            this.txtSipNo = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
-            this.txtKargoTarihi = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
-            this.txtKargoFirmasi = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel15 = new DevExpress.XtraReports.UI.XRLabel();
-            this.txtSevkYetkilisi = new DevExpress.XtraReports.UI.XRLabel();
-            this.txtKargoNo = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow33 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell18 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.txtKdvHaricToplamT = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow34 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell19 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.txtToplamIsk = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow35 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell22 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.txtKDVMatrah = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow36 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell25 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.txtKdvTutar = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow37 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell28 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.txtVDToplamTutar = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow38 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell30 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.txtOdenecekTutar = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.picImza = new DevExpress.XtraReports.UI.XRPictureBox();
@@ -143,11 +110,44 @@ namespace AkinsoftVmodulu.UI.BackOffice.Rapor
             this.txtEttnNo = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLine3 = new DevExpress.XtraReports.UI.XRLine();
             this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
+            this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow33 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell18 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.txtKdvHaricToplamT = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow34 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell19 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.txtToplamIsk = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow35 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell22 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.txtKDVMatrah = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow36 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell25 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.txtKdvTutar = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow37 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell28 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.txtVDToplamTutar = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow38 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell30 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.txtOdenecekTutar = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
+            this.txtKargoNo = new DevExpress.XtraReports.UI.XRLabel();
+            this.txtSevkYetkilisi = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel15 = new DevExpress.XtraReports.UI.XRLabel();
+            this.txtKargoFirmasi = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
+            this.txtKargoTarihi = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
+            this.txtSipNo = new DevExpress.XtraReports.UI.XRLabel();
+            this.txtYaziIle = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCariAdres)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -290,428 +290,6 @@ namespace AkinsoftVmodulu.UI.BackOffice.Rapor
             this.txtUrunToplamTutar.TextFormatString = "{0:c2}";
             this.txtUrunToplamTutar.Weight = 1.3036204353237044D;
             this.txtUrunToplamTutar.WordWrap = false;
-            // 
-            // PageFooter
-            // 
-            this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel1,
-            this.txtYaziIle,
-            this.txtSipNo,
-            this.xrLabel17,
-            this.txtKargoTarihi,
-            this.xrLabel16,
-            this.txtKargoFirmasi,
-            this.xrLabel15,
-            this.txtSevkYetkilisi,
-            this.txtKargoNo,
-            this.xrLabel12,
-            this.xrLabel11,
-            this.xrLabel10,
-            this.xrTable5});
-            this.PageFooter.Dpi = 254F;
-            this.PageFooter.HeightF = 225.9918F;
-            this.PageFooter.Name = "PageFooter";
-            // 
-            // xrLabel1
-            // 
-            this.xrLabel1.AutoWidth = true;
-            this.xrLabel1.Dpi = 254F;
-            this.xrLabel1.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(5.477298F, 192.7477F);
-            this.xrLabel1.Multiline = true;
-            this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(84.00604F, 27.63445F);
-            this.xrLabel1.StylePriority.UseFont = false;
-            this.xrLabel1.Text = "Yazıyla :";
-            // 
-            // txtYaziIle
-            // 
-            this.txtYaziIle.AutoWidth = true;
-            this.txtYaziIle.Dpi = 254F;
-            this.txtYaziIle.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold);
-            this.txtYaziIle.LocationFloat = new DevExpress.Utils.PointFloat(90.02081F, 192.7476F);
-            this.txtYaziIle.Multiline = true;
-            this.txtYaziIle.Name = "txtYaziIle";
-            this.txtYaziIle.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.txtYaziIle.SizeF = new System.Drawing.SizeF(346.0775F, 27.63446F);
-            this.txtYaziIle.StylePriority.UseFont = false;
-            this.txtYaziIle.Text = "txtYaziIle";
-            // 
-            // txtSipNo
-            // 
-            this.txtSipNo.AutoWidth = true;
-            this.txtSipNo.Dpi = 254F;
-            this.txtSipNo.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSipNo.LocationFloat = new DevExpress.Utils.PointFloat(111.0208F, 162.0864F);
-            this.txtSipNo.Multiline = true;
-            this.txtSipNo.Name = "txtSipNo";
-            this.txtSipNo.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.txtSipNo.SizeF = new System.Drawing.SizeF(325.0774F, 30.6613F);
-            this.txtSipNo.StylePriority.UseFont = false;
-            // 
-            // xrLabel17
-            // 
-            this.xrLabel17.AutoWidth = true;
-            this.xrLabel17.Dpi = 254F;
-            this.xrLabel17.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(1.00002F, 165.0865F);
-            this.xrLabel17.Multiline = true;
-            this.xrLabel17.Name = "xrLabel17";
-            this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.xrLabel17.SizeF = new System.Drawing.SizeF(109.7709F, 27.66113F);
-            this.xrLabel17.StylePriority.UseFont = false;
-            this.xrLabel17.Text = "Sipariş No :";
-            // 
-            // txtKargoTarihi
-            // 
-            this.txtKargoTarihi.Dpi = 254F;
-            this.txtKargoTarihi.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKargoTarihi.LocationFloat = new DevExpress.Utils.PointFloat(124.0208F, 108.4056F);
-            this.txtKargoTarihi.Multiline = true;
-            this.txtKargoTarihi.Name = "txtKargoTarihi";
-            this.txtKargoTarihi.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.txtKargoTarihi.SizeF = new System.Drawing.SizeF(312.0774F, 22.08644F);
-            this.txtKargoTarihi.StylePriority.UseFont = false;
-            // 
-            // xrLabel16
-            // 
-            this.xrLabel16.Dpi = 254F;
-            this.xrLabel16.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(0F, 108.4054F);
-            this.xrLabel16.Multiline = true;
-            this.xrLabel16.Name = "xrLabel16";
-            this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.xrLabel16.SizeF = new System.Drawing.SizeF(123.7709F, 25.08642F);
-            this.xrLabel16.StylePriority.UseFont = false;
-            this.xrLabel16.Text = "Kargo Tarihi :";
-            // 
-            // txtKargoFirmasi
-            // 
-            this.txtKargoFirmasi.Dpi = 254F;
-            this.txtKargoFirmasi.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKargoFirmasi.LocationFloat = new DevExpress.Utils.PointFloat(146.6701F, 57.54861F);
-            this.txtKargoFirmasi.Multiline = true;
-            this.txtKargoFirmasi.Name = "txtKargoFirmasi";
-            this.txtKargoFirmasi.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.txtKargoFirmasi.SizeF = new System.Drawing.SizeF(289.4281F, 22.08644F);
-            this.txtKargoFirmasi.StylePriority.UseFont = false;
-            // 
-            // xrLabel15
-            // 
-            this.xrLabel15.Dpi = 254F;
-            this.xrLabel15.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xrLabel15.LocationFloat = new DevExpress.Utils.PointFloat(0F, 57.54879F);
-            this.xrLabel15.Multiline = true;
-            this.xrLabel15.Name = "xrLabel15";
-            this.xrLabel15.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.xrLabel15.SizeF = new System.Drawing.SizeF(146.6701F, 25.08639F);
-            this.xrLabel15.StylePriority.UseFont = false;
-            this.xrLabel15.Text = "Kargo Firması :";
-            // 
-            // txtSevkYetkilisi
-            // 
-            this.txtSevkYetkilisi.AutoWidth = true;
-            this.txtSevkYetkilisi.Dpi = 254F;
-            this.txtSevkYetkilisi.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSevkYetkilisi.LocationFloat = new DevExpress.Utils.PointFloat(133.0208F, 131.4251F);
-            this.txtSevkYetkilisi.Multiline = true;
-            this.txtSevkYetkilisi.Name = "txtSevkYetkilisi";
-            this.txtSevkYetkilisi.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.txtSevkYetkilisi.SizeF = new System.Drawing.SizeF(303.0774F, 30.6613F);
-            this.txtSevkYetkilisi.StylePriority.UseFont = false;
-            // 
-            // txtKargoNo
-            // 
-            this.txtKargoNo.Dpi = 254F;
-            this.txtKargoNo.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKargoNo.LocationFloat = new DevExpress.Utils.PointFloat(101.0208F, 83.00562F);
-            this.txtKargoNo.Multiline = true;
-            this.txtKargoNo.Name = "txtKargoNo";
-            this.txtKargoNo.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.txtKargoNo.SizeF = new System.Drawing.SizeF(335.0774F, 22.08644F);
-            this.txtKargoNo.StylePriority.UseFont = false;
-            // 
-            // xrLabel12
-            // 
-            this.xrLabel12.AutoWidth = true;
-            this.xrLabel12.Dpi = 254F;
-            this.xrLabel12.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(0F, 134.4252F);
-            this.xrLabel12.Multiline = true;
-            this.xrLabel12.Name = "xrLabel12";
-            this.xrLabel12.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.xrLabel12.SizeF = new System.Drawing.SizeF(132.3807F, 27.66113F);
-            this.xrLabel12.StylePriority.UseFont = false;
-            this.xrLabel12.Text = "Sevk Yetkilisi :";
-            // 
-            // xrLabel11
-            // 
-            this.xrLabel11.Dpi = 254F;
-            this.xrLabel11.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(0F, 83.00556F);
-            this.xrLabel11.Multiline = true;
-            this.xrLabel11.Name = "xrLabel11";
-            this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.xrLabel11.SizeF = new System.Drawing.SizeF(100.3012F, 25.0864F);
-            this.xrLabel11.StylePriority.UseFont = false;
-            this.xrLabel11.Text = "Kargo No :";
-            // 
-            // xrLabel10
-            // 
-            this.xrLabel10.AutoWidth = true;
-            this.xrLabel10.Dpi = 254F;
-            this.xrLabel10.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(1.00002F, 4.42544F);
-            this.xrLabel10.Multiline = true;
-            this.xrLabel10.Name = "xrLabel10";
-            this.xrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.xrLabel10.SizeF = new System.Drawing.SizeF(435.0982F, 52.91666F);
-            this.xrLabel10.StylePriority.UseFont = false;
-            this.xrLabel10.Text = "Bu satış İnternet üzerinden yapılmıştır. İrsaliye yerine geçer";
-            // 
-            // xrTable5
-            // 
-            this.xrTable5.Dpi = 254F;
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(531.551F, 0F);
-            this.xrTable5.Name = "xrTable5";
-            this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow33,
-            this.xrTableRow34,
-            this.xrTableRow35,
-            this.xrTableRow36,
-            this.xrTableRow37,
-            this.xrTableRow38});
-            this.xrTable5.SizeF = new System.Drawing.SizeF(408.4489F, 205.6462F);
-            // 
-            // xrTableRow33
-            // 
-            this.xrTableRow33.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell18,
-            this.txtKdvHaricToplamT});
-            this.xrTableRow33.Dpi = 254F;
-            this.xrTableRow33.Name = "xrTableRow33";
-            this.xrTableRow33.Weight = 1D;
-            // 
-            // xrTableCell18
-            // 
-            this.xrTableCell18.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell18.Dpi = 254F;
-            this.xrTableCell18.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xrTableCell18.Multiline = true;
-            this.xrTableCell18.Name = "xrTableCell18";
-            this.xrTableCell18.StylePriority.UseBorders = false;
-            this.xrTableCell18.StylePriority.UseFont = false;
-            this.xrTableCell18.StylePriority.UseTextAlignment = false;
-            this.xrTableCell18.Text = "Mal Hizmet Toplam Tutari";
-            this.xrTableCell18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell18.Weight = 1.035150039585726D;
-            // 
-            // txtKdvHaricToplamT
-            // 
-            this.txtKdvHaricToplamT.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.txtKdvHaricToplamT.Dpi = 254F;
-            this.txtKdvHaricToplamT.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKdvHaricToplamT.Multiline = true;
-            this.txtKdvHaricToplamT.Name = "txtKdvHaricToplamT";
-            this.txtKdvHaricToplamT.StylePriority.UseBorders = false;
-            this.txtKdvHaricToplamT.StylePriority.UseFont = false;
-            this.txtKdvHaricToplamT.TextFormatString = "{0:c2}";
-            this.txtKdvHaricToplamT.Weight = 0.57291699876790747D;
-            // 
-            // xrTableRow34
-            // 
-            this.xrTableRow34.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell19,
-            this.txtToplamIsk});
-            this.xrTableRow34.Dpi = 254F;
-            this.xrTableRow34.Name = "xrTableRow34";
-            this.xrTableRow34.Weight = 1D;
-            // 
-            // xrTableCell19
-            // 
-            this.xrTableCell19.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell19.Dpi = 254F;
-            this.xrTableCell19.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xrTableCell19.Multiline = true;
-            this.xrTableCell19.Name = "xrTableCell19";
-            this.xrTableCell19.StylePriority.UseBorders = false;
-            this.xrTableCell19.StylePriority.UseFont = false;
-            this.xrTableCell19.StylePriority.UseTextAlignment = false;
-            this.xrTableCell19.Text = "Toplam Iskonto   (% )";
-            this.xrTableCell19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell19.Weight = 1.035150039585726D;
-            // 
-            // txtToplamIsk
-            // 
-            this.txtToplamIsk.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.txtToplamIsk.Dpi = 254F;
-            this.txtToplamIsk.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtToplamIsk.Multiline = true;
-            this.txtToplamIsk.Name = "txtToplamIsk";
-            this.txtToplamIsk.StylePriority.UseBorders = false;
-            this.txtToplamIsk.StylePriority.UseFont = false;
-            this.txtToplamIsk.TextFormatString = "{0:c2}";
-            this.txtToplamIsk.Weight = 0.57291699876790747D;
-            // 
-            // xrTableRow35
-            // 
-            this.xrTableRow35.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell22,
-            this.txtKDVMatrah});
-            this.xrTableRow35.Dpi = 254F;
-            this.xrTableRow35.Name = "xrTableRow35";
-            this.xrTableRow35.Weight = 1D;
-            // 
-            // xrTableCell22
-            // 
-            this.xrTableCell22.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell22.Dpi = 254F;
-            this.xrTableCell22.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xrTableCell22.Multiline = true;
-            this.xrTableCell22.Name = "xrTableCell22";
-            this.xrTableCell22.StylePriority.UseBorders = false;
-            this.xrTableCell22.StylePriority.UseFont = false;
-            this.xrTableCell22.StylePriority.UseTextAlignment = false;
-            this.xrTableCell22.Text = "KDV Matrahı";
-            this.xrTableCell22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell22.Weight = 1.035150039585726D;
-            // 
-            // txtKDVMatrah
-            // 
-            this.txtKDVMatrah.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.txtKDVMatrah.Dpi = 254F;
-            this.txtKDVMatrah.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKDVMatrah.Multiline = true;
-            this.txtKDVMatrah.Name = "txtKDVMatrah";
-            this.txtKDVMatrah.StylePriority.UseBorders = false;
-            this.txtKDVMatrah.StylePriority.UseFont = false;
-            this.txtKDVMatrah.TextFormatString = "{0:c2}";
-            this.txtKDVMatrah.Weight = 0.57291699876790747D;
-            // 
-            // xrTableRow36
-            // 
-            this.xrTableRow36.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell25,
-            this.txtKdvTutar});
-            this.xrTableRow36.Dpi = 254F;
-            this.xrTableRow36.Name = "xrTableRow36";
-            this.xrTableRow36.Weight = 1D;
-            // 
-            // xrTableCell25
-            // 
-            this.xrTableCell25.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell25.Dpi = 254F;
-            this.xrTableCell25.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xrTableCell25.Multiline = true;
-            this.xrTableCell25.Name = "xrTableCell25";
-            this.xrTableCell25.StylePriority.UseBorders = false;
-            this.xrTableCell25.StylePriority.UseFont = false;
-            this.xrTableCell25.StylePriority.UseTextAlignment = false;
-            this.xrTableCell25.Text = "Hesaplanan KDV (% )";
-            this.xrTableCell25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell25.Weight = 1.035150039585726D;
-            // 
-            // txtKdvTutar
-            // 
-            this.txtKdvTutar.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.txtKdvTutar.Dpi = 254F;
-            this.txtKdvTutar.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKdvTutar.Multiline = true;
-            this.txtKdvTutar.Name = "txtKdvTutar";
-            this.txtKdvTutar.StylePriority.UseBorders = false;
-            this.txtKdvTutar.StylePriority.UseFont = false;
-            this.txtKdvTutar.TextFormatString = "{0:c2}";
-            this.txtKdvTutar.Weight = 0.57291699876790747D;
-            // 
-            // xrTableRow37
-            // 
-            this.xrTableRow37.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell28,
-            this.txtVDToplamTutar});
-            this.xrTableRow37.Dpi = 254F;
-            this.xrTableRow37.Name = "xrTableRow37";
-            this.xrTableRow37.Weight = 1D;
-            // 
-            // xrTableCell28
-            // 
-            this.xrTableCell28.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell28.Dpi = 254F;
-            this.xrTableCell28.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xrTableCell28.Multiline = true;
-            this.xrTableCell28.Name = "xrTableCell28";
-            this.xrTableCell28.StylePriority.UseBorders = false;
-            this.xrTableCell28.StylePriority.UseFont = false;
-            this.xrTableCell28.StylePriority.UseTextAlignment = false;
-            this.xrTableCell28.Text = "Vergiler Dahil Toplam Tutar(TL)";
-            this.xrTableCell28.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell28.Weight = 1.035150039585726D;
-            // 
-            // txtVDToplamTutar
-            // 
-            this.txtVDToplamTutar.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.txtVDToplamTutar.Dpi = 254F;
-            this.txtVDToplamTutar.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtVDToplamTutar.Multiline = true;
-            this.txtVDToplamTutar.Name = "txtVDToplamTutar";
-            this.txtVDToplamTutar.StylePriority.UseBorders = false;
-            this.txtVDToplamTutar.StylePriority.UseFont = false;
-            this.txtVDToplamTutar.TextFormatString = "{0:c2}";
-            this.txtVDToplamTutar.Weight = 0.57291699876790747D;
-            // 
-            // xrTableRow38
-            // 
-            this.xrTableRow38.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell30,
-            this.txtOdenecekTutar});
-            this.xrTableRow38.Dpi = 254F;
-            this.xrTableRow38.Name = "xrTableRow38";
-            this.xrTableRow38.Weight = 1D;
-            // 
-            // xrTableCell30
-            // 
-            this.xrTableCell30.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell30.Dpi = 254F;
-            this.xrTableCell30.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xrTableCell30.Multiline = true;
-            this.xrTableCell30.Name = "xrTableCell30";
-            this.xrTableCell30.StylePriority.UseBorders = false;
-            this.xrTableCell30.StylePriority.UseFont = false;
-            this.xrTableCell30.StylePriority.UseTextAlignment = false;
-            this.xrTableCell30.Text = "Ödenecek Tutar(TL)";
-            this.xrTableCell30.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell30.Weight = 1.035150039585726D;
-            // 
-            // txtOdenecekTutar
-            // 
-            this.txtOdenecekTutar.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.txtOdenecekTutar.Dpi = 254F;
-            this.txtOdenecekTutar.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOdenecekTutar.Multiline = true;
-            this.txtOdenecekTutar.Name = "txtOdenecekTutar";
-            this.txtOdenecekTutar.StylePriority.UseBorders = false;
-            this.txtOdenecekTutar.StylePriority.UseFont = false;
-            this.txtOdenecekTutar.TextFormatString = "{0:c2}";
-            this.txtOdenecekTutar.Weight = 0.57291699876790747D;
             // 
             // ReportHeader
             // 
@@ -1576,14 +1154,436 @@ namespace AkinsoftVmodulu.UI.BackOffice.Rapor
     "stanbul";
             this.xrLabel13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
+            // ReportFooter
+            // 
+            this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable5,
+            this.xrLabel10,
+            this.xrLabel11,
+            this.xrLabel12,
+            this.txtKargoNo,
+            this.txtSevkYetkilisi,
+            this.xrLabel15,
+            this.txtKargoFirmasi,
+            this.xrLabel16,
+            this.txtKargoTarihi,
+            this.xrLabel17,
+            this.txtSipNo,
+            this.txtYaziIle,
+            this.xrLabel1});
+            this.ReportFooter.Dpi = 254F;
+            this.ReportFooter.HeightF = 225F;
+            this.ReportFooter.Name = "ReportFooter";
+            // 
+            // xrTable5
+            // 
+            this.xrTable5.Dpi = 254F;
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(531.551F, 0F);
+            this.xrTable5.Name = "xrTable5";
+            this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow33,
+            this.xrTableRow34,
+            this.xrTableRow35,
+            this.xrTableRow36,
+            this.xrTableRow37,
+            this.xrTableRow38});
+            this.xrTable5.SizeF = new System.Drawing.SizeF(408.4489F, 205.6462F);
+            // 
+            // xrTableRow33
+            // 
+            this.xrTableRow33.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell18,
+            this.txtKdvHaricToplamT});
+            this.xrTableRow33.Dpi = 254F;
+            this.xrTableRow33.Name = "xrTableRow33";
+            this.xrTableRow33.Weight = 1D;
+            // 
+            // xrTableCell18
+            // 
+            this.xrTableCell18.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell18.Dpi = 254F;
+            this.xrTableCell18.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xrTableCell18.Multiline = true;
+            this.xrTableCell18.Name = "xrTableCell18";
+            this.xrTableCell18.StylePriority.UseBorders = false;
+            this.xrTableCell18.StylePriority.UseFont = false;
+            this.xrTableCell18.StylePriority.UseTextAlignment = false;
+            this.xrTableCell18.Text = "Mal Hizmet Toplam Tutari";
+            this.xrTableCell18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell18.Weight = 1.035150039585726D;
+            // 
+            // txtKdvHaricToplamT
+            // 
+            this.txtKdvHaricToplamT.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.txtKdvHaricToplamT.Dpi = 254F;
+            this.txtKdvHaricToplamT.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKdvHaricToplamT.Multiline = true;
+            this.txtKdvHaricToplamT.Name = "txtKdvHaricToplamT";
+            this.txtKdvHaricToplamT.StylePriority.UseBorders = false;
+            this.txtKdvHaricToplamT.StylePriority.UseFont = false;
+            this.txtKdvHaricToplamT.TextFormatString = "{0:c2}";
+            this.txtKdvHaricToplamT.Weight = 0.57291699876790747D;
+            // 
+            // xrTableRow34
+            // 
+            this.xrTableRow34.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell19,
+            this.txtToplamIsk});
+            this.xrTableRow34.Dpi = 254F;
+            this.xrTableRow34.Name = "xrTableRow34";
+            this.xrTableRow34.Weight = 1D;
+            // 
+            // xrTableCell19
+            // 
+            this.xrTableCell19.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell19.Dpi = 254F;
+            this.xrTableCell19.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xrTableCell19.Multiline = true;
+            this.xrTableCell19.Name = "xrTableCell19";
+            this.xrTableCell19.StylePriority.UseBorders = false;
+            this.xrTableCell19.StylePriority.UseFont = false;
+            this.xrTableCell19.StylePriority.UseTextAlignment = false;
+            this.xrTableCell19.Text = "Toplam Iskonto   (% )";
+            this.xrTableCell19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell19.Weight = 1.035150039585726D;
+            // 
+            // txtToplamIsk
+            // 
+            this.txtToplamIsk.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.txtToplamIsk.Dpi = 254F;
+            this.txtToplamIsk.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtToplamIsk.Multiline = true;
+            this.txtToplamIsk.Name = "txtToplamIsk";
+            this.txtToplamIsk.StylePriority.UseBorders = false;
+            this.txtToplamIsk.StylePriority.UseFont = false;
+            this.txtToplamIsk.TextFormatString = "{0:c2}";
+            this.txtToplamIsk.Weight = 0.57291699876790747D;
+            // 
+            // xrTableRow35
+            // 
+            this.xrTableRow35.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell22,
+            this.txtKDVMatrah});
+            this.xrTableRow35.Dpi = 254F;
+            this.xrTableRow35.Name = "xrTableRow35";
+            this.xrTableRow35.Weight = 1D;
+            // 
+            // xrTableCell22
+            // 
+            this.xrTableCell22.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell22.Dpi = 254F;
+            this.xrTableCell22.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xrTableCell22.Multiline = true;
+            this.xrTableCell22.Name = "xrTableCell22";
+            this.xrTableCell22.StylePriority.UseBorders = false;
+            this.xrTableCell22.StylePriority.UseFont = false;
+            this.xrTableCell22.StylePriority.UseTextAlignment = false;
+            this.xrTableCell22.Text = "KDV Matrahı";
+            this.xrTableCell22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell22.Weight = 1.035150039585726D;
+            // 
+            // txtKDVMatrah
+            // 
+            this.txtKDVMatrah.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.txtKDVMatrah.Dpi = 254F;
+            this.txtKDVMatrah.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKDVMatrah.Multiline = true;
+            this.txtKDVMatrah.Name = "txtKDVMatrah";
+            this.txtKDVMatrah.StylePriority.UseBorders = false;
+            this.txtKDVMatrah.StylePriority.UseFont = false;
+            this.txtKDVMatrah.TextFormatString = "{0:c2}";
+            this.txtKDVMatrah.Weight = 0.57291699876790747D;
+            // 
+            // xrTableRow36
+            // 
+            this.xrTableRow36.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell25,
+            this.txtKdvTutar});
+            this.xrTableRow36.Dpi = 254F;
+            this.xrTableRow36.Name = "xrTableRow36";
+            this.xrTableRow36.Weight = 1D;
+            // 
+            // xrTableCell25
+            // 
+            this.xrTableCell25.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell25.Dpi = 254F;
+            this.xrTableCell25.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xrTableCell25.Multiline = true;
+            this.xrTableCell25.Name = "xrTableCell25";
+            this.xrTableCell25.StylePriority.UseBorders = false;
+            this.xrTableCell25.StylePriority.UseFont = false;
+            this.xrTableCell25.StylePriority.UseTextAlignment = false;
+            this.xrTableCell25.Text = "Hesaplanan KDV (% )";
+            this.xrTableCell25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell25.Weight = 1.035150039585726D;
+            // 
+            // txtKdvTutar
+            // 
+            this.txtKdvTutar.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.txtKdvTutar.Dpi = 254F;
+            this.txtKdvTutar.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKdvTutar.Multiline = true;
+            this.txtKdvTutar.Name = "txtKdvTutar";
+            this.txtKdvTutar.StylePriority.UseBorders = false;
+            this.txtKdvTutar.StylePriority.UseFont = false;
+            this.txtKdvTutar.TextFormatString = "{0:c2}";
+            this.txtKdvTutar.Weight = 0.57291699876790747D;
+            // 
+            // xrTableRow37
+            // 
+            this.xrTableRow37.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell28,
+            this.txtVDToplamTutar});
+            this.xrTableRow37.Dpi = 254F;
+            this.xrTableRow37.Name = "xrTableRow37";
+            this.xrTableRow37.Weight = 1D;
+            // 
+            // xrTableCell28
+            // 
+            this.xrTableCell28.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell28.Dpi = 254F;
+            this.xrTableCell28.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xrTableCell28.Multiline = true;
+            this.xrTableCell28.Name = "xrTableCell28";
+            this.xrTableCell28.StylePriority.UseBorders = false;
+            this.xrTableCell28.StylePriority.UseFont = false;
+            this.xrTableCell28.StylePriority.UseTextAlignment = false;
+            this.xrTableCell28.Text = "Vergiler Dahil Toplam Tutar(TL)";
+            this.xrTableCell28.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell28.Weight = 1.035150039585726D;
+            // 
+            // txtVDToplamTutar
+            // 
+            this.txtVDToplamTutar.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.txtVDToplamTutar.Dpi = 254F;
+            this.txtVDToplamTutar.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtVDToplamTutar.Multiline = true;
+            this.txtVDToplamTutar.Name = "txtVDToplamTutar";
+            this.txtVDToplamTutar.StylePriority.UseBorders = false;
+            this.txtVDToplamTutar.StylePriority.UseFont = false;
+            this.txtVDToplamTutar.TextFormatString = "{0:c2}";
+            this.txtVDToplamTutar.Weight = 0.57291699876790747D;
+            // 
+            // xrTableRow38
+            // 
+            this.xrTableRow38.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell30,
+            this.txtOdenecekTutar});
+            this.xrTableRow38.Dpi = 254F;
+            this.xrTableRow38.Name = "xrTableRow38";
+            this.xrTableRow38.Weight = 1D;
+            // 
+            // xrTableCell30
+            // 
+            this.xrTableCell30.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell30.Dpi = 254F;
+            this.xrTableCell30.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xrTableCell30.Multiline = true;
+            this.xrTableCell30.Name = "xrTableCell30";
+            this.xrTableCell30.StylePriority.UseBorders = false;
+            this.xrTableCell30.StylePriority.UseFont = false;
+            this.xrTableCell30.StylePriority.UseTextAlignment = false;
+            this.xrTableCell30.Text = "Ödenecek Tutar(TL)";
+            this.xrTableCell30.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell30.Weight = 1.035150039585726D;
+            // 
+            // txtOdenecekTutar
+            // 
+            this.txtOdenecekTutar.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.txtOdenecekTutar.Dpi = 254F;
+            this.txtOdenecekTutar.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtOdenecekTutar.Multiline = true;
+            this.txtOdenecekTutar.Name = "txtOdenecekTutar";
+            this.txtOdenecekTutar.StylePriority.UseBorders = false;
+            this.txtOdenecekTutar.StylePriority.UseFont = false;
+            this.txtOdenecekTutar.TextFormatString = "{0:c2}";
+            this.txtOdenecekTutar.Weight = 0.57291699876790747D;
+            // 
+            // xrLabel10
+            // 
+            this.xrLabel10.AutoWidth = true;
+            this.xrLabel10.Dpi = 254F;
+            this.xrLabel10.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(1.00002F, 4.42544F);
+            this.xrLabel10.Multiline = true;
+            this.xrLabel10.Name = "xrLabel10";
+            this.xrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.xrLabel10.SizeF = new System.Drawing.SizeF(435.0982F, 52.91666F);
+            this.xrLabel10.StylePriority.UseFont = false;
+            this.xrLabel10.Text = "Bu satış İnternet üzerinden yapılmıştır. İrsaliye yerine geçer";
+            // 
+            // xrLabel11
+            // 
+            this.xrLabel11.Dpi = 254F;
+            this.xrLabel11.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(0F, 83.00556F);
+            this.xrLabel11.Multiline = true;
+            this.xrLabel11.Name = "xrLabel11";
+            this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.xrLabel11.SizeF = new System.Drawing.SizeF(100.3012F, 25.0864F);
+            this.xrLabel11.StylePriority.UseFont = false;
+            this.xrLabel11.Text = "Kargo No :";
+            // 
+            // xrLabel12
+            // 
+            this.xrLabel12.AutoWidth = true;
+            this.xrLabel12.Dpi = 254F;
+            this.xrLabel12.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(0F, 134.4252F);
+            this.xrLabel12.Multiline = true;
+            this.xrLabel12.Name = "xrLabel12";
+            this.xrLabel12.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.xrLabel12.SizeF = new System.Drawing.SizeF(132.3807F, 27.66113F);
+            this.xrLabel12.StylePriority.UseFont = false;
+            this.xrLabel12.Text = "Sevk Yetkilisi :";
+            // 
+            // txtKargoNo
+            // 
+            this.txtKargoNo.Dpi = 254F;
+            this.txtKargoNo.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKargoNo.LocationFloat = new DevExpress.Utils.PointFloat(101.0208F, 83.00562F);
+            this.txtKargoNo.Multiline = true;
+            this.txtKargoNo.Name = "txtKargoNo";
+            this.txtKargoNo.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.txtKargoNo.SizeF = new System.Drawing.SizeF(335.0774F, 22.08644F);
+            this.txtKargoNo.StylePriority.UseFont = false;
+            // 
+            // txtSevkYetkilisi
+            // 
+            this.txtSevkYetkilisi.AutoWidth = true;
+            this.txtSevkYetkilisi.Dpi = 254F;
+            this.txtSevkYetkilisi.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSevkYetkilisi.LocationFloat = new DevExpress.Utils.PointFloat(133.0208F, 131.4251F);
+            this.txtSevkYetkilisi.Multiline = true;
+            this.txtSevkYetkilisi.Name = "txtSevkYetkilisi";
+            this.txtSevkYetkilisi.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.txtSevkYetkilisi.SizeF = new System.Drawing.SizeF(303.0774F, 30.6613F);
+            this.txtSevkYetkilisi.StylePriority.UseFont = false;
+            // 
+            // xrLabel15
+            // 
+            this.xrLabel15.Dpi = 254F;
+            this.xrLabel15.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xrLabel15.LocationFloat = new DevExpress.Utils.PointFloat(0F, 57.54879F);
+            this.xrLabel15.Multiline = true;
+            this.xrLabel15.Name = "xrLabel15";
+            this.xrLabel15.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.xrLabel15.SizeF = new System.Drawing.SizeF(146.6701F, 25.08639F);
+            this.xrLabel15.StylePriority.UseFont = false;
+            this.xrLabel15.Text = "Kargo Firması :";
+            // 
+            // txtKargoFirmasi
+            // 
+            this.txtKargoFirmasi.Dpi = 254F;
+            this.txtKargoFirmasi.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKargoFirmasi.LocationFloat = new DevExpress.Utils.PointFloat(146.6701F, 57.54861F);
+            this.txtKargoFirmasi.Multiline = true;
+            this.txtKargoFirmasi.Name = "txtKargoFirmasi";
+            this.txtKargoFirmasi.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.txtKargoFirmasi.SizeF = new System.Drawing.SizeF(289.4281F, 22.08644F);
+            this.txtKargoFirmasi.StylePriority.UseFont = false;
+            // 
+            // xrLabel16
+            // 
+            this.xrLabel16.Dpi = 254F;
+            this.xrLabel16.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(0F, 108.4054F);
+            this.xrLabel16.Multiline = true;
+            this.xrLabel16.Name = "xrLabel16";
+            this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.xrLabel16.SizeF = new System.Drawing.SizeF(123.7709F, 25.08642F);
+            this.xrLabel16.StylePriority.UseFont = false;
+            this.xrLabel16.Text = "Kargo Tarihi :";
+            // 
+            // txtKargoTarihi
+            // 
+            this.txtKargoTarihi.Dpi = 254F;
+            this.txtKargoTarihi.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKargoTarihi.LocationFloat = new DevExpress.Utils.PointFloat(124.0208F, 108.4056F);
+            this.txtKargoTarihi.Multiline = true;
+            this.txtKargoTarihi.Name = "txtKargoTarihi";
+            this.txtKargoTarihi.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.txtKargoTarihi.SizeF = new System.Drawing.SizeF(312.0774F, 22.08644F);
+            this.txtKargoTarihi.StylePriority.UseFont = false;
+            // 
+            // xrLabel17
+            // 
+            this.xrLabel17.AutoWidth = true;
+            this.xrLabel17.Dpi = 254F;
+            this.xrLabel17.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(1.00002F, 165.0865F);
+            this.xrLabel17.Multiline = true;
+            this.xrLabel17.Name = "xrLabel17";
+            this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.xrLabel17.SizeF = new System.Drawing.SizeF(109.7709F, 27.66113F);
+            this.xrLabel17.StylePriority.UseFont = false;
+            this.xrLabel17.Text = "Sipariş No :";
+            // 
+            // txtSipNo
+            // 
+            this.txtSipNo.AutoWidth = true;
+            this.txtSipNo.Dpi = 254F;
+            this.txtSipNo.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSipNo.LocationFloat = new DevExpress.Utils.PointFloat(111.0208F, 162.0864F);
+            this.txtSipNo.Multiline = true;
+            this.txtSipNo.Name = "txtSipNo";
+            this.txtSipNo.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.txtSipNo.SizeF = new System.Drawing.SizeF(325.0774F, 30.6613F);
+            this.txtSipNo.StylePriority.UseFont = false;
+            // 
+            // txtYaziIle
+            // 
+            this.txtYaziIle.AutoWidth = true;
+            this.txtYaziIle.Dpi = 254F;
+            this.txtYaziIle.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold);
+            this.txtYaziIle.LocationFloat = new DevExpress.Utils.PointFloat(90.02081F, 192.7476F);
+            this.txtYaziIle.Multiline = true;
+            this.txtYaziIle.Name = "txtYaziIle";
+            this.txtYaziIle.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.txtYaziIle.SizeF = new System.Drawing.SizeF(346.0775F, 27.63446F);
+            this.txtYaziIle.StylePriority.UseFont = false;
+            this.txtYaziIle.Text = "txtYaziIle";
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.AutoWidth = true;
+            this.xrLabel1.Dpi = 254F;
+            this.xrLabel1.Font = new System.Drawing.Font("Arial", 5F, System.Drawing.FontStyle.Bold);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(5.477298F, 192.7477F);
+            this.xrLabel1.Multiline = true;
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(84.00604F, 27.63445F);
+            this.xrLabel1.StylePriority.UseFont = false;
+            this.xrLabel1.Text = "Yazıyla :";
+            // 
             // rptFis
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,
             this.BottomMargin,
             this.Detail,
-            this.PageFooter,
-            this.ReportHeader});
+            this.ReportHeader,
+            this.ReportFooter});
             this.Dpi = 254F;
             this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.Margins = new System.Drawing.Printing.Margins(28, 26, 14, 0);
@@ -1594,10 +1594,10 @@ namespace AkinsoftVmodulu.UI.BackOffice.Rapor
             this.SnapGridSize = 25F;
             this.Version = "20.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCariAdres)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -1616,39 +1616,6 @@ namespace AkinsoftVmodulu.UI.BackOffice.Rapor
         private DevExpress.XtraReports.UI.XRTableCell txtMiktar;
         private DevExpress.XtraReports.UI.XRTableCell txtBirimFiyat;
         private DevExpress.XtraReports.UI.XRTableCell txtUrunToplamTutar;
-        private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
-        private DevExpress.XtraReports.UI.XRTable xrTable5;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow33;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell18;
-        private DevExpress.XtraReports.UI.XRTableCell txtKdvHaricToplamT;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow34;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell19;
-        private DevExpress.XtraReports.UI.XRTableCell txtToplamIsk;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow35;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell22;
-        private DevExpress.XtraReports.UI.XRTableCell txtKDVMatrah;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow36;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell25;
-        private DevExpress.XtraReports.UI.XRTableCell txtKdvTutar;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow37;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell28;
-        private DevExpress.XtraReports.UI.XRTableCell txtVDToplamTutar;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow38;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell30;
-        private DevExpress.XtraReports.UI.XRTableCell txtOdenecekTutar;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel10;
-        private DevExpress.XtraReports.UI.XRLabel txtSevkYetkilisi;
-        private DevExpress.XtraReports.UI.XRLabel txtKargoNo;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel12;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel11;
-        private DevExpress.XtraReports.UI.XRLabel txtKargoTarihi;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel16;
-        private DevExpress.XtraReports.UI.XRLabel txtKargoFirmasi;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel15;
-        private DevExpress.XtraReports.UI.XRLabel txtSipNo;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel17;
-        private DevExpress.XtraReports.UI.XRLabel txtYaziIle;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox1;
         private DevExpress.XtraReports.UI.XRPictureBox picImza;
@@ -1717,5 +1684,38 @@ namespace AkinsoftVmodulu.UI.BackOffice.Rapor
         private DevExpress.XtraReports.UI.XRLabel txtEttnNo;
         private DevExpress.XtraReports.UI.XRLine xrLine3;
         private DevExpress.XtraReports.UI.XRLabel xrLabel13;
+        private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
+        private DevExpress.XtraReports.UI.XRTable xrTable5;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow33;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell18;
+        private DevExpress.XtraReports.UI.XRTableCell txtKdvHaricToplamT;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow34;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell19;
+        private DevExpress.XtraReports.UI.XRTableCell txtToplamIsk;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow35;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell22;
+        private DevExpress.XtraReports.UI.XRTableCell txtKDVMatrah;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow36;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell25;
+        private DevExpress.XtraReports.UI.XRTableCell txtKdvTutar;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow37;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell28;
+        private DevExpress.XtraReports.UI.XRTableCell txtVDToplamTutar;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow38;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell30;
+        private DevExpress.XtraReports.UI.XRTableCell txtOdenecekTutar;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel10;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel11;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel12;
+        private DevExpress.XtraReports.UI.XRLabel txtKargoNo;
+        private DevExpress.XtraReports.UI.XRLabel txtSevkYetkilisi;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel15;
+        private DevExpress.XtraReports.UI.XRLabel txtKargoFirmasi;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel16;
+        private DevExpress.XtraReports.UI.XRLabel txtKargoTarihi;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel17;
+        private DevExpress.XtraReports.UI.XRLabel txtSipNo;
+        private DevExpress.XtraReports.UI.XRLabel txtYaziIle;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
     }
 }

@@ -189,6 +189,7 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
+            this.colMaskodu = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             this.tabPageUrunler.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridSiparisListe)).BeginInit();
@@ -691,7 +692,8 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             this.colBLPAKETKODU,
             this.colONAYLAMA,
             this.colOZELALANTANIM_20,
-            this.colOZELALANTANIM_19});
+            this.colOZELALANTANIM_19,
+            this.colMaskodu});
             this.gridViewSiparisListe.CustomizationFormBounds = new System.Drawing.Rectangle(951, 324, 294, 307);
             this.gridViewSiparisListe.DetailHeight = 404;
             this.gridViewSiparisListe.GridControl = this.gridSiparisListe;
@@ -1759,6 +1761,14 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
             this.xtraTabPage2});
             this.xtraTabControl1.Click += new System.EventHandler(this.xtraTabControl1_Click);
             // 
+            // colMaskodu
+            // 
+            this.colMaskodu.Caption = "Maskodu";
+            this.colMaskodu.FieldName = "BLMASKODU";
+            this.colMaskodu.Name = "colMaskodu";
+            this.colMaskodu.Visible = true;
+            this.colMaskodu.VisibleIndex = 8;
+            // 
             // frmV2Siparis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1957,5 +1967,6 @@ namespace AkinsoftVmodulu.UI.BackOffice.V2
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton btnIslemGeriAl;
+        private DevExpress.XtraGrid.Columns.GridColumn colMaskodu;
     }
 }

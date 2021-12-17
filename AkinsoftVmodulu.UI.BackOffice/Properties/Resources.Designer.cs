@@ -133,6 +133,26 @@ namespace AkinsoftVmodulu.UI.BackOffice.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap Fatura_AlisIade32x32 {
+            get {
+                object obj = ResourceManager.GetObject("Fatura_AlisIade32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fatura_Satis32x32 {
+            get {
+                object obj = ResourceManager.GetObject("Fatura_Satis32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap imza_darkseer {
             get {
                 object obj = ResourceManager.GetObject("imza darkseer", resourceCulture);

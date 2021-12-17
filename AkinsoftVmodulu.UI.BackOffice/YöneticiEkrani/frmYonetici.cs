@@ -92,6 +92,17 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             adp.Fill(dt);
             return dt;
         }
+        public DataTable FiltreSelectMik(string stokKd, string renkk, string bedenn)//filtreleme özellikleri
+        {
+            SqlDataAdapter adp = new SqlDataAdapter(string.Format("SP_FATURAKTMIK"), Baglanti2);
+            adp.SelectCommand.CommandType = CommandType.StoredProcedure;
+            adp.SelectCommand.Parameters.AddWithValue("@stokkodu", stokKd);
+            adp.SelectCommand.Parameters.AddWithValue("@renk", renkk);
+            adp.SelectCommand.Parameters.AddWithValue("@beden", bedenn);
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            return dt;
+        }
         public DataTable ToplayıcıListele()//toplayıcıda olanları listele procedure
         {
             SqlDataAdapter adp = new SqlDataAdapter(string.Format("SP_TOPLAYICIDA"), Baglanti2);
@@ -288,6 +299,11 @@ namespace AkinsoftVmodulu.UI.BackOffice.YöneticiEkrani
             listele();
 
 
+        }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            gridControl1.DataSource = FiltreSelectMik(txtStokKodu.Text, txtRenk.Text, txtBeden.Text);
         }
     }
 }
